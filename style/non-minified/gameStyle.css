@@ -1,0 +1,52 @@
+﻿table.gameRules{
+    width: 80%;
+    padding: 0px; 
+    background-color:rgba(0,0,0,0.1);        
+    border: 3px solid #00C9FF;
+    border-collapse: collapse;
+    font-size: 12pt;
+    margin: auto;
+    margin-top: 10px;
+}
+
+table.reqMaterials{
+    border: 3px solid orange;
+    background-color: rgba(34,34,34,0.8); 
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+tr.ruleRow1{
+    border: none;
+    height: 28px;
+    background-color: rgba(34,34,34,0.8);  
+    text-align: left;    
+}
+
+tr.ruleRow2{
+    border: solid 1px;
+    border-color: rgba(51,51,51,0.8);
+    height: 28px;
+    color: #00C9FF;
+    background-color: rgba(17,17,17,0.8);   
+    text-align: left;          
+}
+
+td.ruleNum1{
+    width: 3%;
+    text-align: center;
+    font-size: 16pt;
+}
+
+td.ruleNum2{
+    width: 3%;
+    text-align: center;
+    font-size: 16pt;
+}
+
+.gameSubtitle{
+    color: #999999;
+    font-weight: 400;
+    margin: 100px;
+}

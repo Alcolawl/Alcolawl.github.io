@@ -1,0 +1,6 @@
+//Color Pallette
+#00C9FF Cyan
+#CD00FF Purple
+#FFA200 Orange
+#39B54A Green
+#FF0000 Red

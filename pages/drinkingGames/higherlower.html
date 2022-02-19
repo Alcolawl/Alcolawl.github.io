@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Higher-Lower</title>
+    <meta name="keywords" content="Drink,Movie,Games,Alcohol,Drinking Game">
+    <meta name="author" content="Team D2M">
+    <link rel="image_src" href="http://www.drink2movies.com/images/previewpic.png" />
+    <link href="../../favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="../../style/style2.css" rel="stylesheet" type="text/css" />
+    <link href="../../style/gameStyle.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        [
+            '../../scripts/essential/jquery-3.3.1.min.js',
+            '../../scripts/essential/displaymenu.js',
+            '../../scripts/jquery.cookie.js',
+            '../../scripts/popup.js',
+        ].forEach(function (src) {
+            var script = document.createElement('script');
+            script.src = src;
+            script.async = false;
+            document.head.appendChild(script);
+        });
+    </script>
+
+</head>
+<body>
+    <div id="header">
+        <button id="hamburger"><div class="stripe"></div><div class="stripe"></div><div class="stripe"></div></button>
+        <img src="../../images/banner.gif" />
+    </div>
+    <div class="clearfloat"></div>
+
+    <div id="content">
+        <div id="navMenu">
+            <a href="../../index.html"><button class="navMenuButton">HOME</button></a><br />
+            <a href="../about.html"><button class="navMenuButton">ABOUT</button></a><br />
+            <a href="../movies.html"><button class="navMenuButton">MOVIES</button></a><br />
+            <a href="../games.html"><button class="navMenuButton">GAMES</button></a><br />
+            <a href="../shows.html"><button class="navMenuButton">SHOWS</button></a><br />
+        </div>
+        <div class="innerContainer">
+            <h1>Higher-Lower.</h1>
+            <h3>Players: 3+ <br /> Difficulty: 1/7 <br /> Drunk Scale: 6/7</h3>
+
+            <font color="#999999"><b>This is a "team" game with really simple rules. You will almost never win though, goodluck.</b></font>
+
+            <table class="gameRules">
+                <tr class="ruleRow1"><td class="ruleNum1">1.</td><td>Layout nine cards faceup in a 3 x 3 square on the table.</td></tr>
+                <tr class="ruleRow2">
+                    <td class="ruleNum2">2.</td>
+                    <td>
+                        The game starts with a player choosing a card in the square and guessing whether or not the next card in the deck will be higher
+                        or lower than the card they chose on the table.
+                    </td>
+                </tr>
+                <tr class="ruleRow1"><td class="ruleNum1">3.</td><td>After the player guesses, you place the card from the deck over the card that they chose in the square. The cards pile up over time, so you're a victim of your own success.</td></tr>
+                <tr class="ruleRow2">
+                    <td class="ruleNum2">4.</td>
+                    <td>
+                        If the player guessed correctly keep the card as it is and it is now the next player's turn. However, if the player guessed
+                        incorrectly you must count the amount of cards in the pile and each player at the table must now drink in seconds for that amount. (ex. 5 cards = 5 seconds). You then must
+                        flip that pile and you can no longer play from that pile.
+                    </td>
+                </tr>
+                <tr class="ruleRow1"><td class="ruleNum1">5.</td><td>Play until all of the piles are facedown or all of the cards are gone from the deck.</td></tr>
+                <tr class="ruleRow2"><td class="ruleNum2">6.</td><td>If you win, go crazy! It doesn't happen often.</td></tr>
+                <tr class="ruleRow1"><td class="ruleNum1">7.</td><td>If you lose blame the idiot who guessed higher on a Jack because "they like to live dangerously". Also, finish your drinks.</td></tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+<footer>
+    <!--Footer / Legal Stuff-->
+    <p>&#169;2018 - Team D2M</p>
+</footer>

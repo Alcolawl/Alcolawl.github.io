@@ -1,0 +1,99 @@
+﻿button {
+    width: 800px;
+    background-color: #444444;
+    color: #C9C9C9;
+    border: none;
+    font-family: Noto;
+    font-size: 12pt;
+}
+
+h2.smallMargin{color: #00C9FF; margin-bottom: 0px;}
+
+#gamesContainer{
+    margin: 0 auto;    
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    width: 95%; 
+    background-color: #333333;
+}
+
+.thirdContainer{
+    display: inline-block;
+    background-color: #333333; 
+    margin-top: 10px;
+    margin-bottom: auto;
+    height: 500px;
+    vertical-align: top;
+}
+
+.playerChoose{
+    width: 75px;
+    height: 75px;
+    margin-top: 10px;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    font-size: 32px;
+    color: #00C9FF;
+    box-shadow: 3px 3px 1px #222222;
+}
+
+.playerChoose:active{background-color: #666666;}
+
+.highlighted{background-color: rgba(205,0,255,0.5);}
+
+.playerPressed{background-color: rgba(205,0,255,0.5); box-shadow: -3px -3px 0px #222222;}
+
+.twoPlayerChoice{
+    width: 75px;
+    height: 75px;
+    margin-top: 10px;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    font-size: 32px;
+    color: #00C9FF;
+    box-shadow: 3px 3px 1px #222222;
+}
+
+.twoPlayerChoice:active{background-color: #666666;}
+
+.threePlayerChoice{
+    width: 75px;
+    height: 75px;
+    margin-top: 10px;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    font-size: 32px;
+    color: #00C9FF;
+    box-shadow: 3px 3px 1px #222222;
+}
+
+.threePlayerChoice:active{background-color: #666666;}
+
+.fourPlayerChoice{
+    width: 75px;
+    height: 75px;
+    margin-top: 10px;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    font-size: 32px;
+    color: #00C9FF;
+    box-shadow: 3px 3px 1px #222222;
+}
+
+.fourPlayerChoice:active{background-color: #666666;}
+
+.sixPlayerChoice{
+    width: 75px;
+    height: 75px;
+    margin-top: 10px;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    font-size: 32px;
+    color: #00C9FF;
+    box-shadow: 3px 3px 1px #222222;
+}
+
+.sixPlayerChoice:active{background-color: #666666;}

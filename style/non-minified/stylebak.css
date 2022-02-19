@@ -1,0 +1,637 @@
+/*Main*/
+
+body {
+    background-color: #111111;
+    font-family: Roboto;
+    color: #cccccc;
+    font-weight: 300;
+    font-size: 14pt;
+}
+
+body.update {font-family: Roboto; color: #00C9FF;}
+
+iframe::-webkit-scrollbar {display: none;} 
+
+/*Custom Fonts*/
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto-bold-webfont.woff') format('woff');      
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto-condensed-webfont.woff') format('woff');       
+    font-weight: normal;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto-light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/*Foundation CSS*/
+
+    #main{width: 1280px; margin: 0 auto;}
+
+    #mainContainer{
+        float: left;
+        display: inline-block;
+        width: 1040px; 
+        background-color: #222222;        
+        min-height: 200px;        
+    }
+
+    #navBar{
+        width: 1278px;
+        height: 75px;
+        background-color: #00C9FF;
+        display: inline-block;
+        padding-top: 5px;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+    a:visited.navButton {color: #999999;}
+    a:visited.navButton:hover {color: #222222;}
+
+    a:link.navButton{
+        width: 207px;
+        height: 60px;
+        background-color: #222222;
+        color: #999999;
+        display: inline-block;
+        padding-top: 10px;
+        font-family: Tahoma;
+        font-size: 30pt;
+        font-weight: bold;
+        text-decoration: none;
+}
+    a:link.navButton:hover{background-color: #555555; color: #222222;}
+    a:link {color: #00C9FF; text-decoration: none;}
+    a:link:hover {color: #CD00FF; text-decoration: none;}
+    a:visited {color: #00C9FF;}
+
+    .sideBar{
+        float: left;
+        width: 120px;
+        min-height: 500px;
+        background-color: #111111;
+        display: inline-block;
+}
+    .sideBarRight{
+        float: right;
+        width: 120px;
+        min-height: 500px;
+        background-color: #111111;
+        display: inline-block;
+}
+
+    /*Clear Float of Div Fields*/
+    .clearFloat {clear: both;}
+
+    #footer {float: right; font-family: Roboto;}
+
+    #main{width: 1280px; margin: 0 auto;}
+    .cyan{color: #00C9FF; font-weight: bold;}
+    h1{color: #00C9FF;}
+
+    /*Home Page*/
+    #welcome{
+        text-align: center; 
+        margin-left: 20px; 
+        margin-top: 20px; 
+        margin-bottom: 20px; 
+        padding-bottom: 20px;
+        padding-right: 10px;
+        padding-left: 10px;
+        width: 980px; 
+        background-color: #333333;
+}
+
+    #updateFrame{
+        width: 1040px;
+        height: 720px;
+        text-align: center;
+        overflow-x: hidden;
+        border: none;
+}
+
+    .update {background-color: #222222;}
+
+    .announcement{
+        background-color: #333333; 
+        width: 100%; 
+        margin-left: 12px; 
+        padding-top: 1px;        
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        color: #CCCCCC;
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: 300;
+}
+    .innerContainer{
+        margin-top: 20px; 
+        margin-bottom: 20px; 
+        padding-bottom: 20px;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 1px;
+        width: 980px; 
+        background-color: #333333;
+        color: #CCCCCC;
+        text-align: center;
+}
+    .updateTitle{border-bottom: 4px solid; color: #00C9FF;}
+    .updateList{text-align: left; margin-top: -10px;}
+
+    #rules{line-height: 130%; text-align: left;}
+
+    #favorite{
+        position: absolute;
+        top: 300px;
+        right: 375px;
+}
+
+    /*Warning Popup*/
+    .black_overlay {
+        display: none;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        z-index: 1001;
+        -moz-opacity: 0.8;
+        opacity: .80;
+        filter: alpha(opacity=80);
+}
+
+     .popupbg {
+        display: none;
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        width: 50%;
+        height: 50%;
+        padding: 16px;
+        border: 16px solid orange;
+        background-color: #222222;
+        z-index: 1002;
+        overflow: auto;
+}
+     .popupbg button{font-size: 18pt; height: 40px;}
+
+    /*Special Font*/
+
+    em {
+        font-family: Roboto;
+        font-weight: 300;
+        font-style: normal;
+}
+    em.bottom{position:relative; bottom: -700px;}
+    hr {
+        width: 800px;
+        border-color: #CD00FF;
+        box-shadow: 2px 5px 3px #000000;
+}
+    h2.series{
+        padding: 0px;
+        margin-bottom: 2px;
+        margin-top: 20px;
+}
+    .gameSubtitle{
+        color: #999999;
+        font-weight: 400;
+        margin: 100px;
+    }
+
+    /*Games Page Containers*/
+
+    #gamesContainer{margin-top: -40px; margin-left: 20px;}
+
+    .thirdContainer{
+        float: left;
+        width: 333px;
+        height: 500px;
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: #333333;   
+}
+
+   .announceContainer{
+        float: left;
+        width: 928px;
+        display: inline-block; 
+        text-align: center; 
+}
+
+    .rule{color: #00C9FF; padding-right: 5%;}
+
+    h2.smallMargin{color: #00C9FF; margin-bottom: 0px;}
+
+    .playerChoose{
+        width: 75px;
+        height: 75px;
+        margin-top: 10px;
+        margin-left: 2.5px;
+        margin-right: 2.5px;
+        font-size: 32px;
+        color: #00C9FF;
+        box-shadow: 3px 3px 1px #222222;
+}
+
+    .playerChoose:active{background-color: #666666;}
+
+    .highlighted{background-color: rgba(205,0,255,0.5);}
+
+    .playerPressed{background-color: rgba(205,0,255,0.5); box-shadow: -3px -3px 0px #222222;}
+
+    .twoPlayerChoice{
+        width: 75px;
+        height: 75px;
+        margin-top: 10px;
+        margin-left: 2.5px;
+        margin-right: 2.5px;
+        font-size: 32px;
+        color: #00C9FF;
+        box-shadow: 3px 3px 1px #222222;
+}
+
+    .twoPlayerChoice:active{background-color: #666666;}
+
+    .threePlayerChoice{
+        width: 75px;
+        height: 75px;
+        margin-top: 10px;
+        margin-left: 2.5px;
+        margin-right: 2.5px;
+        font-size: 32px;
+        color: #00C9FF;
+        box-shadow: 3px 3px 1px #222222;
+}
+
+    .threePlayerChoice:active{background-color: #666666;}
+
+    .fourPlayerChoice{
+        width: 75px;
+        height: 75px;
+        margin-top: 10px;
+        margin-left: 2.5px;
+        margin-right: 2.5px;
+        font-size: 32px;
+        color: #00C9FF;
+        box-shadow: 3px 3px 1px #222222;
+}
+
+    .fourPlayerChoice:active{background-color: #666666;}
+
+    .sixPlayerChoice{
+        width: 75px;
+        height: 75px;
+        margin-top: 10px;
+        margin-left: 2.5px;
+        margin-right: 2.5px;
+        font-size: 32px;
+        color: #00C9FF;
+        box-shadow: 3px 3px 1px #222222;
+    }
+
+    .sixPlayerChoice:active{background-color: #666666;}
+
+
+/*Jump Menu IDs*/
+    #jumpMenu{
+        display: none;
+        position: fixed;
+        max-width: 1280px;
+        border-style: solid;
+        border-color: #00C9FF;
+        padding-left: 5px;
+        background-color: rgba(0,0,0,0.8);
+}
+    #jumpMenu a{font-size: 48pt; text-decoration: none;}
+    #jumpMenu a:hover{font-size: 48pt; text-decoration: none; color: #CD00FF;}
+    #jumpMenu h2{margin-bottom: -20px; margin-top: 0px;}
+    #jumpMenu:hover{display: block;}
+
+    #jump{
+        font-size: 28pt;
+        font-weight: bold;
+        width: 100px;
+        color: #CD00FF;
+        border-style:solid;
+        border-color: #00C9FF;
+        padding-left: 5px;
+}
+
+    #jump:hover ~ #jumpMenu{display:block;}
+    #lazy{position: fixed;}
+    
+    /*Rules Table Copy Styling*/
+    #copyRules{position: fixed;}
+    #copyButton {width: 300px; margin-bottom: 10px;}
+    .copy{width: 300px; height: 300px;}
+    #copyJump {
+        font-size: 24pt;
+        line-height: 30px;
+        font-weight: bold;
+        max-width: 108px;
+        color: #CD00FF;
+        border-style:solid;
+        border-color: #00C9FF;
+        padding-left: 5px;
+}
+
+    #copyMenu{
+        display: none;
+        position: fixed;
+        max-width: 300px;
+        border-style: solid;
+        border-color: #00C9FF;
+        padding-left: 5px;
+        background-color: rgba(0,0,0,0.8);
+        padding: 10px;
+        text-align: center;
+}
+    #copyMenu a{font-size: 48pt; text-decoration: none;}
+    #copyMenu a:hover{font-size: 48pt; text-decoration: none; color: #CD00FF;}
+    #copyMenu:hover{display: block;}
+    #copyJump:hover ~ #copyMenu{display:block;}
+
+    /*DropDownList Styling*/
+    #movieSelect{
+        margin: 10px;
+        padding: 5px 35px;
+        height: 50px;
+        width: 720px;
+        background: #222;
+        border: 2px solid #444;
+        font-size: 24px;
+        color: #00C9FF; 
+        text-align: center;          
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
+    /*Table*/
+    table{
+        width: 870px;
+        text-align: center; 
+        border: 4px solid #00C9FF;
+        background-color: rgba(73,73,73,0.8);
+        padding: 0px; 
+        border-collapse: collapse;
+        margin-bottom: 20px;
+}
+
+    tr{
+        height: 30px;
+        border-bottom: 2px solid #222222;
+        border-collapse: collapse;
+}
+    th{
+        height: 35px;
+        border-left: 2px solid #222222;
+        text-shadow: 5px 4px 3px 2px;
+        border-collapse: collapse;
+        padding-right: 5%;
+}
+
+    th.nopad{
+        height: 35px;
+        font-size: 18px;
+        border-left: 2px solid #222222;
+        text-shadow: 5px 4px 3px 2px;
+        border-collapse: collapse;
+        padding-right: 0%;
+}
+
+    th.sort {
+        height: 35px;
+        font-size: 18px;
+        border-left: 2px solid #222222;
+        text-shadow: 5px 4px 3px 2px;
+        border-collapse: collapse; 
+        background-image: url(../images/table/bg.gif);
+        background-repeat: no-repeat;
+	    background-position: center right;
+	    cursor: pointer;
+        padding-right: 0px;
+}
+
+    th.reset {
+        height: 35px;
+        font-size: 18px;
+        border-left: 2px solid #222222;
+        text-shadow: 5px 4px 3px 2px;
+        border-collapse: collapse; 
+        background-image: url(../images/table/reset.png);
+        background-repeat: no-repeat;
+	    background-position: center right;
+	    cursor: pointer;
+        padding-right: 0px;
+}
+
+    td{
+        border-left: 2px solid #222222;
+        border-collapse: collapse;  
+        padding-top: 5px;
+}
+
+    table.gameRules{
+        width: 862px;
+        margin-top: 10px;
+        padding: 0px; 
+        background-color:rgba(0,0,0,0.1);        
+        border: 3px solid #00C9FF;
+        border-collapse: collapse;
+        font-size: 12pt;
+}
+    table.reqMaterials{
+        border: 3px solid orange;
+        background-color: rgba(34,34,34,0.8); 
+        margin-top: 10px;
+        width: 862px;
+    }
+
+    tr.ruleRow1{
+        border: none;
+        height: 28px;
+        background-color: rgba(34,34,34,0.8);  
+        text-align: left;    
+}
+
+    tr.ruleRow2{
+        border: solid 1px;
+        border-color: rgba(51,51,51,0.8);
+        height: 28px;
+        color: #00C9FF;
+        background-color: rgba(17,17,17,0.8);   
+        text-align: left;          
+}
+
+    td.ruleNum1{
+        width: 3%;
+        text-align: center;
+        font-size: 16pt;
+}
+     td.ruleNum2{
+        width: 3%;
+        text-align: center;
+        font-size: 16pt;
+}
+
+    /*Movie List Effects*/
+    table.movielist tr{
+        border: 2px solid #222222;
+        -webkit-transition: all 0.3s ease; 
+        -moz-transition: all 0.3s ease; 
+        -o-transition: all 0.3s ease;  
+}
+    table.movielist tr:hover{
+        font-size: 22px;
+        height: 50px;
+        opacity: 1; 
+        background: #555555;
+}
+    table.movielist a:link{text-decoration: none;}
+    table.movielist a:hover{
+        font-size: 22px;
+        font-weight: 500;
+        color: #CD00FF;
+        -webkit-transition: all 0.3s ease; 
+        -moz-transition: all 0.3s ease; 
+        -o-transition: all 0.3s ease;  
+}
+
+    table.movielist td {border: 2px solid #222222;}
+
+    /*Movie Page Classes*/
+    .kbButton{
+        width: 82.5px;
+        height: 82.5px;
+        margin-left: 2.5px;
+        margin-right: 2.5px;
+        margin-bottom: 5px;
+        font-size: 24pt;
+        color: #00C9FF;
+        box-shadow: 3px 3px 1px #222222;
+}
+
+    .kbButton:active{
+        background-color: #CD00FF;
+        font-weight: bold;
+        color: #333333;
+}
+
+    #results tr{
+        border: 2px solid #222222;
+        -webkit-transition: all 0.3s ease; 
+        -moz-transition: all 0.3s ease; 
+        -o-transition: all 0.3s ease;  
+}
+    #results tr:hover{
+        font-size: 22px;
+        height: 50px;
+        opacity: 1; 
+        background: #555555;
+        -webkit-box-shadow: 0px 0px 10px 5px gba(205,0,255,0.8); 
+        -moz-box-shadow: 0px 0px 10px 5px rgba(205,0,255,0.8); 
+        box-shadow: 0px 0px 10px 5px rgba(205,0,255,0.8); 
+}
+    #results a:link{text-decoration: none;}
+    #results a:hover{
+        font-size: 22px;
+        font-weight: 500;
+        color: #CD00FF;
+        -webkit-transition: all 0.3s ease; 
+        -moz-transition: all 0.3s ease; 
+        -o-transition: all 0.3s ease;  
+}
+
+    #fullList{
+        margin-top: 2.5px;
+        margin-bottom: 10px;
+        font-size: 24pt;
+        width: 520px;
+        height: 60px;
+        color: #00C9FF;
+        -webkit-box-shadow: 3px 3px 1px #222222;
+        -moz-box-shadow: 3px 3px 1px #222222;
+        box-shadow: 3px 3px 1px #222222;
+}
+
+    #fullList:active{
+        background-color: #CD00FF;
+        font-weight: bold;
+        color: #333333;
+}
+
+    /*Collapsible menu*/
+
+    .list {
+        display:none; 
+        height:auto;
+        margin:0;
+}
+    .show {display: none;}
+    .hide:target + .show {display: inline;}
+    .hide:target {display: none;}
+    .hide:target ~ .list {display:inline;}
+    .show:active {background-color: #CD00FF; color: #333333;}
+
+    .expand{
+        height: 82.5px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-size: 24pt;
+        color: #00C9FF;
+        -webkit-box-shadow: 3px 3px 1px #222222;
+        -moz-box-shadow: 3px 3px 1px #222222;
+        box-shadow: 3px 3px 1px #222222;
+}
+    .expand:active{background-color: #CD00FF;}
+
+    .list p{height: auto; margin: 0;}
+
+    th.center {
+        height: 35px;
+        font-size: 18px;
+        padding-right: 0px;
+}
+
+    /*Spoiler Buttons*/
+    button {
+        width: 800px;
+        background-color: #444444;
+        color: #C9C9C9;
+        border: none;
+        font-family: Roboto;
+        font-size: 12pt;
+}
+    button:hover span {display:none}
+    button.fourthkind:hover:before {content:"The daughter gets abducted."}
+    button.ahx:hover:before {content:"Danny Dies."}
+    button.amityville:hover:before {content:"The family dog dies. :("}
+    button.pubenemy1:hover:before {content:"Baby Face Nelson dies."}
+    button.pubenemy2:hover:before {content:"Johnny Depp dies."}
+    button.reignoffire:hover:before {content:"Creedy dies."}
+    button.toystory3:hover:before {content:"Andy gives the toys away."}
+    button.watch:hover:before {content:"Jamarcus reveals his true form."}
+    button.thetown:hover:before {content:"When Doug kills Fergie (The Florist)"}

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rules>
+  <drink>
+    <ruleA>Someone says "Grayson" "Harker" "Mina" "Lucy".</ruleA>
+    <ruleB>Someone dies.</ruleB>
+    <ruleC>Dracula walks in the light.</ruleC>
+    <ruleD>Harker is dumb.</ruleD>
+    <ruleE>Renfield says or does something cool.</ruleE>
+  </drink>
+  <chug>
+    <ruleA>There's a sex scene.</ruleA>
+    <ruleB>There's a romantic connection between Grayson and Mina.</ruleB>
+  </chug>
+  <finish>
+    <ruleA>Someone is turned to a Vampire.</ruleA>
+  </finish>
+  <show>
+    <title>Dracula</title>
+  </show>
+</rules>

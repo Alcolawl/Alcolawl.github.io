@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rules>
+  <drink>
+    <ruleA>Any of the main cast names are said, Depending on the season. (Alex, Thad, Sammy, Coach Daniels, Shilo, Larry, Raydon, Debra, Mary Jo, and Harmon).</ruleA>
+    <ruleB>There is a football on screen.</ruleB>
+    <ruleC>Alex sleeps with a new girl.</ruleC>
+    <ruleD>Someone takes a swig of an alcoholic beverage.</ruleD>
+  </drink>
+  <gulp>
+    <ruleA>There's football practice..</ruleA>
+    <ruleB>Drugs are used.</ruleB>
+    <ruleC>Someone in your group of friends laughs at the show.</ruleC>
+    <ruleD>There's a Flashback or Vision.</ruleD>
+    <ruleE>There's a live animal on screen.</ruleE>
+    <ruleF>Harmon smells his balls.</ruleF>
+    <ruleG>Thad screams like a little bitch.</ruleG>
+    <ruleH>Thad calls a team meeting.</ruleH>
+  </gulp>
+  <finish>
+    <ruleA>Sammy gets laid.</ruleA>
+    <ruleB>Coach Daniels gets laid.</ruleB>
+  </finish>
+  <show>
+    <title>Blue Mountain State</title>
+  </show>
+</rules>

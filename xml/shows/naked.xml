@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rules>
+  <drink>
+    <ruleA>You see someone's butt.</ruleA>
+    <ruleB>There's a voice over.</ruleB>
+  </drink>
+  <gulp>
+    <ruleA>The two contestants argue.</ruleA>
+    <ruleB>One of the contestants complains about the other off camera.</ruleB>
+  </gulp>
+  <chug>
+    <ruleA>There's sexual tension between the two.</ruleA>
+  </chug>
+  <finish>
+    <ruleA>Someone quits or needs to be rescued (and therefore cannot complete the challenge).</ruleA>
+  </finish>
+  <show>
+    <title>Naked And Afraid</title>
+  </show>
+</rules>

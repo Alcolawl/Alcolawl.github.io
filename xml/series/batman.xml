@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rules>
+  <universalRule>
+    <drink>
+      <ruleA>Someone says "Bruce", "Wayne" or "Batman".</ruleA>
+      <ruleB>There is a fight scene.</ruleB>
+      <ruleC>There is a view of Gotham's Skyline.</ruleC>
+      <ruleD>There is a panoramic.</ruleD>
+    </drink>
+    <gulp></gulp>
+    <chug></chug>
+    <finish>
+      <ruleA></ruleA>
+    </finish>
+  </universalRule>
+  <firstMovie>
+    <drinkA>
+      <ruleA>The names "Rachel" or "Scarecrow" are said.</ruleA>
+      <ruleB>Batman gets a new piece of equipment.</ruleB>
+      <ruleC>Bruce Wayne is an asshole.</ruleC>
+    </drinkA>
+    <gulpA>
+      <ruleA>You see the scumbag of TV Joffrey Baratheon (Extra gulp if you have to look up who it is).</ruleA>
+      <ruleB>Someone is shown hallucinating.</ruleB>
+      <ruleC>Someone says "Why do we fall".</ruleC>
+    </gulpA>
+    <chugA></chugA>
+    <finishA>
+      <ruleA>Batman calls in the bat reinforcements.</ruleA>
+      <ruleB>Rachel finds out Bruce is Batman.</ruleB>
+    </finishA>
+  </firstMovie>
+  <secondMovie>
+    <drinkB>
+      <ruleA>The names "Harvey", "Dent" or "Rachel" are mentioned.</ruleA>
+    </drinkB>
+    <gulpB>
+      <ruleA>Gun(s) are fired.</ruleA>
+    </gulpB>
+    <chugB>
+      <ruleA>The Joker talks about his scars.</ruleA>
+    </chugB>
+    <finishB>
+      <ruleA>The Lamborghini is killed in the car crash.</ruleA>
+      <ruleB>Rachel dies.</ruleB>
+    </finishB>
+  </secondMovie>
+  <thirdMovie>
+    <drinkC>
+      <ruleA>The names "Harvey", "Dent" or "Bane" are mentioned.</ruleA>
+      <ruleB>You see an explosion.</ruleB>
+      <ruleC>Berlin and Munich are mentioned/seen in text.</ruleC>
+    </drinkC>
+    <gulpC></gulpC>
+    <chugC></chugC>
+    <finishC>
+      <ruleA>Batman gets it in!</ruleA>
+      <ruleB>Batman escapes the pit!.</ruleB>
+    </finishC>
+  </thirdMovie>
+</rules>

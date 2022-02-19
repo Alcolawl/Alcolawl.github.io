@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rules>
+  <drink>
+    <ruleA>Someone wipe's out.</ruleA>
+    <ruleB>Someone tries to make a joke.</ruleB>
+  </drink>
+  <gulp>
+    <ruleA>A contestant completes all of the obstacles or clears a course.</ruleA>
+  </gulp>
+  <chug>
+    <ruleA>It goes to the next round.</ruleA>
+    <ruleB>Someone quits.</ruleB>
+  </chug>
+  <show>
+    <title>Wipeout</title>
+  </show>
+</rules>

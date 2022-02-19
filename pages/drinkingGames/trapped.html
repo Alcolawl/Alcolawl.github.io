@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Trapped</title>
+    <meta name="keywords" content="Drink,Movie,Games,Alcohol,Drinking Game">
+    <meta name="author" content="Team D2M">
+    <link rel="image_src" href="http://www.drink2movies.com/images/previewpic.png" />
+    <link href="../../favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="../../style/style2.css" rel="stylesheet" type="text/css" />
+    <link href="../../style/gameStyle.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        [
+            '../../scripts/essential/jquery-3.3.1.min.js',
+            '../../scripts/essential/displaymenu.js',
+            '../../scripts/jquery.cookie.js',
+            '../../scripts/popup.js',
+        ].forEach(function (src) {
+            var script = document.createElement('script');
+            script.src = src;
+            script.async = false;
+            document.head.appendChild(script);
+        });
+    </script>
+
+</head>
+<body>
+    <div id="header">
+        <button id="hamburger"><div class="stripe"></div><div class="stripe"></div><div class="stripe"></div></button>
+        <img src="../../images/banner.gif" />
+    </div>
+    <div class="clearfloat"></div>
+
+    <div id="content">
+        <div id="navMenu">
+            <a href="../../index.html"><button class="navMenuButton">HOME</button></a><br />
+            <a href="../about.html"><button class="navMenuButton">ABOUT</button></a><br />
+            <a href="../movies.html"><button class="navMenuButton">MOVIES</button></a><br />
+            <a href="../games.html"><button class="navMenuButton">GAMES</button></a><br />
+            <a href="../shows.html"><button class="navMenuButton">SHOWS</button></a><br />
+        </div>
+        <div class="innerContainer">
+            <h1>Trapped.</h1>
+            <img height="243" width="324" src="../../images/games/trapped.jpg" />
+            <h3>Amount of Players: 3+ <br />Difficulty: 2/7 <br /> Drunk Scale: 3/7</h3>
+
+            <font color="#999999"><b>The game where everyone gangs up on that one kid.</b></font>
+            <table class="gameRules">
+                <tr class="ruleRow1"><td class="ruleNum1">1.</td><td>Start the game off by dealing all of the cards out in a clockwise fashion to every player.</td></tr>
+                <tr class="ruleRow2"><td class="ruleNum2">2.</td><td>Give everyone a solid minute to organize their hand.</td></tr>
+                <tr class="ruleRow1"><td class="ruleNum1">3.</td><td>The player with the Ace of Spades goes first by placing it face up on the table.</td></tr>
+                <tr class="ruleRow2"><td class="ruleNum2">4.</td><td>The player on the left goes next and must also place an ace.</td></tr>
+                <tr class="ruleRow1"><td class="ruleNum1">5.</td><td>The next player must do the same, eventually you'll either reach a person that doesn't have an Ace, or run out of Aces (as there are only 4 in a deck).</td></tr>
+                <tr class="ruleRow2">
+                    <td class="ruleNum2">6.</td>
+                    <td>
+                        The player that cannot go is now trapped between the player on their left and right. These two players can place down any card that they'd like, being sure to
+                        place cards that they think the trapped player doesn't have. The players take turns placed down as many cards as possible until the trapped player can match one
+                        of the cards placed down. When this happens, the player is no longer trapped and the table clears. The liberated player may now place down any card of their liking and the
+                        game continues.
+                    </td>
+                </tr>
+                <tr class="ruleRow1"><td class="ruleNum1">7.</td><td>The player that runs out of cards first wins, and the remaining players must drink in seconds for the amount of cards they have left in their deck.</td></tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+
+<footer>
+    <!--Footer / Legal Stuff-->
+    <div id="footer">
+        <p>&#169;2018 - Team D2M</p>
+    </div>
+</footer>
+<div class="clearFloat"></div> <!--Clear Float-->

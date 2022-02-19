@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Memory Game</title>
+    <meta name="keywords" content="Drink,Movie,Games,Alcohol,Drinking Game">
+    <meta name="author" content="Team D2M">
+    <link rel="image_src" href="http://www.drink2movies.com/images/previewpic.png" />
+    <link href="../../favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="../../style/style2.css" rel="stylesheet" type="text/css" />
+    <link href="../../style/gameStyle.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        [
+            '../../scripts/essential/jquery-3.3.1.min.js',
+            '../../scripts/essential/displaymenu.js',
+            '../../scripts/jquery.cookie.js',
+            '../../scripts/popup.js',
+        ].forEach(function (src) {
+            var script = document.createElement('script');
+            script.src = src;
+            script.async = false;
+            document.head.appendChild(script);
+        });
+    </script>
+
+</head>
+<body>
+    <div id="header">
+        <button id="hamburger"><div class="stripe"></div><div class="stripe"></div><div class="stripe"></div></button>
+        <img src="../../images/banner.gif" />
+    </div>
+    <div class="clearfloat"></div>
+
+    <div id="content">
+        <div id="navMenu">
+            <a href="../../index.html"><button class="navMenuButton">HOME</button></a><br />
+            <a href="../about.html"><button class="navMenuButton">ABOUT</button></a><br />
+            <a href="../movies.html"><button class="navMenuButton">MOVIES</button></a><br />
+            <a href="../games.html"><button class="navMenuButton">GAMES</button></a><br />
+            <a href="../shows.html"><button class="navMenuButton">SHOWS</button></a><br />
+        </div>
+        <div class="innerContainer">
+            <h1>Memory Game.</h1>
+            <img height="243" width="324" src="../../images/games/memorygame.jpg" />
+            <h3>Amount of Players: 3+ <br />Difficulty: 3/7 <br /> Drunk Scale: 1/7</h3>
+
+            <font color="#999999"><b>A game of memory and deception. - Played best when trashed.</b> </font>
+            <table class="gameRules">
+                <tr class="ruleRow1"><td class="ruleNum1">1.</td><td>The Dealer passes out 19 cards in the shape of a diamond. The middle should be 4 cards wide, then the rows beside it 3 wide, then 2, then 1.</td></tr>
+                <tr class="ruleRow2"><td class="ruleNum2">2.</td><td>Each player gets Five cards. They are allowed to look at them once and ONLY once, for as long as they want before the song starts, but after that they can never look at them again.</td></tr>
+                <tr class="ruleRow1"><td class="ruleNum1">3.</td><td>Each player should place down the cards in the order that they can remember, the goal of the game is to be able to remember your cards at the end of the game.</td></tr>
+                <tr class="ruleRow2">
+                    <td class="ruleNum2">4.</td>
+                    <td>
+                        The Dealer then starts the game by flipping a card at the tip of the diamond.  Each card is flipped one at a time. Your job is to tell people to drink when
+                        one of the cards that is flipped matches a card that you have in your hand. Problem is, you're drunk and can't look at the cards. On top of this, you can lie. :D
+                    </td>
+                </tr>
+                <tr class="ruleRow1">
+                    <td class="ruleNum1">5.</td>
+                    <td>
+                        Another player can call "bullshit" when another players tells them to drink, meaning that they think they're lying or don't remember where their card is in their hand.
+                        At this point, they must flip the card in their hand that they either know or think is the correct card (of if they're lying, just flip a card). This card is replaced by the dealer
+                        and the player is allowed to look at that one card and only that one card and place it in their hand on the table.
+                    </td>
+                </tr>
+                <tr class="ruleRow2">
+                    <td class="ruleNum2">6.</td>
+                    <td>
+                        The game ends when all cards have been flipped. At this point, each player takes a turn reciting their hand IN ORDER from one end to the other (they must specify). If the player gets it wrong,
+                        they must drink for the value of the card that they got wrong. (a Nine = 9 seconds, A = 14, K = 13, Q = 12, J = 11).
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+<footer>
+    <!--Footer / Legal Stuff-->
+    <p>&#169;2018 - Team D2M</p>
+</footer>

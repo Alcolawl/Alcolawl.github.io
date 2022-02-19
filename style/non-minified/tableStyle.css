@@ -1,0 +1,98 @@
+﻿/*Table*/
+table{
+    width: 870px;
+    text-align: center; 
+    border: 4px solid #00C9FF;
+    background-color: rgba(73,73,73,0.8);
+    padding: 0px; 
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+tr{
+    height: 30px;
+    border-bottom: 2px solid #222222;
+    border-collapse: collapse;
+}
+th{
+    height: 35px;
+    border-left: 2px solid #222222;
+    text-shadow: 5px 4px 3px 2px;
+    border-collapse: collapse;
+    padding-right: 5%;
+}
+
+th.nopad{
+    height: 35px;
+    font-size: 18px;
+    border-left: 2px solid #222222;
+    text-shadow: 5px 4px 3px 2px;
+    border-collapse: collapse;
+    padding-right: 0%;
+}
+
+td{
+    border-left: 2px solid #222222;
+    border-collapse: collapse;  
+    padding-top: 5px;
+}
+
+td.rule {padding-right: 5%;}
+
+.movielist{
+    margin: auto;
+}
+
+/*Movie List*/
+
+.movielist{
+    margin: auto;
+    min-width: 80%;
+}
+
+table.movielist tr{
+    border: 2px solid #222222;
+    -webkit-transition: all 0.3s ease; 
+    -moz-transition: all 0.3s ease; 
+    -o-transition: all 0.3s ease;  
+}
+table.movielist tr:hover{
+    font-size: 22px;
+    height: 50px;
+    opacity: 1; 
+    background: #555555;
+}
+table.movielist a:link{text-decoration: none;}
+table.movielist a:hover{
+    font-size: 22px;
+    font-weight: 500;
+    color: #CD00FF;
+    -webkit-transition: all 0.3s ease; 
+    -moz-transition: all 0.3s ease; 
+    -o-transition: all 0.3s ease;  
+}
+
+table.movielist td {border: 2px solid #222222;}
+
+/*Shows*/
+
+#rulesTable{
+    margin: auto;
+    margin-top: 10px;
+    width: 80%;
+}
+
+#rulesTable th{
+    color: #00C9FF;
+}
+
+/*for shows with multiple tables*/
+.rulesTable{
+    margin: auto;
+    margin-top: 10px;
+    width: 80%;
+}
+
+.rulesTable th{
+    color: #00C9FF;
+}

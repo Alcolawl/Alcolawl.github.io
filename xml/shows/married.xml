@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rules>
+  <drink>
+    <ruleA>The crowd cheers, laughs or whistles.</ruleA>
+    <ruleB>Someone says "Al", "Peggy", "Kelly", "Bud", "Marcy", "Steve", or "Jefferson".</ruleB>
+    <ruleC>Al talks about his high school football glory days.</ruleC>
+    <ruleD>Al won't have sex with Peggy.</ruleD>
+  </drink>
+  <chug>
+    <ruleA>There's a scene at the shoe store.</ruleA>
+    <ruleB>There's a scene at the strip club.</ruleB>
+  </chug>
+  <finish>
+    <ruleA>Al puts his hand in his pants.</ruleA>
+  </finish>
+  <show>
+    <title>Married With Children</title>
+  </show>
+</rules>

@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Drink,Movie,Games,Alcohol,Drinking Game">
+    <meta name="author" content="Team D2M">
+    <meta name="description" content="Access our massive database of over 250 movies that you can get hammered to!">
+    <!--<meta http-equiv="refresh" content="3;url=../pages/movies.html"> --> <!--Redirect after 3 seconds-->
+    <title>Movies - Drink 2 Movies</title>
+    <link rel="image_src" href="http://www.drink2movies.com/images/previewpic.png" />
+    <link href="../favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="../../style/normalize.css" rel="stylesheet" type="text/css" /> 
+    <link href="../style/style2.css" rel="stylesheet" type="text/css" />
+    <link href="../style/moviesPageStyle.css" rel="stylesheet" type="text/css" />
+    <link href="../style/tableStyle.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+    [
+        '../scripts/essential/jquery-3.3.1.min.js',
+        '../scripts/essential/displaymenu.js',
+        '../scripts/displaySeries.js',
+        '../scripts/movieGrab.js'        
+    ].forEach(function (src) {
+        var script = document.createElement('script');
+        script.src = src;
+        script.async = false;
+        document.head.appendChild(script);
+    });</script>
+
+</head>
+<body>
+    <div id="header">
+        <button id="hamburger"><div class="stripe"></div><div class="stripe"></div><div class="stripe"></div></button>
+        <img src="../images/banner.gif" />
+    </div>
+    <div class="clearfloat"></div>
+
+    <div id="content">
+        <div id="navMenu">
+            <a href="../index.html"><button class="navMenuButton">HOME</button></a><br />
+            <a href="about.html"><button class="navMenuButton">ABOUT</button></a><br />
+            <a href="movies.html"><button class="navMenuButton">MOVIES</button></a><br />
+            <a href="games.html"><button class="navMenuButton">GAMES</button></a><br />
+            <a href="shows.html"><button class="navMenuButton">SHOWS</button></a><br />
+        </div>
+        <center>
+            <div class="innerContainer">
+                <img src="../images/update/shmammered.png" /><br />
+
+                An amazing gathering of popular Movie Series and Trilogies that have similar rules to eachother, so it's fitting
+                to list them all on one page. +5 Internet Dollars to the bros who drink to an entire series without dying.<br />
+
+                <button id="show">Click HERE to reveal Trilogies and Series</button>
+                <button id="hide">Hide</button>
+                <center>
+                    <div id="movieListContainer">
+                        <table class="movielist">
+                            <th width="22%" class="nopad">Drunk Scale (1-7)</th>
+                            <th class="nopad">Title</th>
+                            <th class="nopad">Author</th>
+                            <tr><td>6.5</td><td><a href="series/americanpie.html">American Pie Series (WIP)</a></td><td>Bill/Joe</td></tr>
+                            <tr><td>6.5</td><td><a href="series/bourne.html">The Bourne Trilogy</a></td><td>Bill</td></tr>
+                            <tr><td>5</td><td><a href="series/childsplay.html">Child's Play 1,2,3 & 4</a></td><td>Bill/Joe</td></tr>
+                            <tr><td>7</td><td><a href="series/batman.html">The Dark Knight Trilogy</a></td><td>Team D2M</td></tr>
+                            <tr><td>6</td><td><a href="series/diehard.html">The Die Hard Series</a></td><td>Team D2M</td></tr>
+                            <tr><td>6</td><td><a href="series/fastfurious.html">The Fast and the Furious Series.</a></td><td>Team D2M</td></tr>
+                            <tr><td>6</td><td><a href="series/halloween.html">Halloween 1,2,3,4,5 & 6</a></td><td>Joe</td></tr>
+                            <tr><td>5</td><td><a href="series/harryplopper.html">Harry Potter Octology</a></td><td>Duff</td></tr>
+                            <tr><td>5.5</td><td><a href="series/indianajones.html">Indiana Jones Series</a></td><td>Bill</td></tr>
+                            <tr><td>6</td><td><a href="series/lethalweapon.html">Lethal Weapon 1,2 & 3.</a></td><td>Team D2M</td></tr>
+                            <tr><td>7</td><td><a href="series/lotr.html">Lord of The Rings Trilogy</a></td><td>Team D2M</td></tr>
+                            <tr><td>7</td><td><a href="series/matrix.html">The Matrix Trilogy</a></td><td>Alcolawl</td></tr>
+                            <tr><td>6</td><td><a href="series/nightmareonelmstreet.html">Nightmare on Elm Street</a></td><td>Team D2M</td></tr>
+                            <tr><td>5.5</td><td><a href="series/paranormalactivity.html">Paranormal Activity 1,2,3 & 4</a></td><td>Bill/Joe</td></tr>
+                            <tr><td>6</td><td><a href="series/residentevil.html">Resident Evil Series</a></td><td>Bill/Joe</td></tr>
+                            <tr><td>6</td><td><a href="series/scream.html">Scream 1,2 & 3</a></td><td>Bill/Joe</td></tr>
+                            <tr><td>7</td><td><a href="series/starwars456.html">The Star Wars Original Trilogy</a></td><td>Team D2M</td></tr>
+                            <tr><td>6</td><td><a href="series/starwars123.html">The Star Wars Prequel Trilogy</a></td><td>Team D2M</td></tr>
+                            <tr><td>6.5</td><td><a href="series/toystory.html">Toy Story Trilogy</a></td><td>Bill</td></tr>
+                            <tr><td>6</td><td><a href="series/underworld.html">Underworld Trilogy</a></td><td>Joe</td></tr>
+                            <tr><td>6</td><td><a href="series/wrongturn.html">Wrong Turn Series</a></td><td>Joe</td></tr>
+                            <!--71 Movies-->
+                        </table>
+                    </div>
+                </center>
+                <img src="../images/films/pickaletter.png" /><br />
+
+                Browsing on your phone or tablet? We've made things easy for you.<br />  Simply click a letter below to quickly filter all of our 250+ movies by the letter of your choice.<br></br>
+                <div><button class="kbButton" onclick="go('65')">A</button><button class="kbButton" onclick="go('66')">B</button><button class="kbButton" onclick="go('67')">C</button><button class="kbButton" onclick="go('68')">D</button><button class="kbButton" onclick="go('69')">E</button><button class="kbButton" onclick="go('70')">F</button><button class="kbButton" onclick="go('71')">G</button><button class="kbButton" onclick="go('72')">H</button><button class="kbButton" onclick="go('73')">I</button><button class="kbButton" onclick="go('74')">J</button></div>
+                <div><button class="kbButton" onclick="go('75')">K</button><button class="kbButton" onclick="go('76')">L</button><button class="kbButton" onclick="go('77')">M</button><button class="kbButton" onclick="go('78')">N</button><button class="kbButton" onclick="go('79')">O</button><button class="kbButton" onclick="go('80')">P</button><button class="kbButton" onclick="go('81')">Q</button><button class="kbButton" onclick="go('82')">R</button><button class="kbButton" onclick="go('83')">S</button></div>
+                <div><button class="kbButton" onclick="tCase('84')">T</button><button class="kbButton" onclick="go('85')">U</button><button class="kbButton" onclick="go('86')">V</button><button class="kbButton" onclick="go('87')">W</button><button class="kbButton" onclick="go('88')">X</button><button class="kbButton" onclick="go('89')">Y</button><button class="kbButton" onclick="go('90')">Z</button><button class="kbButton" onclick="numCase()">#</button></div>
+                <a href="fullmovielist.html"><button id="fullList">Click here for all 275+ Movies!</button></a>
+                <br />
+                <div><center><table id="results"></table></center></div>
+            </div>
+        </center>
+    </div>
+</body>
+</html>
+
+<footer>
+    <!--Footer / Legal Stuff-->
+    <div id="footer">
+        <p>&#169;2018 - Team D2M</p>
+    </div>
+</footer>
+<div class="clearFloat"></div> <!--Clear Float-->

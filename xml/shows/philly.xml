@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rules>
+  <drink>
+    <ruleA>Charlie yells.</ruleA>
+    <ruleB>Frank acts crazy or senile.</ruleB>
+    <ruleC>Mac talks about his body.</ruleC>
+  </drink>
+  <gulp>
+    <ruleA>The whole gang is on screen at once.</ruleA>
+    <ruleB>Dee and Dennis hatch a plan or scheme.</ruleB>
+  </gulp>
+  <chug>
+    <ruleA>Someone drinks a Coors Light.</ruleA>
+    <ruleB>There's a scene at the bar.</ruleB>
+    <ruleC>Someone takes a Shot.</ruleC>
+  </chug>
+  <show>
+    <title>It's Always Sunny In Philadelphia</title>
+  </show>
+</rules>

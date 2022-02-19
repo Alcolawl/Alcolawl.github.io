@@ -1,0 +1,93 @@
+﻿table.gameRules {
+    width: 80%;
+    padding: 0;
+    background-color: rgba(0, 0, 0, .1);
+    border: 3px solid #00C9FF;
+    border-collapse: collapse;
+    font-size: 12pt;
+    margin: 10px auto auto
+}
+
+div.reqMaterials {
+    border: 3px solid #FFA200;
+    text-align: left;
+    background-color: rgba(34, 34, 34, .8);
+    float: left;
+    width: 40%;
+	min-height: 261px;
+    margin: 10px auto;
+    margin-left: 10%;
+	padding-top: 5px;
+}
+
+div.reqMaterials ul li {color: #cccccc;}
+
+div.gameRatings {
+	border: 3px solid #FFA200;
+    text-align: left;
+    background-color: rgba(34, 34, 34, .8);
+    float: right;
+    width: 39%;
+    margin: 10px auto;
+	margin-right: 10%;
+	font-size: 42pt;
+	font-weight: bold;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+td.rating {
+	width: 13%; 
+	text-align: center;
+	color: #00C9FF;
+}
+
+td.ratingHarsh {
+	width: 13%; 
+	text-align: center;
+	color: black;
+	background-color: #FFA200;
+}
+
+td.ratingEasy {
+	width: 13%; 
+	text-align: center;
+	color: black;
+	background-color: #39B54A;
+}
+
+td.ratingYikes {
+	width: 13%; 
+	text-align: center;
+	color: black;
+	background-color: #FF0000;
+}
+
+tr.ruleRow1 {
+    border: none;
+    height: 28px;
+    background-color: rgba(34, 34, 34, .8);
+    text-align: left
+}
+
+tr.ruleRow2 {
+    border: 1px solid;
+    border-color: rgba(51, 51, 51, .8);
+    height: 28px;
+    color: #00C9FF;
+    background-color: rgba(17, 17, 17, .8);
+    text-align: left
+}
+
+td.ruleNum1,
+td.ruleNum2 {
+    width: 3%;
+    text-align: center;
+    font-size: 16pt
+}
+
+.gameSubtitle {
+    color: #999;
+    font-weight: 300;
+    margin: 100px
+}

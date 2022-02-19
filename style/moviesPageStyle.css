@@ -1,0 +1,120 @@
+﻿button {
+    width: 800px;
+    background-color: #444444;
+    color: #C9C9C9;
+    border: none;
+    font-family: Noto;
+    font-size: 12pt;
+}
+
+#show{
+    margin: 0 auto;
+    margin-top: 2.5px;
+    margin-bottom: 10px;
+    font-size: 28pt;
+    font-weight: 500;
+    width: 800px;
+    height: 80px;
+    color: #00C9FF;
+    -webkit-box-shadow: 3px 3px 1px #222222;
+    -moz-box-shadow: 3px 3px 1px #222222;
+    box-shadow: 3px 3px 1px #222222;
+}
+
+#hide{
+    margin: 0 auto;
+    display: none;
+    margin-top: 2.5px;
+    margin-bottom: 10px;
+    font-size: 28pt;
+    font-weight: 500;
+    width: 800px;
+    height: 80px;
+    color: #00C9FF;
+    -webkit-box-shadow: 3px 3px 1px #222222;
+    -moz-box-shadow: 3px 3px 1px #222222;
+    box-shadow: 3px 3px 1px #222222;
+}
+
+/*Collapsible menu*/
+
+#movieListContainer{
+    display: none;
+}
+
+/*Movie Page Classes*/
+.kbButton{
+    width: 8%;
+    height: 90px;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    margin-bottom: 5px;
+    font-size: 32pt;
+    font-weight: 500;
+    color: #00C9FF;
+    box-shadow: 3px 3px 1px #222222;
+}
+
+.kbButton:active{
+    background-color: #CD00FF;
+    font-weight: bold;
+    color: #333333;
+}
+
+#results tr{
+    border: 2px solid #222222;
+    -webkit-transition: all 0.3s ease; 
+    -moz-transition: all 0.3s ease; 
+    -o-transition: all 0.3s ease;  
+}
+
+#results th{
+    text-align: center;
+    margin: auto;
+}
+
+#results tr:hover{
+    font-size: 22px;
+    height: 50px;
+    opacity: 1; 
+    background: #555555;
+    -webkit-box-shadow: 0px 0px 10px 5px gba(205,0,255,0.8); 
+    -moz-box-shadow: 0px 0px 10px 5px rgba(205,0,255,0.8); 
+    box-shadow: 0px 0px 10px 5px rgba(205,0,255,0.8); 
+}
+
+#results a:link{text-decoration: none;}
+
+#results a:hover{
+    font-size: 22px;
+    font-weight: 500;
+    color: #CD00FF;
+    -webkit-transition: all 0.3s ease; 
+    -moz-transition: all 0.3s ease; 
+    -o-transition: all 0.3s ease;  
+}
+
+#fullList{
+    margin-top: 2.5px;
+    margin-bottom: 10px;
+    font-size: 24pt;
+    font-weight: 500;
+    width: 520px;
+    height: 80px;
+    color: #00C9FF;
+    -webkit-box-shadow: 3px 3px 1px #222222;
+    -moz-box-shadow: 3px 3px 1px #222222;
+    box-shadow: 3px 3px 1px #222222;
+}
+
+#fullList:active{
+    background-color: #CD00FF;
+    font-weight: bold;
+    color: #333333;
+}
+
+h2.series{
+    padding: 0px;
+    margin-bottom: 2px;
+    margin-top: 20px;
+}

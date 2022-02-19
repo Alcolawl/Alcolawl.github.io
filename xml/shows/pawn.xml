@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rules>
+  <drink>
+    <ruleA>There's a price haggle.</ruleA>
+  </drink>
+  <gulp>
+    <ruleA>Someone purchases something.</ruleA>
+    <ruleB>There's an extremely cheesy scripted part of the show.</ruleB>
+  </gulp>
+  <chug>
+    <ruleA>Rick just happens to have a buddy that knows about weird historical shit nearby.</ruleA>
+    <ruleB>Rick or Big Hoss lowballs the shit out of an item.</ruleB>
+  </chug>
+  <show>
+    <title>Pawn Stars</title>
+  </show>
+</rules>

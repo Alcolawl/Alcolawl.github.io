@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rules>
+  <drink>
+    <ruleA>You see the gorgeous MMA cheerleader girls that do absolutely nothing but look pretty.</ruleA>
+    <ruleB>The crowd goes "oooooo" after someone gets hit.</ruleB>
+    <ruleC>If you think a fighter's shorts are too short.</ruleC>
+    <ruleD>Extra drink if you just noticed and you're trying to convince yourself you're not gay.</ruleD>
+  </drink>
+  <gulp>
+    <ruleA>Someone starts bleeding.</ruleA>
+    <ruleB>Someone gets taken down.</ruleB>
+    <ruleC>They show a fighter's family or wife/girlfriend.</ruleC>
+    <ruleD>Extra drink if their wife/girlfriend is hot.</ruleD>
+  </gulp>
+  <chug>
+    <ruleA>The fight gets stopped.</ruleA>
+    <ruleB>Joe Rogan starts screaming.</ruleB>
+    <ruleC>The fighters get locked up against the cage.</ruleC>
+    <ruleD>There's a new round.</ruleD>
+    <ruleE>If it's live, the show isn't censored at all. Chug if they curse on National TV.</ruleE>
+  </chug>
+  <finish>
+    <ruleA>Someone gets knocked the fuck out.</ruleA>
+  </finish>
+  <show>
+    <title>UFC / Bellator MMA</title>
+  </show>
+</rules>

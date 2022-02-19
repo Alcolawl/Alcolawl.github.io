@@ -1,0 +1,84 @@
+﻿body {
+    background-color: #111111;
+    font-family: Noto;
+    color: #00C9FF;
+}
+
+a {
+    color: #00C9FF;
+    font-size: 18pt;
+    font-family: Noto;
+    text-shadow: 1px -1px 0px #000000; 
+}
+
+h3:hover {
+    background-image:url(../images/changelog/versionBgHover.png);
+}
+
+.logContent {
+    background-color: #333333;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+.ui-collapsible-heading {
+    background-image:url(../images/changelog/versionBg2.png);
+    text-decoration-color: #0094ff;
+    font-style: italic;
+    font-weight: bold;
+    border: solid;
+    height: 40px;
+    padding-bottom: 15px;
+}
+
+ul li {
+    color: #FFFFFF;
+    font-family: roboto;
+    font-size: 14pt;
+    border: solid;
+    min-height: 30px;
+    margin: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
+    text-shadow: -1px -2px 0px #3c3c3c;
+}
+
+ul li.add {background-color: rgba(0,201,255,0.5); border-color: #00C9FF;}
+
+ul li.fix {background-color: rgba(205,0,255,0.5); border-color: #CD00FF;}
+
+ul li.change {background-color: rgba(255,162,0,0.5); border-color: #FFA200;}
+
+ul li.amend {background-color: rgba(57,181,74,0.5); border-color: #39B54A;}
+
+ul li.dev {background-color: rgba(255,0,0,0.5); border-color: #FF0000;}
+
+/*Custom Fonts*/
+@font-face {
+    font-family: 'Noto';
+    src: url('../fonts/notosans-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto';
+    src: url('../fonts/notosans-bold.woff') format('woff');      
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto';
+    src: url('../fonts/notosans-condensed.woff') format('woff');       
+    font-weight: normal;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'Noto';
+    src: url('../fonts/notosans-light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}

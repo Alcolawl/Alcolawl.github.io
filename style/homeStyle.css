@@ -1,0 +1,30 @@
+﻿/*Home*/
+
+#welcome{
+    background-color: #333333;
+    width: 95%;
+    margin: auto;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#newsFrame{
+    width: 100%;
+    min-height: 720px;
+    margin-top: 10px;
+}
+
+.innerContainer{
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+    margin: auto;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 1px;
+    width: 95%;
+    background-color: #333333;
+    color: #CCCCCC;
+    text-align: center;
+}

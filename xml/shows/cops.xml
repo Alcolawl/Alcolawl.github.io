@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rules>
+  <drink>
+    <ruleA>The Police respond to a white trash domestic disturbance call.</ruleA>
+    <ruleB>A perp tries lying to the police and just sounds like an asshole.</ruleB>
+    <ruleC>Someone gets caught carrying drugs.</ruleC>
+  </drink>
+  <gulp>
+    <ruleA>Someone gets put in the back of a squad car.</ruleA>
+    <ruleB>They introduce a new officer.</ruleB>
+    <ruleC>There's a car chase or pursuit.</ruleC>
+  </gulp>
+  <chug>
+    <ruleA>An officer floors his car and you hear some of that American V8 music!</ruleA>
+    <ruleB>Someone gets tazed or attacked by a K9.</ruleB>
+  </chug>
+  <show>
+    <title>Cops</title>
+  </show>
+</rules>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rules>
+  <drink>
+    <ruleA>Someone says the names "Ross", "Rachel", "Joey", "Monica", "Chandler" or "Pheobe".</ruleA>
+    <ruleB>The crowd laughs.</ruleB>
+    <ruleC>Ross acts like a loser.</ruleC>
+    <ruleD>Pheobe acts strange.</ruleD>
+    <ruleE>Someone clearly isn't wearing a bra.</ruleE>
+    <ruleF>There's a scene in 'Central Perk'.</ruleF>
+    <ruleG>Someone orders or eats pizza.</ruleG>
+  </drink>
+  <chug>
+    <ruleA>Someone says "How You Doin'?".</ruleA>
+    <ruleB>Janice says "Oh my God."</ruleB>
+    <ruleC>Soemone looks into the apartments across the street.</ruleC>
+    <ruleD>Someone has sex.</ruleD>
+    <ruleE>There's a break up.</ruleE>
+  </chug>
+  <finish>
+    <ruleA>A wedding is ruined.</ruleA>
+  </finish>
+  <show>
+    <title>Friends</title>
+  </show>
+</rules>
