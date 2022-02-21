@@ -1,29 +1,33 @@
 ﻿/*Custom Fonts*/
 @font-face {
     font-family: 'Noto';
-    src: url('../fonts/notosans-regular.woff') format('woff');
+    src: local('Custom Font'), url('../fonts/notosans-regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    unicode-range: U+000-5FF; /* Download only latin glyphs */
 }
 
 @font-face {
     font-family: 'Noto';
-    src: url('../fonts/notosans-bold.woff') format('woff');	
+    src: local('Custom Font'), url('../fonts/notosans-bold.woff') format('woff');	
     font-style: normal;
+    unicode-range: U+000-5FF; 
 }
 
 @font-face {
     font-family: 'Noto';
-    src: url('../fonts/notosans-condensed.woff') format('woff');       
+    src: local('Custom Font'), url('../fonts/notosans-condensed.woff') format('woff');       
     font-weight: normal;
     font-style: oblique;
+    unicode-range: U+000-5FF;
 }
 
 @font-face {
     font-family: 'Noto';
-    src: url('../fonts/notosans-light.woff') format('woff');
+    src: local('Custom Font'), url('../fonts/notosans-light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
+    unicode-range: U+000-5FF;
 }
 
 /*Main*/
