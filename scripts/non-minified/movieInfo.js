@@ -1,7 +1,7 @@
 ﻿$(function () {
     $.ajax({
         type: "GET",
-        url: "../../xml/movielist.xml",
+        url: "../xml/movielist.xml",
         dataType: "xml",
         success: function (xml) {
             var img = '<img src="';
