@@ -89,6 +89,7 @@ table.movielist tr:hover{
     height: 50px;
     opacity: 1; 
     background: #555555;
+    box-shadow: 0px 0px 20px #CD00FF;
 }
 table.movielist a:link{text-decoration: none;}
 table.movielist a:hover{
