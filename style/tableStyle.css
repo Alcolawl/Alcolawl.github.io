@@ -7,6 +7,8 @@ table{
     padding: 0px; 
     border-collapse: collapse;
     margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 tr{
@@ -37,6 +39,32 @@ td{
 
 td.rule {padding-right: 5%;}
 
+th.sort {
+    height: 35px;
+    font-size: 18px;
+    border-left: 2px solid #222222;
+    text-shadow: 5px 4px 3px 2px;
+    border-collapse: collapse; 
+    background-image: url(../images/table/bg.gif);
+    background-repeat: no-repeat;
+    background-position: center right;
+    cursor: pointer;
+    padding-right: 0px;
+}
+
+th.reset {
+    height: 35px;
+    font-size: 18px;
+    border-left: 2px solid #222222;
+    text-shadow: 5px 4px 3px 2px;
+    border-collapse: collapse; 
+    background-image: url(../images/table/reset.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    cursor: pointer;
+    padding-right: 0px;
+}
+
 .movielist{
     margin: auto;
 }
@@ -56,9 +84,7 @@ th.center {
 
 table.movielist tr{
     border: 2px solid #222222;
-    -webkit-transition: all 0.3s ease; 
-    -moz-transition: all 0.3s ease; 
-    -o-transition: all 0.3s ease;  
+    transition: all 0.3s ease;  
 }
 table.movielist tr:hover{
     font-size: 22px;
@@ -71,9 +97,7 @@ table.movielist a:hover{
     font-size: 22px;
     font-weight: 500;
     color: #CD00FF;
-    -webkit-transition: all 0.3s ease; 
-    -moz-transition: all 0.3s ease; 
-    -o-transition: all 0.3s ease;  
+    transition: all 0.3s ease; 
 }
 
 table.movielist td {border: 2px solid #222222;}
