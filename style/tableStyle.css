@@ -43,7 +43,6 @@ th.sort {
     height: 35px;
     font-size: 18px;
     border-left: 2px solid #222222;
-    text-shadow: 5px 4px 3px 2px;
     border-collapse: collapse; 
     background-image: url(../images/table/bg.gif);
     background-repeat: no-repeat;
@@ -56,7 +55,6 @@ th.reset {
     height: 35px;
     font-size: 18px;
     border-left: 2px solid #222222;
-    text-shadow: 5px 4px 3px 2px;
     border-collapse: collapse; 
     background-image: url(../images/table/reset.png);
     background-repeat: no-repeat;

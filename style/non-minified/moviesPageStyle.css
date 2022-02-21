@@ -60,9 +60,7 @@
 
 #results tr{
     border: 2px solid #222222;
-    -webkit-transition: all 0.3s ease; 
-    -moz-transition: all 0.3s ease; 
-    -o-transition: all 0.3s ease;  
+    transition: all 0.3s ease; 
 }
 #results tr:hover{
     font-size: 22px;
@@ -78,9 +76,7 @@
     font-size: 22px;
     font-weight: 500;
     color: #CD00FF;
-    -webkit-transition: all 0.3s ease; 
-    -moz-transition: all 0.3s ease; 
-    -o-transition: all 0.3s ease;  
+    transition: all 0.3s ease;  
 }
 
 #fullList{
