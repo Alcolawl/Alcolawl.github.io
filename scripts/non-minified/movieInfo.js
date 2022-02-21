@@ -1,4 +1,4 @@
-﻿$(function () {
+﻿$(window).on('load', function() {
     $.ajax({
         type: "GET",
         url: "../xml/movielist.xml",
