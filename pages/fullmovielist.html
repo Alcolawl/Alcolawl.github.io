@@ -5,7 +5,6 @@
     <meta name="keywords" content="Drink,Movie,Games,Alcohol,Drinking Game">
     <meta name="author" content="Team D2M">
     <meta name="description" content="A massive list of rules to over 250 movies that you can get absolutely wasted to!">
-    <!--<meta http-equiv="refresh" content="3;url=../pages/movies.aspx"> --> <!--Redirect after 3 seconds-->
     <title>All Movies - Drink 2 Movies</title>
     <link rel="preload" as="font" href="../fonts/notosans-bold.woff" type="font/woff" crossorigin="anonymous">
     <link rel="preload" as="font" href="../fonts/notosans-light.woff" type="font/woff" crossorigin="anonymous">
@@ -18,6 +17,7 @@
         '../scripts/essential/jquery-3.6.0.min.js',
         '../scripts/essential/displaymenu.js',
         '../scripts/essential/jquery.tablesorter.min.js',
+        '../scripts/essential/parsers/parser-ignore-articles.min.js',
         '../scripts/movieDisplay.js'
     ].forEach(function (src) {
         var script = document.createElement('script');
@@ -25,8 +25,23 @@
         script.async = false;
         document.head.appendChild(script);
     });</script>
-
+    <script type="text/javascript">
+        $(function() {
+            $("#fullList").tablesorter({ 
+                headers: {
+                    0: {
+                        sorter: 'ignoreArticles',
+                        ignoreArticles : 'en',
+                        ignoreArticlesExcept : ''
+                    }
+                },
+                sortInitialOrder: "desc",
+                sortList: [[1,0]]
+            });
+        });
+    </script>
 </head>
+
 <body>
     <div id="header">
         <button id="hamburger"><div class="stripe"></div><div class="stripe"></div><div class="stripe"></div></button>
@@ -81,7 +96,7 @@
                 What lies below is a glorious compilation of drinking rules to over <b>200</b> movies of all styles and genres. Feel free to
                 click the arrows in the headers of the table to sort the data by Drunk Scale, Run Time or Author. To reset to Alphabetical order, double-click <b>RESET</b>.<br></br>
 
-                    <table class="movielist">
+                    <table id="fullList" class="tablesorter">
                         <thead>
                             <tr><th class="sort" width="21%">Drunk Scale (1-7)</th><th class="reset" width="50%">Title</th><th class="sort" width="10%">Run Time</th><th class="sort">Author</th></tr>
                         </thead>
