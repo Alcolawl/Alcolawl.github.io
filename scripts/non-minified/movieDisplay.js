@@ -28,8 +28,8 @@
                     author = cell + author + cellEnd;                                             //<td>author</td>
                     output = output + row + scale + title + runtime + author + rowEnd;            //Create Output Block
                     x++;
+                    callback(output);
                 })
-                callback(output);
             }
         })
     }
