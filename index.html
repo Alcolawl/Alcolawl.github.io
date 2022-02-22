@@ -6,6 +6,7 @@
     <meta name="keywords" content="Drink,Movie,Games,Alcohol,Drinking Game">
     <meta name="author" content="Team D2M">
     <meta name="description" content="A college kid's dream! Drink to your Favorite Movies, TV Shows or look up a new game for your next party!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Home - Drink 2 Movies</title>
     <link rel="preload" as="font" href="../fonts/notosans-bold.woff" type="font/woff" crossorigin="anonymous">
     <link rel="preload" as="font" href="../fonts/notosans-light.woff" type="font/woff" crossorigin="anonymous">
@@ -17,23 +18,18 @@
         [
             'scripts/essential/jquery-3.6.0.min.js',
             'scripts/essential/displaymenu.js',
-            'scripts/IEdetect.js',
-            'scripts/jquery.cookie.js'
+            'scripts/IEdetect.js'
         ].forEach(function (src) {
             var script = document.createElement('script');
             script.src = src;
             script.async = false;
             document.head.appendChild(script);
         });</script>
-
 </head>
 <body>
     <div id="header">
-        <button id="hamburger"><div class="stripe"></div><div class="stripe"></div><div class="stripe"></div></button>
-        <img src="images/banner.gif" />
+        <input type="checkbox" id="hamburger"/><img src="images/banner.gif"/>
     </div>
-    <div class="clearfloat"></div>
-
     <div id="content">
         <div id="navMenu">
             <a href="index.html"><button class="navMenuButton">HOME</button></a><br />
@@ -42,7 +38,6 @@
             <a href="pages/games.html"><button class="navMenuButton">GAMES</button></a><br />
             <a href="pages/shows.html"><button class="navMenuButton">SHOWS</button></a><br />
         </div>
-        <div class="clearFloat"></div> <!--Clear Float-->
         <div id="welcome">
             <img src="images/update/welcome.png" /><br />
             Welcome to the fresh and improved Drink 2 Movies! Today we begin the rollout of a brand new website that features both better ease of use and performance. It's been nearly two years since the launch of this glorious site, and we like to spruce it up a bit every year.<br /><br />
@@ -65,7 +60,6 @@
             started and begin browsing for drinking games to dozens of your favorite movie titles. New movies and TV shows are added each week, so be sure to
             refer to this page for news and announcements or follow us on <a href="http://www.facebook.com/Drink2Movies">Facebook!</a><br /> Enjoy and, as always, drink responsibly. Cheers!--> 
         </div>
-        <!--<object id="newsFrame" data="pages/announcements.html"></object>-->
     </div>
 </body>
 </html>
