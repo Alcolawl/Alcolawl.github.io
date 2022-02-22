@@ -40,5 +40,5 @@
     }
 
     foo(buildResult);
-    $("#fullList").html(header+finalOutput);                                                      //Output entire table lol
+    $("#fullList").append(header+finalOutput);                                                      //Output entire table lol
 });
