@@ -52,7 +52,7 @@ footer{
 }
 
 #hamburger{
-    display: inline-block;
+    display: block;
     float: left;
     background-color: #222222;
     width: 200px;
