@@ -30,8 +30,7 @@
 </head>
 <body>
     <div id="header">
-        <button id="hamburger"><div class="stripe"></div><div class="stripe"></div><div class="stripe"></div></button>
-        <img src="../images/banner.gif" />
+        <input type="checkbox" id="hamburger"/><img src="../images/banner.gif"/>
     </div>
     <div class="clearfloat"></div>
 
@@ -43,7 +42,7 @@
             <a href="games.html"><button class="navMenuButton">GAMES</button></a><br />
             <a href="shows.html"><button class="navMenuButton">SHOWS</button></a><br />
         </div>
-        <center>
+        
             <div class="innerContainer">
                 <img src="../images/update/shmammered.png" /><br />
 
@@ -52,7 +51,7 @@
 
                 <button id="show">Click HERE to reveal Trilogies and Series</button>
                 <button id="hide">Hide</button>
-                <center>
+                
                     <div id="movieListContainer">
                         <table class="movielist">
                             <th width="22%" class="nopad">Drunk Scale (1-7)</th>
@@ -82,18 +81,18 @@
                             <!--71 Movies-->
                         </table>
                     </div>
-                </center>
+                
                 <img src="../images/films/pickaletter.png" /><br />
 
                 Browsing on your phone or tablet? We've made things easy for you.<br />  Simply click a letter below to quickly filter all of our 250+ movies by the letter of your choice.<br></br>
-                <div><button class="kbButton" onclick="go('65')">A</button><button class="kbButton" onclick="go('66')">B</button><button class="kbButton" onclick="go('67')">C</button><button class="kbButton" onclick="go('68')">D</button><button class="kbButton" onclick="go('69')">E</button><button class="kbButton" onclick="go('70')">F</button><button class="kbButton" onclick="go('71')">G</button><button class="kbButton" onclick="go('72')">H</button><button class="kbButton" onclick="go('73')">I</button><button class="kbButton" onclick="go('74')">J</button></div>
-                <div><button class="kbButton" onclick="go('75')">K</button><button class="kbButton" onclick="go('76')">L</button><button class="kbButton" onclick="go('77')">M</button><button class="kbButton" onclick="go('78')">N</button><button class="kbButton" onclick="go('79')">O</button><button class="kbButton" onclick="go('80')">P</button><button class="kbButton" onclick="go('81')">Q</button><button class="kbButton" onclick="go('82')">R</button><button class="kbButton" onclick="go('83')">S</button></div>
-                <div><button class="kbButton" onclick="tCase('84')">T</button><button class="kbButton" onclick="go('85')">U</button><button class="kbButton" onclick="go('86')">V</button><button class="kbButton" onclick="go('87')">W</button><button class="kbButton" onclick="go('88')">X</button><button class="kbButton" onclick="go('89')">Y</button><button class="kbButton" onclick="go('90')">Z</button><button class="kbButton" onclick="numCase()">#</button></div>
-                <a href="fullmovielist.html"><button id="fullList">Click here for all 275+ Movies!</button></a>
+                <div class="kbRow"><button class="kbButton" onclick="go('65')">A</button><button class="kbButton" onclick="go('66')">B</button><button class="kbButton" onclick="go('67')">C</button><button class="kbButton" onclick="go('68')">D</button><button class="kbButton" onclick="go('69')">E</button><button class="kbButton" onclick="go('70')">F</button><button class="kbButton" onclick="go('71')">G</button><button class="kbButton" onclick="go('72')">H</button><button class="kbButton" onclick="go('73')">I</button><button class="kbButton" onclick="go('74')">J</button></div>
+                <div class="kbRow"><button class="kbButton" onclick="go('75')">K</button><button class="kbButton" onclick="go('76')">L</button><button class="kbButton" onclick="go('77')">M</button><button class="kbButton" onclick="go('78')">N</button><button class="kbButton" onclick="go('79')">O</button><button class="kbButton" onclick="go('80')">P</button><button class="kbButton" onclick="go('81')">Q</button><button class="kbButton" onclick="go('82')">R</button><button class="kbButton" onclick="go('83')">S</button></div>
+                <div class="kbRow"><button class="kbButton" onclick="tCase('84')">T</button><button class="kbButton" onclick="go('85')">U</button><button class="kbButton" onclick="go('86')">V</button><button class="kbButton" onclick="go('87')">W</button><button class="kbButton" onclick="go('88')">X</button><button class="kbButton" onclick="go('89')">Y</button><button class="kbButton" onclick="go('90')">Z</button><button class="kbButton" onclick="numCase()">#</button></div>
+                <div id="fullList"><a target="_blank" href="fullmovielist.html">Click here for all 275+ Movies!</a></div>
                 <br />
-                <div><center><table id="results"></table></center></div>
+                <div><table id="results"></table></div>
             </div>
-        </center>
+        
     </div>
 </body>
 </html>
