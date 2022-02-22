@@ -1,4 +1,5 @@
 ﻿$(document).ready(function () {
+    let finalOutput = '';
 
     function foo(callback) { 
         $.ajax({
@@ -35,7 +36,7 @@
 
     function populateTable(result){
         var header = '<th class="nopad" width="21%">Drunk Scale (1-7)</th><th class="nopad" width="50%">Title</th><th class="nopad" width="10%">Run Time</th><th class="nopad">Author</th>';
-        var finalOutput = finalOutput + result;
+        finalOutput = finalOutput+result;
         $("#fullList").html(header+finalOutput);                                                 //Output entire table lol
     }
 
