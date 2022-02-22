@@ -14,7 +14,6 @@
                 var linkEnd = "</a>";
                 var row = '<tr>';
                 var rowEnd = '</tr>';
-                var output = '<th class="nopad" width="21%">Drunk Scale (1-7)</th><th class="nopad" width="50%">Title</th><th class="nopad" width="10%">Run Time</th><th class="nopad">Author</th>';
 
                 $(xml).find('movie').each(function () {                                           //For each <Movie> tag, retrieve the following:
                     var scale = $(this).find('drunkscale').text()                                 //Retreive Movie's Drunk Scale
@@ -26,7 +25,7 @@
                     runtime = cell + runtime + cellEnd;                                           //<td>runtime</td>
                     var author = $(this).find('author').text()                                    //Retrieve Movie's Blurb
                     author = cell + author + cellEnd;                                             //<td>author</td>
-                    output = output + row + scale + title + runtime + author + rowEnd;            //Create Output Block
+                    var output = row + scale + title + runtime + author + rowEnd;                 //Create Output Block
                     x++;
                     callback(output);
                 })
@@ -35,7 +34,9 @@
     }
 
     function populateTable(result){
-        $("#fullList").html(result);                                                              //Output entire table lol
+        var header = '<th class="nopad" width="21%">Drunk Scale (1-7)</th><th class="nopad" width="50%">Title</th><th class="nopad" width="10%">Run Time</th><th class="nopad">Author</th>';
+        var finalOutput = finalOutput + result;
+        $("#fullList").html(header+finalOutput);                                                 //Output entire table lol
     }
 
     foo(populateTable);
