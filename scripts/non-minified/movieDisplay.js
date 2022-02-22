@@ -1,4 +1,7 @@
 ﻿$(document).ready(function () {
+    var output = '<th class="nopad" width="21%">Drunk Scale (1-7)</th><th class="nopad" width="50%">Title</th><th class="nopad" width="10%">Run Time</th><th class="nopad">Author</th>';
+    $("#fullList").html(output);                                                              //Build Table Header
+
     $.ajax({
         type: "GET",
         url: "../xml/movielist.xml",
@@ -12,7 +15,6 @@
             var linkEnd = "</a>";
             var row = '<tr>';
             var rowEnd = '</tr>';
-            var output = '<th class="nopad" width="21%">Drunk Scale (1-7)</th><th class="nopad" width="50%">Title</th><th class="nopad" width="10%">Run Time</th><th class="nopad">Author</th>';
 
             $(xml).find('movie').each(function () {                                           //For each <Movie> tag, retrieve the following:
                 var scale = $(this).find('drunkscale').text()                                 //Retreive Movie's Drunk Scale
@@ -24,10 +26,10 @@
                 runtime = cell + runtime + cellEnd;                                           //<td>runtime</td>
                 var author = $(this).find('author').text()                                    //Retrieve Movie's Blurb
                 author = cell + author + cellEnd;                                             //<td>author</td>
-                output = output + row + scale + title + runtime + author + rowEnd;            //Create Output Block
+                output = output+ row + scale + title + runtime + author + rowEnd;             //Create Output Block
                 x++;
             })
-            $("#fullList").html(output);                                                      //Output entire table lol
         }
     })
+    $("#fullList").html(output);                                                              //Output entire table lol
 });
