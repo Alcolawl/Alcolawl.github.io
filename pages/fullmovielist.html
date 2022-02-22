@@ -16,21 +16,13 @@
     [
         '../scripts/essential/jquery-3.6.0.min.js',
         '../scripts/essential/displaymenu.js',
-        '../scripts/essential/jquery.tablesorter.min.js',
-        '../scripts/essential/parsers/parser-ignore-articles.min.js',
-        '../scripts/non-minified/tableSortDefine.js',
-        '../scripts/movieDisplay.js'
+        '../scripts/non-minified/movieDisplay.js'
     ].forEach(function (src) {
         var script = document.createElement('script');
         script.src = src;
         script.async = false;
         document.head.appendChild(script);
     });</script>
-    <script type="text/javascript">
-        function launchSort(){
-            $.getScript("../scripts/essential/jquery.tablesorter.min.js");
-        }
-    </script>
 </head>
 
 <body>
@@ -84,241 +76,11 @@
 
                 <img src="../images/update/movieList.png" /><br />
 
-                What lies below is a glorious compilation of drinking rules to over <b>200</b> movies of all styles and genres. Feel free to
-                click the arrows in the headers of the table to sort the data by Drunk Scale, Run Time or Author. To reset to Alphabetical order, double-click <b>RESET</b>.<br></br>
+                What lies below is a glorious compilation of drinking rules to over <b>200</b> movies of all styles and genres.<br></br> 
 
-                <button id="button" onClick="launchSort();">OK</button>
+                <table id="fullList" class="movielist">
 
-                    <table id="fullList" class="movielist">
-                        <thead>
-                            <tr><th class="sort" width="21%">Drunk Scale (1-7)</th><th class="reset" width="50%">Title</th><th class="sort" width="10%">Run Time</th><th class="sort">Author</th></tr>
-                        </thead>
-                        <tbody>
-                            <tr id="movie1"></tr>
-                            <tr id="movie2"></tr>
-                            <tr id="movie3"></tr>
-                            <tr id="movie4"></tr>
-                            <tr id="movie5"></tr>
-                            <tr id="movie6"></tr>
-                            <tr id="movie7"></tr>
-                            <tr id="movie8"></tr>
-                            <tr id="movie9"></tr>
-                            <tr id="movie10"></tr>
-                            <tr id="movie11"></tr>
-                            <tr id="movie12"></tr>
-                            <tr id="movie13"></tr>
-                            <tr id="movie14"></tr>
-                            <tr id="movie15"></tr>
-                            <tr id="movie16"></tr>
-                            <tr id="movie17"></tr>
-                            <tr id="movie18"></tr>
-                            <tr id="movie19"></tr>
-                            <tr id="movie20"></tr>
-                            <tr id="movie21"></tr>
-                            <tr id="movie22"></tr>
-                            <tr id="movie23"></tr>
-                            <tr id="movie24"></tr>
-                            <tr id="movie25"></tr>
-                            <tr id="movie26"></tr>
-                            <tr id="movie27"></tr>
-                            <tr id="movie28"></tr>
-                            <tr id="movie29"></tr>
-                            <tr id="movie30"></tr>
-                            <tr id="movie31"></tr>
-                            <tr id="movie32"></tr>
-                            <tr id="movie33"></tr>
-                            <tr id="movie34"></tr>
-                            <tr id="movie35"></tr>
-                            <tr id="movie36"></tr>
-                            <tr id="movie37"></tr>
-                            <tr id="movie38"></tr>
-                            <tr id="movie39"></tr>
-                            <tr id="movie40"></tr>
-                            <tr id="movie41"></tr>
-                            <tr id="movie42"></tr>
-                            <tr id="movie43"></tr>
-                            <tr id="movie44"></tr>
-                            <tr id="movie45"></tr>
-                            <tr id="movie46"></tr>
-                            <tr id="movie47"></tr>
-                            <tr id="movie48"></tr>
-                            <tr id="movie49"></tr>
-                            <tr id="movie50"></tr>
-                            <tr id="movie51"></tr>
-                            <tr id="movie52"></tr>
-                            <tr id="movie53"></tr>
-                            <tr id="movie54"></tr>
-                            <tr id="movie55"></tr>
-                            <tr id="movie56"></tr>
-                            <tr id="movie57"></tr>
-                            <tr id="movie58"></tr>
-                            <tr id="movie59"></tr>
-                            <tr id="movie60"></tr>
-                            <tr id="movie61"></tr>
-                            <tr id="movie62"></tr>
-                            <tr id="movie63"></tr>
-                            <tr id="movie64"></tr>
-                            <tr id="movie65"></tr>
-                            <tr id="movie66"></tr>
-                            <tr id="movie67"></tr>
-                            <tr id="movie68"></tr>
-                            <tr id="movie69"></tr>
-                            <tr id="movie70"></tr>
-                            <tr id="movie71"></tr>
-                            <tr id="movie72"></tr>
-                            <tr id="movie73"></tr>
-                            <tr id="movie74"></tr>
-                            <tr id="movie75"></tr>
-                            <tr id="movie76"></tr>
-                            <tr id="movie77"></tr>
-                            <tr id="movie78"></tr>
-                            <tr id="movie79"></tr>
-                            <tr id="movie80"></tr>
-                            <tr id="movie81"></tr>
-                            <tr id="movie82"></tr>
-                            <tr id="movie83"></tr>
-                            <tr id="movie84"></tr>
-                            <tr id="movie85"></tr>
-                            <tr id="movie86"></tr>
-                            <tr id="movie87"></tr>
-                            <tr id="movie88"></tr>
-                            <tr id="movie89"></tr>
-                            <tr id="movie90"></tr><!--New 8/30-->
-                            <tr id="movie91"></tr>
-                            <tr id="movie92"></tr>
-                            <tr id="movie93"></tr>
-                            <tr id="movie94"></tr><!--New 9/6-->
-                            <tr id="movie95"></tr>
-                            <tr id="movie96"></tr>
-                            <tr id="movie97"></tr>
-                            <tr id="movie98"></tr>
-                            <tr id="movie99"></tr>
-                            <tr id="movie100"></tr>
-                            <tr id="movie101"></tr><!--New 9/20-->
-                            <tr id="movie102"></tr>
-                            <tr id="movie103"></tr>
-                            <tr id="movie104"></tr>
-                            <tr id="movie105"></tr>
-                            <tr id="movie106"></tr>
-                            <tr id="movie107"></tr>
-                            <tr id="movie108"></tr>
-                            <tr id="movie109"></tr>
-                            <tr id="movie110"></tr>
-                            <tr id="movie111"></tr><!--New 10/18-->
-                            <tr id="movie112"></tr>
-                            <tr id="movie113"></tr>
-                            <tr id="movie114"></tr>
-                            <tr id="movie115"></tr>
-                            <tr id="movie116"></tr>
-                            <tr id="movie117"></tr>
-                            <tr id="movie118"></tr>
-                            <tr id="movie119"></tr>
-                            <tr id="movie120"></tr>
-                            <tr id="movie121"></tr>
-                            <tr id="movie122"></tr><!--New 10/26-->
-                            <tr id="movie123"></tr>
-                            <tr id="movie124"></tr>
-                            <tr id="movie125"></tr>
-                            <tr id="movie126"></tr>
-                            <tr id="movie127"></tr>
-                            <tr id="movie128"></tr>
-                            <tr id="movie129"></tr> <!--New 11/16-->
-                            <tr id="movie130"></tr>
-                            <tr id="movie131"></tr> <!--New 12/20-->
-                            <tr id="movie132"></tr>
-                            <tr id="movie133"></tr>
-                            <tr id="movie134"></tr>
-                            <tr id="movie135"></tr>
-                            <tr id="movie136"></tr>
-                            <tr id="movie137"></tr>
-                            <tr id="movie138"></tr><!--New 1/7/14-->
-                            <tr id="movie139"></tr>
-                            <tr id="movie140"></tr>
-                            <tr id="movie141"></tr>
-                            <tr id="movie142"></tr>
-                            <tr id="movie143"></tr>
-                            <tr id="movie144"></tr>
-                            <tr id="movie145"></tr>
-                            <tr id="movie146"></tr><!--New 2/14/14-->
-                            <tr id="movie147"></tr>
-                            <tr id="movie148"></tr>
-                            <tr id="movie149"></tr>
-                            <tr id="movie150"></tr>
-                            <tr id="movie151"></tr>
-                            <tr id="movie152"></tr>
-                            <tr id="movie153"></tr>
-                            <tr id="movie154"></tr><!-- New 4/4/14-->
-                            <tr id="movie155"></tr>
-                            <tr id="movie156"></tr>
-                            <tr id="movie157"></tr>
-                            <tr id="movie158"></tr>
-                            <tr id="movie159"></tr>
-                            <tr id="movie160"></tr>
-                            <tr id="movie161"></tr>
-                            <tr id="movie162"></tr>
-                            <tr id="movie163"></tr>
-                            <tr id="movie164"></tr><!-- New 5/16/14-->
-                            <tr id="movie165"></tr>
-                            <tr id="movie166"></tr>
-                            <tr id="movie167"></tr>
-                            <tr id="movie168"></tr>
-                            <tr id="movie169"></tr><!-- New 6/20/14-->
-                            <tr id="movie170"></tr>
-                            <tr id="movie171"></tr>
-                            <tr id="movie172"></tr>
-                            <tr id="movie173"></tr>
-                            <tr id="movie174"></tr>
-                            <tr id="movie175"></tr>
-                            <tr id="movie176"></tr>
-                            <tr id="movie177"></tr><!--- New 10/4/14 -->
-                            <tr id="movie178"></tr>
-                            <tr id="movie179"></tr>
-                            <tr id="movie180"></tr>
-                            <tr id="movie181"></tr>
-                            <tr id="movie182"></tr>
-                            <tr id="movie183"></tr>
-                            <tr id="movie184"></tr>
-                            <tr id="movie185"></tr>
-                            <tr id="movie186"></tr>
-                            <tr id="movie187"></tr>
-                            <tr id="movie188"></tr>
-                            <tr id="movie189"></tr>
-                            <tr id="movie190"></tr>
-                            <tr id="movie191"></tr>
-                            <tr id="movie192"></tr>
-                            <tr id="movie193"></tr><!--New 11/21/14-->
-                            <tr id="movie194"></tr>
-                            <tr id="movie195"></tr>
-                            <tr id="movie196"></tr>
-                            <tr id="movie197"></tr>
-                            <tr id="movie198"></tr>
-                            <tr id="movie199"></tr><!--New 1/8/15-->
-                            <tr id="movie200"></tr>
-                            <tr id="movie201"></tr>
-                            <tr id="movie202"></tr>
-                            <tr id="movie203"></tr>
-                            <tr id="movie204"></tr>
-                            <tr id="movie205"></tr>
-                            <tr id="movie206"></tr>
-                            <tr id="movie207"></tr>
-                            <tr id="movie208"></tr>
-                            <tr id="movie209"></tr>
-                            <tr id="movie210"></tr>
-                            <tr id="movie211"></tr>
-                            <tr id="movie212"></tr>
-                            <tr id="movie213"></tr>
-                            <tr id="movie214"></tr>
-                            <tr id="movie215"></tr>
-                            <tr id="movie216"></tr><!--New 1/30/15-->
-                            <tr id="movie217"></tr>
-                            <tr id="movie218"></tr>
-                            <tr id="movie219"></tr>
-                            <tr id="movie220"></tr><!--New 3/22/15 -->
-                            <tr id="movie221"></tr>
-                            <tr id="movie222"></tr>
-                            <tr id="movie223"></tr><!--New 4/24/15 -->
-                        </tbody>
-                    </table>
+                </table>
             </div>
     </div>
 </body>
@@ -327,7 +89,7 @@
 <footer>
     <!--Footer / Legal Stuff-->
     <div id="footer">
-        <p>&#169;2018 - Team D2M</p>
+        <p>&#169;2022 - Team D2M</p>
     </div>
 </footer>
 <div class="clearFloat"></div> <!--Clear Float-->
