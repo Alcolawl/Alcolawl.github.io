@@ -1,34 +1,33 @@
 ﻿button {
-    width: 800px;
+    max-width: 80%;
     background-color: #444444;
     color: #C9C9C9;
     border: none;
-    font-family: Noto;
-    font-size: 12pt;
+    font-size: 28pt;
+    font-weight: bold;
 }
 
 #show{
-    margin: 0 auto;
-    margin-top: 2.5px;
-    margin-bottom: 10px;
-    font-size: 28pt;
-    font-weight: 500;
-    width: 800px;
-    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    padding: 2%;
+    max-width: 80%;
     color: #00C9FF;
     -webkit-box-shadow: 3px 3px 1px #222222;
     box-shadow: 3px 3px 1px #222222;
 }
 
 #hide{
-    margin: 0 auto;
     display: none;
-    margin-top: 2.5px;
-    margin-bottom: 10px;
-    font-size: 28pt;
-    font-weight: 500;
-    width: 800px;
-    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    padding: 2%;
+    width: 100%;
+    max-width: 800px;
     color: #00C9FF;
     -webkit-box-shadow: 3px 3px 1px #222222;
     box-shadow: 3px 3px 1px #222222;
@@ -41,21 +40,29 @@
 }
 
 /*Movie Page Classes*/
+.kbRow{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;   
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .kbButton{
     width: 8%;
     height: 90px;
     margin-left: 2.5px;
     margin-right: 2.5px;
     margin-bottom: 5px;
-    font-size: 32pt;
-    font-weight: 500;
     color: #00C9FF;
     box-shadow: 3px 3px 1px #222222;
+    font-size: 32pt;
 }
 
 .kbButton:active{
     background-color: #CD00FF;
-    font-weight: bold;
     color: #333333;
 }
 
@@ -84,7 +91,7 @@
 
 #results a:hover{
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 700;
     color: #CD00FF;
     transition: all 0.3s ease; 
     -moz-transition: all 0.3s ease; 
@@ -92,20 +99,24 @@
 }
 
 #fullList{
-    margin-top: 2.5px;
-    margin-bottom: 10px;
-    font-size: 24pt;
-    font-weight: 500;
-    width: 520px;
-    height: 80px;
+    background-color: #444444;
     color: #00C9FF;
+    font-size: 28pt;
+    font-weight: bold;
+    margin-top: 2.5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5%;
+    max-width: 50%;
+    min-height: 2%;    
     -webkit-box-shadow: 3px 3px 1px #222222;
     box-shadow: 3px 3px 1px #222222;
 }
 
+#fullList a:hover{color: #00C9FF;}
+
 #fullList:active{
     background-color: #CD00FF;
-    font-weight: bold;
     color: #333333;
 }
 
