@@ -1,103 +1,124 @@
 ﻿button {
-    width: 800px;
+    max-width: 80%;
     background-color: #444444;
     color: #C9C9C9;
     border: none;
-    font-family: Roboto;
-    font-size: 12pt;
+    font-size: 28pt;
+    font-weight: bold;
 }
 
-#show{
-    margin: 0 auto;
-    margin-top: 2.5px;
-    margin-bottom: 10px;
-    font-size: 24pt;
-    width: 800px;
-    height: 60px;
+#show {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    padding: 2%;
+    max-width: 80%;
     color: #00C9FF;
     -webkit-box-shadow: 3px 3px 1px #222222;
-    -moz-box-shadow: 3px 3px 1px #222222;
     box-shadow: 3px 3px 1px #222222;
 }
 
-#hide{
-    margin: 0 auto;
+#hide {
     display: none;
-    margin-top: 2.5px;
-    margin-bottom: 10px;
-    font-size: 24pt;
-    width: 800px;
-    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    padding: 2%;
+    width: 100%;
+    max-width: 800px;
     color: #00C9FF;
     -webkit-box-shadow: 3px 3px 1px #222222;
-    -moz-box-shadow: 3px 3px 1px #222222;
     box-shadow: 3px 3px 1px #222222;
 }
 
 /*Collapsible menu*/
 
-#movieListContainer{
-    display: none;
-}
+#movieListContainer{display: none;}
 
 /*Movie Page Classes*/
-.kbButton{
-    width: 82.5px;
-    height: 82.5px;
+.kbRow {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;   
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.kbButton {
+    width: 8%;
+    height: 90px;
     margin-left: 2.5px;
     margin-right: 2.5px;
     margin-bottom: 5px;
-    font-size: 24pt;
     color: #00C9FF;
     box-shadow: 3px 3px 1px #222222;
+    font-size: 32pt;
 }
 
-.kbButton:active{
+.kbButton:active {
     background-color: #CD00FF;
-    font-weight: bold;
     color: #333333;
 }
 
-#results tr{
+#results tr {
     border: 2px solid #222222;
     transition: all 0.3s ease; 
+    -moz-transition: all 0.3s ease; 
+    -o-transition: all 0.3s ease;  
 }
-#results tr:hover{
+
+#results th {
+    text-align: center;
+    margin: auto;
+}
+
+#results tr:hover {
     font-size: 22px;
     height: 50px;
     opacity: 1; 
     background: #555555;
     -webkit-box-shadow: 0px 0px 10px 5px gba(205,0,255,0.8); 
-    -moz-box-shadow: 0px 0px 10px 5px rgba(205,0,255,0.8); 
     box-shadow: 0px 0px 10px 5px rgba(205,0,255,0.8); 
 }
-#results a:link{text-decoration: none;}
-#results a:hover{
+
+#results a:link {text-decoration: none;}
+
+#results a:hover {
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 700;
     color: #CD00FF;
-    transition: all 0.3s ease;  
+    transition: all 0.3s ease; 
+    -moz-transition: all 0.3s ease; 
+    -o-transition: all 0.3s ease;  
 }
 
-#fullList{
-    margin-top: 2.5px;
-    margin-bottom: 10px;
-    font-size: 24pt;
-    width: 520px;
-    height: 60px;
+#fullList {
+    background-color: #444444;
     color: #00C9FF;
+    font-size: 28pt;
+    font-weight: bold;
+    margin-top: 2.5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5%;
+    max-width: 50%;
+    min-height: 2%;    
     -webkit-box-shadow: 3px 3px 1px #222222;
-    -moz-box-shadow: 3px 3px 1px #222222;
     box-shadow: 3px 3px 1px #222222;
 }
 
-#fullList:active{
+#fullList a:hover {color: #00C9FF;}
+
+#fullList:active {
     background-color: #CD00FF;
-    font-weight: bold;
     color: #333333;
 }
 
-h2.series{
+h2.series {
     padding: 0px;
     margin-bottom: 2px;
     margin-top: 20px;

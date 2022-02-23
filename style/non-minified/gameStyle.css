@@ -1,52 +1,96 @@
-﻿table.gameRules{
-    width: 80%;
-    padding: 0px; 
-    background-color:rgba(0,0,0,0.1);        
+﻿table.gameRules {
+    max-width: 85%;
+    padding: 0;
+    background-color: rgba(0, 0, 0, .1);
     border: 3px solid #00C9FF;
     border-collapse: collapse;
     font-size: 12pt;
-    margin: auto;
-    margin-top: 10px;
+    margin: 10px auto auto
 }
 
-table.reqMaterials{
-    border: 3px solid orange;
-    background-color: rgba(34,34,34,0.8); 
-    width: 80%;
-    margin: auto;
-    margin-top: 10px;
+.gameReqContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;   
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(34, 34, 34, .8);
 }
 
-tr.ruleRow1{
+div.reqMaterials {
+    border: 3px solid #FFA200;
+    text-align: left;
+    width: 50%;
+    padding: 1%;
+}
+
+div.reqMaterials ul li {color: #cccccc;}
+
+.gameRatings {
+	border: 3px solid #FFA200;
+    text-align: left;  
+    width: 50%;
+	font-size: 36pt;
+	font-weight: bold;
+    padding: 2.4%;
+    height: 100%;
+}
+
+td.gameRating {max-width: 90%}
+
+td.rating {
+	text-align: right;
+	color: #00C9FF;
+    width: 10%;    
+}
+
+td.ratingHarsh {
+	text-align: right;
+	color: black;
+	background-color: #FFA200;
+    width: 10%;
+}
+
+td.ratingEasy {
+	text-align: right;
+	color: black;
+	background-color: #39B54A;
+    width: 10%;
+}
+
+td.ratingYikes {
+	text-align: right;
+	color: black;
+	background-color: #FF0000;
+    width: 10%;
+}
+
+tr.ruleRow1 {
     border: none;
     height: 28px;
-    background-color: rgba(34,34,34,0.8);  
-    text-align: left;    
+    background-color: rgba(34, 34, 34, .8);
+    text-align: left
 }
 
-tr.ruleRow2{
-    border: solid 1px;
-    border-color: rgba(51,51,51,0.8);
+tr.ruleRow2 {
+    border: 1px solid;
+    border-color: rgba(51, 51, 51, .8);
     height: 28px;
     color: #00C9FF;
-    background-color: rgba(17,17,17,0.8);   
-    text-align: left;          
+    background-color: rgba(17, 17, 17, .8);
+    text-align: left
 }
 
-td.ruleNum1{
+td.ruleNum1,
+td.ruleNum2 {
     width: 3%;
     text-align: center;
-    font-size: 16pt;
+    font-size: 16pt
 }
 
-td.ruleNum2{
-    width: 3%;
-    text-align: center;
-    font-size: 16pt;
-}
-
-.gameSubtitle{
-    color: #999999;
-    font-weight: 400;
-    margin: 100px;
+.gameSubtitle {
+    color: #999;
+    font-weight: 300;
 }

@@ -1,109 +1,103 @@
 ﻿/*Custom Fonts*/
 @font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/roboto-regular.woff') format('woff');
-    font-weight: normal;
+    font-family: Noto;
+    src: local(''), url('../fonts/notosans-light.woff2') format('woff2');
     font-style: normal;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/roboto-bold-webfont.woff') format('woff');      
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/roboto-condensed-webfont.woff') format('woff');       
-    font-weight: normal;
-    font-style: oblique;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/roboto-light-webfont.woff') format('woff');
     font-weight: 300;
+    unicode-range: U+000-5FF; /* Download only latin glyphs */
+}
+
+@font-face {
+    font-family: Noto;
+    src: local('Noto Sans'), url('../fonts/noto-sans-v25-latin-regular.woff2') format('woff2'), url('../fonts/notosans-regular.woff') format('woff');
     font-style: normal;
+    font-weight: 400;
+    unicode-range: U+000-5FF; 
 }
 
-/*Warning Popup*/
-.black_overlay {
-    display: none;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    z-index: 1001;
-    opacity: .80;
-    filter: alpha(opacity=80);
+@font-face {
+    font-family: Noto;
+    src: local('Noto Sans Bold'), url('../fonts/noto-sans-v25-latin-700.woff2') format('woff2'), url('../fonts/notosans-bold.woff2') format('woff2');
+    font-style: normal;	
+    font-weight: 700;
+    unicode-range: U+000-5FF; 
 }
 
-    .popupbg {
-    display: none;
-    position: absolute;
-    top: 25%;
-    left: 25%;
-    width: 50%;
-    height: 50%;
-    padding: 16px;
-    border: 16px solid orange;
-    background-color: #222222;
-    z-index: 1002;
-    overflow: auto;
+b {
+    font-family: Noto;
+    font-style: normal;
+    font-weight: 700;
 }
-    .popupbg button{font-size: 18pt; height: 40px;}
+
+/*Mobile Friendly*/
+img {max-width: 100%;}
+
+#banner {max-width: 84.375%;}
 
 /*Main*/
 
 body {
     background-color: #111111;
-    font-family: Roboto;
     color: #cccccc;
+    font-family: Noto;    
     font-weight: 300;
     font-size: 14pt;
-    min-width: 1280px;
-	text-align: center;
+    max-width: 1280px;
+    margin: auto;
 }
 
-footer{
+footer {
     max-width: 1280px;
 }
 
-#content{
+#content {
     background-color: #222222;
-    max-width: 1280px;
-    width: 100%;
-    margin: 0 auto;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: .8%;
+    padding-bottom: .8%;
+    text-align: center;
+}
+
+#header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;   
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+
+.innerContainer {
+    max-width: 92%;
+    margin: auto;
     padding-top: 1%;
-    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    background-color: #333333;
+    color: #CCCCCC;
 }
 
-#header{
-    display: inline-block;
+input {
+    margin: 0;
+    padding: 0;
+    appearance: none;
 }
 
-#hamburger{
-    display: inline-block;
-    float: left;
-    background-color: #222222;
-    width: 200px;
-    height: 200px;
-    border-style: none;
+input[type="checkbox"] {
+    content: url('../images/hamburger.gif');
+    max-width: 15.625%;
 }
 
-.stripe{
-    width: 150px;
-    height: 25px;
-    background-color: #444444;
-    margin: 0 auto;
-    margin-top: 10%;
-    margin-bottom: 10%;
+input[type="checkbox"]:checked {
+    content: url('../images/hamburger_active.gif');
 }
 
-#navMenu{
+#navMenu {
     position: absolute;
     margin-top: -20px;
     background-color: #222222;
@@ -114,7 +108,7 @@ footer{
     border-color: #00C9FF;
     visibility: hidden;
 }
-.navMenuButton{
+.navMenuButton {
     min-height: 125px;
     height: auto;
     width: 400px;
@@ -127,17 +121,14 @@ footer{
     text-decoration: none;
 }    
 
-.navMenuButton:hover{background-color: #555555; color: #222222;}
+.navMenuButton:hover {background-color: #555555; color: #222222;}
 
-footer {font-family: Roboto; min-width: 1280px; margin: auto; text-align: right;}
+footer {font-family: Noto; max-width: 1280px; margin: auto; text-align: right;}
 
-.noCenter{text-align: left;}
+.noCenter {text-align: left;}
 
 ul > li {color: #00C9FF;}
 ul > li > span {color: #cccccc;}
-
-/*Clear Float of Div Fields*/
-.clearFloat {clear: both;}
 
 /*Links*/
 a:link {color: #00C9FF; text-decoration: none;}
@@ -147,32 +138,5 @@ a:visited:hover {color: #CD00FF; text-decoration: none;}
 
 /*Special Font*/
 
-h1{color: #00C9FF; margin: 10px;}
-.cyan{color: #00C9FF; font-weight: bold;}
-
-.innerContainer{
-    width: 95%;
-    margin: auto;
-    padding-bottom: 20px;
-    padding-right: 10px;
-    padding-left: 10px;
-    background-color: #333333;
-    color: #CCCCCC;
-    text-align: center;
-}
-
-/*DropDownList Styling*/
-#movieSelect{
-    margin: 10px;
-    padding: 5px 35px;
-    height: 50px;
-    width: 720px;
-    background: #222;
-    border: 2px solid #444;
-    font-size: 24px;
-    color: #00C9FF; 
-    text-align: center;          
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
+h1 {color: #00C9FF; font-size: 32pt;}
+.cyan {color: #00C9FF; font-weight: bold;}

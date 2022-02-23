@@ -1,37 +1,37 @@
 ﻿/*Table*/
-table{
-    width: 870px;
+table {
+    width: 85%;
     text-align: center; 
     border: 4px solid #00C9FF;
     background-color: rgba(73,73,73,0.8);
     padding: 0px; 
     border-collapse: collapse;
     margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-tr{
+tr {
     height: 30px;
     border-bottom: 2px solid #222222;
     border-collapse: collapse;
 }
-th{
+th {
     height: 35px;
     border-left: 2px solid #222222;
-    text-shadow: 5px 4px 3px 2px;
     border-collapse: collapse;
     padding-right: 5%;
 }
 
-th.nopad{
+th.nopad {
     height: 35px;
     font-size: 18px;
     border-left: 2px solid #222222;
-    text-shadow: 5px 4px 3px 2px;
     border-collapse: collapse;
     padding-right: 0%;
 }
 
-td{
+td {
     border-left: 2px solid #222222;
     border-collapse: collapse;  
     padding-top: 5px;
@@ -39,60 +39,83 @@ td{
 
 td.rule {padding-right: 5%;}
 
-.movielist{
-    margin: auto;
+th.sort {
+    height: 35px;
+    font-size: 18px;
+    border-left: 2px solid #222222;
+    border-collapse: collapse; 
+    background-image: url(../images/table/bg.gif);
+    background-repeat: no-repeat;
+    background-position: center right;
+    cursor: pointer;
+    padding-right: 0px;
+}
+
+th.reset {
+    height: 35px;
+    font-size: 18px;
+    border-left: 2px solid #222222;
+    border-collapse: collapse; 
+    background-image: url(../images/table/reset.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    cursor: pointer;
+    padding-right: 0px;
+}
+
+.movielist {margin: auto;}
+
+th.center {
+    height: 35px;
+    font-size: 14pt;
+    padding-right: 0px;
 }
 
 /*Movie List*/
 
-.movielist{
+.movielist {
     margin: auto;
-    min-width: 80%;
+    min-width: 85%;
 }
 
-table.movielist tr{
+table.movielist tr {
     border: 2px solid #222222;
-    -webkit-transition: all 0.3s ease; 
-    -moz-transition: all 0.3s ease; 
-    -o-transition: all 0.3s ease;  
+    transition: all 0.3s ease;  
 }
-table.movielist tr:hover{
+table.movielist tr:hover {
     font-size: 22px;
     height: 50px;
     opacity: 1; 
     background: #555555;
+    box-shadow: 0px 0px 20px #CD00FF;
 }
-table.movielist a:link{text-decoration: none;}
-table.movielist a:hover{
+table.movielist a:link {text-decoration: none;}
+table.movielist a:hover {
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 700;
     color: #CD00FF;
-    -webkit-transition: all 0.3s ease; 
-    -moz-transition: all 0.3s ease; 
-    -o-transition: all 0.3s ease;  
+    transition: all 0.3s ease; 
 }
 
 table.movielist td {border: 2px solid #222222;}
 
 /*Shows*/
 
-#rulesTable{
+#rulesTable {
     margin: auto;
     margin-top: 10px;
     width: 80%;
 }
 
-#rulesTable th{
-    color: #00C9FF;
-}
+#rulesTable th {color: #00C9FF;}
 
 /*for shows with multiple tables*/
-.rulesTable{
+table.rulesTable {
     margin: auto;
     margin-top: 10px;
     width: 80%;
+    font-weight: 300;
+    font-size: 14pt;
 }
 
-.rulesTable th{
-    color: #00C9FF;
-}
+table.rulesTable th {color: #00C9FF;}
