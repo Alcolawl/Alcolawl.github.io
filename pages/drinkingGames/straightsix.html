@@ -13,8 +13,7 @@
     <script type="text/javascript">
         [
             '../../scripts/essential/jquery-3.6.0.min.js',
-            '../../scripts/essential/displaymenu.js',
-            '../../scripts/jquery.cookie.js'
+            '../../scripts/essential/displaymenu.js'
             
         ].forEach(function (src) {
             var script = document.createElement('script');
@@ -40,16 +39,23 @@
             <a href="../shows.html"><button class="navMenuButton">SHOWS</button></a><br />
         </div>
         <div class="innerContainer">
-            <h1>Straight Six.</h1>
-            <font class="gameSubtitle">Think of it as drunk Monopoly.</font>
-            <h3>Amount of Players: 2+ <br />Difficulty: 2/7 <br /> Drunk Scale: ~5/7</h3>
+            <h1 class="noMargin">Straight Six.</h1>
+            <p class="gameSubtitle">Think of it as drunk Monopoly.</p>
+            <div id="gameRatings">
+                <table class="gameAttributes">
+                    <tr><td class="gameAttributeHeader">Players</td><td class="gameAttributeHeader">Difficulty</td><td class="gameAttributeHeader">Drunk Scale</td></tr>
+                    <tr><td class="gameAttributes">2+</td><td class="gameAttributes">2/7</td><td class="gameAttributes">5/7</td></tr>
+                </table>
+            </div>
 
-            <table class="reqMaterials">
-                <tr><td><b>Materials Required & Game Setup</b></td></tr>
-                <tr><td>Beer (of the same brand) or mix drinks (of the same composition). Maybe liquor if you enjoy Cirrhosis.</td></tr>
-                <tr><td>6 cups, A Sharpie and a die.</td></tr>
-                <tr><td>Place the 6 cups on the table in a straight line. Take the sharpie and number them in order 1 through 6.</td></tr>
-            </table>
+            <div class="reqMaterials">
+                <b>Materials Required & Game Setup</b>
+                <div class="alignLeft">
+                    <ul><li>Beer (of the same brand) or mix drinks (of the same composition). Maybe liquor if you enjoy Cirrhosis.
+                    </li><li>6 cups, A Sharpie and a die.
+                    </li><li>Place the 6 cups on the table in a straight line. Take the sharpie and number them in order 1 through 6.</li></ul>
+                </div>
+            </div>
 
             <table class="gameRules">
                 <tr class="ruleRow1"><td class="ruleNum1">1.</td><td>There is no goal to this game other than to get fucked up. No one can win, and no one can lose. Though, at times, it can seem like someone is "winning". </td></tr>

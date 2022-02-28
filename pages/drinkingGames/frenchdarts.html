@@ -13,8 +13,7 @@
     <script type="text/javascript">
         [
             '../../scripts/essential/jquery-3.6.0.min.js',
-            '../../scripts/essential/displaymenu.js',
-            '../../scripts/jquery.cookie.js'
+            '../../scripts/essential/displaymenu.js'
             
         ].forEach(function (src) {
             var script = document.createElement('script');
@@ -40,14 +39,21 @@
             <a href="../shows.html"><button class="navMenuButton">SHOWS</button></a><br />
         </div>
         <div class="innerContainer">
-            <h1>French Darts.</h1>
-            <font class="gameSubtitle">Team game requiring frisbee skills and the slight destruction of your lawn.</font>
-            <h3>Amount of Players: 4 <br />Difficulty: 2/7 <br /> Drunk Scale: 3/7</h3>
+            <h1 class="noMargin">French Darts.</h1>
+            <p class="gameSubtitle">Team game requiring frisbee skills and the slight destruction of your lawn.</p>
+            <div id="gameRatings">
+                <table class="gameAttributes">
+                    <tr><td class="gameAttributeHeader">Players</td><td class="gameAttributeHeader">Difficulty</td><td class="gameAttributeHeader">Drunk Scale</td></tr>
+                    <tr><td class="gameAttributes">4</td><td class="gameAttributes">2/7</td><td class="gameAttributes">3/7</td></tr>
+                </table>
+            </div>
 
-            <table class="reqMaterials">
-                <tr><td><b>Materials Required</b></td></tr>
-                <tr><td>2 Poles or PVC Pipes, 2 empty beer bottles, tape or spray paint, rubber mallet or something and a frisbee. </td></tr>
-            </table>
+            <div class="reqMaterials">
+                <b>Materials Required & Game Setup</b>
+                <div class="alignLeft">
+                    <ul><li>2 Poles or PVC Pipes, 2 empty beer bottles, tape or spray paint, rubber mallet or something and a frisbee.</li></ul>
+                </div>
+            </div>
 
             <table class="gameRules">
                 <tr class="ruleRow1">

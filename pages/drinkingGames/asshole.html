@@ -13,8 +13,7 @@
     <script type="text/javascript">
         [
             '../../scripts/essential/jquery-3.6.0.min.js',
-            '../../scripts/essential/displaymenu.js',
-            '../../scripts/jquery.cookie.js'
+            '../../scripts/essential/displaymenu.js'
             
         ].forEach(function (src) {
             var script = document.createElement('script');
@@ -40,10 +39,16 @@
             <a href="../shows.html"><button class="navMenuButton">SHOWS</button></a><br />
         </div>
         <div class="innerContainer">
-            <h1>Asshole.</h1>
-            <h3>Amount of Players: 4+ <br />Difficulty: 6/7 <br /> Drunk Scale: 3/7</h3>
+            <h1 class="noMargin">Asshole.</h1>
 
-            <font color="#999999"><b>A challenging game of strategy and douchebaggery. Definitely one of the harder games to learn, but extremely fun.</b> </font>
+            <div id="gameRatings">
+                <table class="gameAttributes">
+                    <tr><td class="gameAttributeHeader">Players</td><td class="gameAttributeHeader">Difficulty</td><td class="gameAttributeHeader">Drunk Scale</td></tr>
+                    <tr><td class="gameAttributes">4+</td><td class="gameAttributes">6/7</td><td class="gameAttributes">3/7</td></tr>
+                </table>
+            </div>
+
+            <p class="gameSubtitle"><b>A challenging game of strategy and douchebaggery. Definitely one of the harder games to learn, but extremely fun.</b> </p>
             <table class="gameRules">
                 <tr class="ruleRow1"><td class="ruleNum1">1.</td><td>Dealer passes out all of the cards in a circle (no jokers), last card goes to the dealer.</td></tr>
                 <tr class="ruleRow2"><td class="ruleNum2">2.</td><td>Give all the players a solid minute to organize their hand before starting.</td></tr>
@@ -107,7 +112,7 @@
                 </tr>
             </table><br />
 
-            <font color="#999999"><b>If you're confused by any of these rules, you're not drunk enough and press backspace immediately to play another game.</b></font>
+            <p class="gameSubtitle"><b>If you're confused by any of these rules, you're not drunk enough and press back immediately to play another game.</b></p>
         </div>
     </div>
 </body>

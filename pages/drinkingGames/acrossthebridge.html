@@ -13,8 +13,7 @@
     <script type="text/javascript">
         [
             '../../scripts/essential/jquery-3.6.0.min.js',
-            '../../scripts/essential/displaymenu.js',
-            '../../scripts/jquery.cookie.js'
+            '../../scripts/essential/displaymenu.js'
             
         ].forEach(function (src) {
             var script = document.createElement('script');
@@ -40,11 +39,17 @@
             <a href="../shows.html"><button class="navMenuButton">SHOWS</button></a><br />
         </div>
         <div class="innerContainer">
-            <h1>Across The Bridge.</h1>
+            <h1 class="noMargin">Across The Bridge.</h1>
             <img height="243" width="324" src="../../images/games/acrossthebridge.jpg" />
-            <h3>Players: 2+ <br /> Difficulty: 1/7 <br /> Drunk Scale: 4/7</h3>
 
-            <font color="#999999"><b>This game is simple, and short-lived fun, but great for pounding a few beers in a short amount of time.</b></font>
+            <div id="gameRatings">
+                <table class="gameAttributes">
+                    <tr><td class="gameAttributeHeader">Players</td><td class="gameAttributeHeader">Difficulty</td><td class="gameAttributeHeader">Drunk Scale</td></tr>
+                    <tr><td class="gameAttributes">2+</td><td class="gameAttributes">1/7</td><td class="gameAttributes">4/7</td></tr>
+                </table>
+            </div>
+
+            <p class="gameSubtitle"><b>This game is simple, and short-lived fun, but great for pounding a few beers in a short amount of time.</b></p>
             <table class="gameRules">
                 <tr class="ruleRow1"><td class="ruleNum1">1.</td><td>Take 10 cards and line them up on the table, face down. This is "The Bridge"</td></tr>
                 <tr class="ruleRow2">

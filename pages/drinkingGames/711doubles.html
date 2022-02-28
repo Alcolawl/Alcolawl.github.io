@@ -13,8 +13,7 @@
     <script type="text/javascript">
         [
             '../../scripts/essential/jquery-3.6.0.min.js',
-            '../../scripts/essential/displaymenu.js',
-            '../../scripts/jquery.cookie.js'
+            '../../scripts/essential/displaymenu.js'
             
         ].forEach(function (src) {
             var script = document.createElement('script');
@@ -40,14 +39,22 @@
             <a href="../shows.html"><button class="navMenuButton">SHOWS</button></a><br />
         </div>
         <div class="innerContainer">
-            <h1>Seven, Eleven, Doubles.</h1>
-            <font class="gameSubtitle">Roll well and chug fast.</font>
-            <h3>Amount of Players: 3+ <br />Difficulty: 2/7 <br /> Drunk Scale: 4/7</h3>
+            <h1 class="noMargin">Seven, Eleven, Doubles.</h1>
+            <p class="gameSubtitle">Roll well and chug fast.</p>
 
-            <table class="reqMaterials">
-                <tr><td><b>Materials Required</b></td></tr>
-                <tr><td>A pint glass or solo cup and dice.</td></tr>
-            </table>
+            <div id="gameRatings">
+                <table class="gameAttributes">
+                    <tr><td class="gameAttributeHeader">Players</td><td class="gameAttributeHeader">Difficulty</td><td class="gameAttributeHeader">Drunk Scale</td></tr>
+                    <tr><td class="gameAttributes">3+</td><td class="gameAttributes">2/7</td><td class="gameAttributes">4/7</td></tr>
+                </table>
+            </div>
+
+            <div class="reqMaterials">
+                <b>Materials Required & Game Setup</b>
+                <div class="alignLeft">
+                    <ul><li>A pint glass or solo cup and dice.</li></ul>
+                </div>
+            </div>
 
             <table class="gameRules">
                 <tr class="ruleRow1"><td class="ruleNum1">1.</td><td>Each player takes a turn rolling the dice.</td></tr>

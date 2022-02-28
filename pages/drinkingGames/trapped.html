@@ -13,8 +13,7 @@
     <script type="text/javascript">
         [
             '../../scripts/essential/jquery-3.6.0.min.js',
-            '../../scripts/essential/displaymenu.js',
-            '../../scripts/jquery.cookie.js'
+            '../../scripts/essential/displaymenu.js'
             
         ].forEach(function (src) {
             var script = document.createElement('script');
@@ -40,11 +39,16 @@
             <a href="../shows.html"><button class="navMenuButton">SHOWS</button></a><br />
         </div>
         <div class="innerContainer">
-            <h1>Trapped.</h1>
+            <h1 class="noMargin">Trapped.</h1>
             <img height="243" width="324" src="../../images/games/trapped.jpg" />
-            <h3>Amount of Players: 3+ <br />Difficulty: 2/7 <br /> Drunk Scale: 3/7</h3>
+            <div id="gameRatings">
+                <table class="gameAttributes">
+                    <tr><td class="gameAttributeHeader">Players</td><td class="gameAttributeHeader">Difficulty</td><td class="gameAttributeHeader">Drunk Scale</td></tr>
+                    <tr><td class="gameAttributes">3+</td><td class="gameAttributes">2/7</td><td class="gameAttributes">3/7</td></tr>
+                </table>
+            </div>
 
-            <font color="#999999"><b>The game where everyone gangs up on that one kid.</b></font>
+            <p class="gameSubtitle"><b>The game where everyone gangs up on that one kid.</b></p>
             <table class="gameRules">
                 <tr class="ruleRow1"><td class="ruleNum1">1.</td><td>Start the game off by dealing all of the cards out in a clockwise fashion to every player.</td></tr>
                 <tr class="ruleRow2"><td class="ruleNum2">2.</td><td>Give everyone a solid minute to organize their hand.</td></tr>

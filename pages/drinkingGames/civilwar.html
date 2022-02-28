@@ -13,8 +13,7 @@
     <script type="text/javascript">
         [
             '../../scripts/essential/jquery-3.6.0.min.js',
-            '../../scripts/essential/displaymenu.js',
-            '../../scripts/jquery.cookie.js'
+            '../../scripts/essential/displaymenu.js'
             
         ].forEach(function (src) {
             var script = document.createElement('script');
@@ -40,17 +39,25 @@
             <a href="../shows.html"><button class="navMenuButton">SHOWS</button></a><br />
         </div>
         <div class="innerContainer">
-            <h1>Civil War.</h1>
+            <h1 class="noMargin">Civil War.</h1>
             <img src="../../images/games/civilwar.gif" /><br />
-            <font class="gameSubtitle">Rapid Fire Beer Pong</font>
-            <h3>Amount of Players: 6+ <br />Difficulty: 2/7 <br /> Drunk Scale: ~5/7</h3>
+            <p class="gameSubtitle">Rapid Fire Beer Pong</p>
 
-            <table class="reqMaterials">
-                <tr><td><b>Materials Required & Game Setup</b></td></tr>
-                <tr><td>A table or two, 6 Pong Balls, Beer and 18 Cups.</td></tr>
-                <tr><td>3 people per side, 3 cups lined up vertically in front of each person.</td></tr>
-                <tr><td><b>Note:</b> This game can be played with more than 6 players as long as it's even number. Just multiply the required materials accordingly.</td></tr>
-            </table>
+            <div id="gameRatings">
+                <table class="gameAttributes">
+                    <tr><td class="gameAttributeHeader">Players</td><td class="gameAttributeHeader">Difficulty</td><td class="gameAttributeHeader">Drunk Scale</td></tr>
+                    <tr><td class="gameAttributes">6+</td><td class="gameAttributes">2/7</td><td class="gameAttributes">~5/7</td></tr>
+                </table>
+            </div>
+
+            <div class="reqMaterials">
+                <b>Materials Required & Game Setup</b>
+                <div class="alignLeft">
+                    <ul><li>A table or two, 6 Pong Balls, Beer and 18 Cups.
+                    </li><li>3 people per side, 3 cups lined up vertically in front of each person.
+                    </li><li><b>Note:</b>This game can be played with more than 6 players as long as it's even number. Just multiply the required materials accordingly.</li></ul>
+                </div>
+            </div>
 
             <table class="gameRules">
                 <tr class="ruleRow1"><td class="ruleNum1">1.</td><td>The goal of the game is to drain all of your opponents' cups.</td></tr>

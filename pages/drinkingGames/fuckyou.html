@@ -13,8 +13,7 @@
     <script type="text/javascript">
         [
             '../../scripts/essential/jquery-3.6.0.min.js',
-            '../../scripts/essential/displaymenu.js',
-            '../../scripts/jquery.cookie.js'
+            '../../scripts/essential/displaymenu.js'
             
         ].forEach(function (src) {
             var script = document.createElement('script');
@@ -40,11 +39,16 @@
             <a href="../shows.html"><button class="navMenuButton">SHOWS</button></a><br />
         </div>
         <div class="innerContainer">
-            <h1>Fuck You Pyramid.</h1>
+            <h1 class="noMargin">Fuck You Pyramid.</h1>
             <img height="243" width="324" src="../../images/games/fuckyoupyramid.jpg" />
-            <h3>Amount of Players: 4+ <br />Difficulty: 2/7 <br /> Drunk Scale: ~4/7</h3>
+            <div id="gameRatings">
+                <table class="gameAttributes">
+                    <tr><td class="gameAttributeHeader">Players</td><td class="gameAttributeHeader">Difficulty</td><td class="gameAttributeHeader">Drunk Scale</td></tr>
+                    <tr><td class="gameAttributes">4+</td><td class="gameAttributes">2/7</td><td class="gameAttributes">4/7</td></tr>
+                </table>
+            </div>
 
-            <font color="#999999"><b>In all honesty, a great way to start flirting with that cute girl across the table.</b> </font>
+            <p class="gameSubtitle"><b>A great way to learn people's names, break the ice, and get the night started off right.</b> </p>
             <table class="gameRules">
                 <tr class="ruleRow1">
                     <td class="ruleNum1">1.</td>

@@ -13,8 +13,7 @@
     <script type="text/javascript">
         [
             '../../scripts/essential/jquery-3.6.0.min.js',
-            '../../scripts/essential/displaymenu.js',
-            '../../scripts/jquery.cookie.js'
+            '../../scripts/essential/displaymenu.js'
             
         ].forEach(function (src) {
             var script = document.createElement('script');
@@ -40,21 +39,26 @@
             <a href="../shows.html"><button class="navMenuButton">SHOWS</button></a><br />
         </div>
         <div class="innerContainer">
-            <h1>Relay.</h1>
+            <h1 class="noMargin">Relay.</h1>
             <img src="../../images/games/relay.gif" /><br />
-            <font class="gameSubtitle">The culmination of skill, speed and strength. With alcohol.</font>
-            <h3>Amount of Players: 2+ <br />Difficulty: 4/7 <br /> Drunk Scale: ~4/7</h3>
+            <p class="gameSubtitle">The culmination of skill, speed and strength. With alcohol.</p>
+            <div id="gameRatings">
+                <table class="gameAttributes">
+                    <tr><td class="gameAttributeHeader">Players</td><td class="gameAttributeHeader">Difficulty</td><td class="gameAttributeHeader">Drunk Scale</td></tr>
+                    <tr><td class="gameAttributes">2+</td><td class="gameAttributes">4/7</td><td class="gameAttributes">4/7</td></tr>
+                </table>
+            </div>
 
-            <table class="reqMaterials">
-                <tr><td><b>Materials Required & Game Setup</b></td></tr>
-                <tr><td>A table, 2 Pong Balls, beer and 10+ Cups.</td></tr>
-                <tr>
-                    <td>
-                        This game plays out like a relay race. Two teams stand on the same side of the table in a single file line for each team. A cup is placed in front of both teams 6 inches from the edge of the table. Then two cups are placed in the center of the table. Then 3 cups are placed vertically at the end of the table
-                        (like a straight line in pong), again, one for each team. (Refer to the diagram above). Make sure to fill each cup 1/3 to 1/2 the way with beer.
-                    </td>
-                </tr>
-            </table>
+            <div class="reqMaterials">
+                <b>Materials Required & Game Setup</b>
+                <div class="alignLeft">
+                    <ul><li>A table, 2 Pong Balls, beer and 10+ Cups.
+                    </li><li>This game plays out like a relay race. Two teams stand on the same side of the table in a single file line for each team.
+                    </li><li>A cup is placed in front of both teams 6 inches from the edge of the table. Then two cups are placed in the center of the table.
+                    </li><li>Then 3 cups are placed vertically at the end of the table (like a straight line in pong), again, one for each team. (Refer to the diagram above).
+                    </li><li>Make sure to fill each cup 1/3 to 1/2 the way with beer.</li></ul>
+                </div>
+            </div>
 
             <table class="gameRules">
                 <tr class="ruleRow1"><td class="ruleNum1">1.</td><td>When the game begins, the first player on both teams must bounce a pong ball into the nearest cup. </td></tr>

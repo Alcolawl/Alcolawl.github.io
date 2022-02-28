@@ -13,8 +13,7 @@
     <script type="text/javascript">
         [
             '../../scripts/essential/jquery-3.6.0.min.js',
-            '../../scripts/essential/displaymenu.js',
-            '../../scripts/jquery.cookie.js'
+            '../../scripts/essential/displaymenu.js'
             
         ].forEach(function (src) {
             var script = document.createElement('script');
@@ -40,11 +39,16 @@
             <a href="../shows.html"><button class="navMenuButton">SHOWS</button></a><br />
         </div>
         <div class="innerContainer">
-            <h1>Kings².</h1>
+            <h1 class="noMargin">Kings².</h1>
             <img height="243" width="324" src="../../images/games/youlose.jpg" />
-            <h3>Amount of Players: 4+ <br />Difficulty: 1/7 <br /> Drunk Scale: 8/7</h3>
+            <div id="gameRatings">
+                <table class="gameAttributes">
+                    <tr><td class="gameAttributeHeader">Players</td><td class="gameAttributeHeader">Difficulty</td><td class="gameAttributeHeader">Drunk Scale</td></tr>
+                    <tr><td class="gameAttributes">4+</td><td class="gameAttributes">1/7</td><td class="gameAttributes">8/7</td></tr>
+                </table>
+            </div>
 
-            <font color="#999999"><b>A hybrid of Death Square and Kings. Absolutely deadly.</b> </font>
+            <p class="gameSubtitle"><b>A hybrid of Death Square and Kings. Absolutely deadly.</b> </p>
             <table class="gameRules">
                 <tr class="ruleRow1"><td class="ruleNum1">1.</td><td>The Dealer passes out a 4 x 4 grid of cards (16 total for you math geniuses) face down.</td></tr>
                 <tr class="ruleRow2"><td class="ruleNum2">2.</td><td>Each column of the grid has a different rule. The first column is Red or Black, where the player must guess if the card is Red or Black.</td></tr>

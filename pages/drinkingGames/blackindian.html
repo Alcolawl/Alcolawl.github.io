@@ -13,8 +13,7 @@
     <script type="text/javascript">
         [
             '../../scripts/essential/jquery-3.6.0.min.js',
-            '../../scripts/essential/displaymenu.js',
-            '../../scripts/jquery.cookie.js'
+            '../../scripts/essential/displaymenu.js'
             
         ].forEach(function (src) {
             var script = document.createElement('script');
@@ -40,16 +39,19 @@
             <a href="../shows.html"><button class="navMenuButton">SHOWS</button></a><br />
         </div>
         <div class="innerContainer">
-            <h1>Black Indian.</h1>
+            <h1 class="noMargin">Black Indian.</h1>
             <img height="243" width="324" src="../../images/games/niggerindian.jpg" />
-            <h3>Amount of Players: 3+ <br />Difficulty: 2/7 <br /> Drunk Scale: 6/7</h3>
 
-            <font color="#999999">
-                <b>
-                    A simple but effective game of probability and revenge. NOTE: The game is really named something much more
-                    derogatory, we'll let your minds do the rest.
-                </b>
-            </font>
+            <div id="gameRatings">
+                <table class="gameAttributes">
+                    <tr><td class="gameAttributeHeader">Players</td><td class="gameAttributeHeader">Difficulty</td><td class="gameAttributeHeader">Drunk Scale</td></tr>
+                    <tr><td class="gameAttributes">3+</td><td class="gameAttributes">2/7</td><td class="gameAttributes">6/7</td></tr>
+                </table>
+            </div>
+
+            <p class="gameSubtitle">A simple but effective game of probability and revenge.</br> 
+                NOTE: The game is really named something much more derogatory, we'll let your minds do the rest.</p>
+
             <table class="gameRules">
                 <tr class="ruleRow1">
                     <td class="ruleNum1">1.</td>

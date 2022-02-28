@@ -13,8 +13,7 @@
     <script type="text/javascript">
         [
             '../../scripts/essential/jquery-3.6.0.min.js',
-            '../../scripts/essential/displaymenu.js',
-            '../../scripts/jquery.cookie.js'
+            '../../scripts/essential/displaymenu.js'
             
         ].forEach(function (src) {
             var script = document.createElement('script');
@@ -40,15 +39,22 @@
             <a href="../shows.html"><button class="navMenuButton">SHOWS</button></a><br />
         </div>
         <div class="innerContainer">
-            <h1>Liquor Roulette</h1>
-            <h3>Amount of Players: 3+ <br />Difficulty: 2/7 <br /> Drunk Scale: 4/7</h3>
+            <h1 class="noMargin">Liquor Roulette.</h1>
+            <p class="gameSubtitle">A nerve racking game of intuition and blind luck.</p>
 
-            <font color="#999999"><b>A nerve racking game of intuition and blind luck.</b> </font>
+            <div id="gameRatings">
+                <table class="gameAttributes">
+                    <tr><td class="gameAttributeHeader">Players</td><td class="gameAttributeHeader">Difficulty</td><td class="gameAttributeHeader">Drunk Scale</td></tr>
+                    <tr><td class="gameAttributes">3+</td><td class="gameAttributes">2/7</td><td class="gameAttributes">4/7</td></tr>
+                </table>
+            </div>
 
-            <table class="reqMaterials">
-                <tr><td><b>Materials Required</b></td></tr>
-                <tr><td>An even amount of identical shot glasses (at least 6), Water, and a Clear Liquor.</td></tr>
-            </table>
+            <div class="reqMaterials">
+                <b>Materials Required & Game Setup</b>
+                <div class="alignLeft">
+                    <ul><li>An even amount of identical shot glasses (at least 6), Water, and a Clear Liquor.</li></ul>
+                </div>
+            </div>
 
             <table class="gameRules">
                 <tr class="ruleRow1">

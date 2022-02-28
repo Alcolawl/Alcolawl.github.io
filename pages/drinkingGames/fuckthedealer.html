@@ -13,8 +13,7 @@
     <script type="text/javascript">
         [
             '../../scripts/essential/jquery-3.6.0.min.js',
-            '../../scripts/essential/displaymenu.js',
-            '../../scripts/jquery.cookie.js'
+            '../../scripts/essential/displaymenu.js'
             
         ].forEach(function (src) {
             var script = document.createElement('script');
@@ -40,11 +39,16 @@
             <a href="../shows.html"><button class="navMenuButton">SHOWS</button></a><br />
         </div>
         <div class="innerContainer">
-            <h1>Fuck The Dealer.</h1>
+            <h1 class="noMargin">Fuck The Dealer.</h1>
             <img height="243" width="324" src="../../images/games/fuckthedealer.jpg" />
-            <h3>Amount of Players: 3+ <br />Difficulty: 1/7 <br /> Drunk Scale: 5/7</h3>
+            <div id="gameRatings">
+                <table class="gameAttributes">
+                    <tr><td class="gameAttributeHeader">Players</td><td class="gameAttributeHeader">Difficulty</td><td class="gameAttributeHeader">Drunk Scale</td></tr>
+                    <tr><td class="gameAttributes">3+</td><td class="gameAttributes">1/7</td><td class="gameAttributes">5/7</td></tr>
+                </table>
+            </div>
 
-            <font color="#999999"><b>You don't wanna be the dealer, trust me.</b></font>
+            <p class="gameSubtitle"><b>You don't wanna be the dealer, trust me.</b></p>
             <table class="gameRules">
                 <tr class="ruleRow1"><td class="ruleNum1">1.</td><td>This game is fairly simple. Your task is to guess the card in the dealer's hand. That's all.</td></tr>
                 <tr class="ruleRow2">

@@ -13,8 +13,7 @@
     <script type="text/javascript">
         [
             '../../scripts/essential/jquery-3.6.0.min.js',
-            '../../scripts/essential/displaymenu.js',
-            '../../scripts/jquery.cookie.js'
+            '../../scripts/essential/displaymenu.js'
             
         ].forEach(function (src) {
             var script = document.createElement('script');
@@ -28,8 +27,7 @@
 <body>
     <div id="header">
         <input type="checkbox" id="hamburger"/><img id="banner" src="../../images/banner.gif"/>
-    </div>
-    
+    </div>   
 
     <div id="content">
         <div id="navMenu">
@@ -40,10 +38,16 @@
             <a href="../shows.html"><button class="navMenuButton">SHOWS</button></a><br />
         </div>
         <div class="innerContainer">
-            <h1>Shoulders.</h1>
-            <h3>Amount of Players: 4+ <br />Difficulty: 4/7 <br /> Drunk Scale: 3/7</h3>
+            <h1 class="noMargin">Shoulders.</h1>
+            <p class="gameSubtitle">A game of memorization and gestures. Best played when hammered.</p>
 
-            <font color="#999999"><b>A game of memorization and gestures. Best played when hammered.</b></font>
+            <div id="gameRatings">
+                <table class="gameAttributes">
+                    <tr><td class="gameAttributeHeader">Players</td><td class="gameAttributeHeader">Difficulty</td><td class="gameAttributeHeader">Drunk Scale</td></tr>
+                    <tr><td class="gameAttributes">4+</td><td class="gameAttributes">4/7</td><td class="gameAttributes">3/7</td></tr>
+                </table>
+            </div>
+
             <table class="gameRules">
                 <tr class="ruleRow1"><td class="ruleNum1">1.</td><td>Best if played hammered and sitting around a table or at least in a circle.</td></tr>
                 <tr class="ruleRow2"><td class="ruleNum2">2.</td><td>The point of the game is to count off, starting at 1, and reach 21.</td></tr>

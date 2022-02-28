@@ -13,8 +13,7 @@
     <script type="text/javascript">
         [
             '../../scripts/essential/jquery-3.6.0.min.js',
-            '../../scripts/essential/displaymenu.js',
-            '../../scripts/jquery.cookie.js'
+            '../../scripts/essential/displaymenu.js'
             
         ].forEach(function (src) {
             var script = document.createElement('script');
@@ -40,26 +39,25 @@
             <a href="../shows.html"><button class="navMenuButton">SHOWS</button></a><br />
         </div>
         <div class="innerContainer">
-            <h1>13 Dice Scheiß.</h1>
-            <font class="gameSubtitle">Its pronounced "Shice".</font></br>
+            <h1 class="noMargin">13 Dice Scheiß.</h1>
+            <p class="gameSubtitle">Its pronounced "Shice".</p>
 
-            <div class="gameReqContainer">
-                <div class="reqMaterials">
-                    <b>Materials Required & Game Setup</b>
+            <div id="gameRatings">
+                <table class="gameAttributes">
+                    <tr><td class="gameAttributeHeader">Players</td><td class="gameAttributeHeader">Difficulty</td><td class="gameAttributeHeader">Drunk Scale</td></tr>
+                    <tr><td class="gameAttributes">3+</td><td class="gameAttributes">3/7</td><td class="gameAttributes">5/7</td></tr>
+                </table>
+            </div>
+            
+            <div class="reqMaterials">
+                <b>Materials Required & Game Setup</b>
+                <div class="alignLeft">
                     <ul><li>The ability to do Kindergarten level math.
                     </li><li>3 Dice and a pen and pad or piece of paper for each player.
                     </li><li>Create 3 columns on the piece of paper. Then create 13 Rows.
                     </li><li>Label the columns "Guess", "Actual", and "Difference" from left to right.</li></ul>
                 </div>
-                <div class="gameRatings">
-                    <table>
-                        <tr><td># of Players: </td><td class="rating">3+</td></tr>
-                        <tr><td>Difficulty: </td><td class="ratingEasy">3/7</td></tr>
-                        <tr><td>Drunk Scale: </td><td class="ratingHarsh">5/7</td></tr>
-                    </table>
-                </div>
             </div>
-
             <table class="gameRules">
                 <tr class="ruleRow1"><td class="ruleNum1">1.</td><td>The goal of the game is to correctly guess that the 3 dice will add up to before a player rolls.</td></tr>
                 <tr class="ruleRow2"><td class="ruleNum2">2.</td><td>Every player writes down their guess, then the player with the dice rolls. All players then write down what the dice added up to. Then simply write down how far off you were in the difference column.</td></tr>

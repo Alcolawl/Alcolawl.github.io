@@ -13,8 +13,7 @@
     <script type="text/javascript">
         [
             '../../scripts/essential/jquery-3.6.0.min.js',
-            '../../scripts/essential/displaymenu.js',
-            '../../scripts/jquery.cookie.js'
+            '../../scripts/essential/displaymenu.js'
             
         ].forEach(function (src) {
             var script = document.createElement('script');
@@ -40,11 +39,17 @@
             <a href="../shows.html"><button class="navMenuButton">SHOWS</button></a><br />
         </div>
         <div class="innerContainer">
-            <h1>Blackjack.</h1>
+            <h1 class="noMargin">Blackjack.</h1>
             <img height="243" width="324" src="../../images/games/blackjack.jpg" />
-            <h3>Amount of Players: 3+ <br />Difficulty: 2/7 <br /> Drunk Scale: 4/7</h3>
 
-            <font color="#999999"><b>A watered down version of casino Blackjack with one goal: Drink!</b> </font>
+            <div id="gameRatings">
+                <table class="gameAttributes">
+                    <tr><td class="gameAttributeHeader">Players</td><td class="gameAttributeHeader">Difficulty</td><td class="gameAttributeHeader">Drunk Scale</td></tr>
+                    <tr><td class="gameAttributes">3+</td><td class="gameAttributes">2/7</td><td class="gameAttributes">4/7</td></tr>
+                </table>
+            </div>
+
+            <p class="gameSubtitle">A watered down version of casino Blackjack with one goal: Drink!</p>
             <table class="gameRules">
                 <tr class="ruleRow1"><td class="ruleNum1">1.</td><td>Dealer passes out one card face down to each player, then one card face up.</td></tr>
                 <tr class="ruleRow2"><td class="ruleNum2">2.</td><td>The goal of the game is to get your hand to equal 21, or get as close as possible without exceeding 21.</td></tr>

@@ -13,8 +13,7 @@
     <script type="text/javascript">
         [
             '../../scripts/essential/jquery-3.6.0.min.js',
-            '../../scripts/essential/displaymenu.js',
-            '../../scripts/jquery.cookie.js'
+            '../../scripts/essential/displaymenu.js'
             
         ].forEach(function (src) {
             var script = document.createElement('script');
@@ -40,15 +39,23 @@
             <a href="../shows.html"><button class="navMenuButton">SHOWS</button></a><br />
         </div>
         <div class="innerContainer">
-            <h1>What Are The Odds?</h1>
-            <h3>Amount of Players: 3+ <br />Difficulty: 1/7 <br /> Drunk Scale: ??/7</h3>
+            <h1 class="noMargin">What Are The Odds?</h1>
+            <p class="gameSubtitle"><b>Dare to be brave.</b></p>
+            
+            <div id="gameRatings">
+                <table class="gameAttributes">
+                    <tr><td class="gameAttributeHeader">Players</td><td class="gameAttributeHeader">Difficulty</td><td class="gameAttributeHeader">Drunk Scale</td></tr>
+                    <tr><td class="gameAttributes">3+</td><td class="gameAttributes">1/7</td><td class="gameAttributes">?/7</td></tr>
+                </table>
+            </div>
 
-            <font color="#999999"><b>Dare to be brave.</b></font>
+            <div class="reqMaterials">
+                <b>Game Summary</b>
+                <div class="alignLeft">
+                    <ul><li>The gist of the game is to make people do absurd shit, even when they don't want to.</li></ul>
+                </div>
+            </div>
 
-            <table class="reqMaterials">
-                <tr><td><b>Game Summary</b></td></tr>
-                <tr><td>The gist of the game is to make people do absurd shit, even when they don't want to.</td></tr>
-            </table>
             <table class="gameRules">
                 <tr class="ruleRow1"><td class="ruleNum1">1.</td><td>The player who goes first chooses any other player to do a dare. They must start by asking: "[Name].. What are the odds that you'll [insert dare here]."</td></tr>
                 <tr class="ruleRow2"><td class="ruleNum2">2.</td><td>The player who has been dared must choose a number between 1 and 14. 1 Meaning they'd definitely do it and 14 means they don't want to do it at all. SAY THE NUMBER OUT LOUD.</td></tr>

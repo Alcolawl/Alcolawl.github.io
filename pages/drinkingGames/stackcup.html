@@ -14,8 +14,7 @@
     <script type="text/javascript">
         [
             '../../scripts/essential/jquery-3.6.0.min.js',
-            '../../scripts/essential/displaymenu.js',
-            '../../scripts/jquery.cookie.js'
+            '../../scripts/essential/displaymenu.js'
             
         ].forEach(function (src) {
             var script = document.createElement('script');
@@ -41,28 +40,30 @@
             <a href="../shows.html"><button class="navMenuButton">SHOWS</button></a><br />
         </div>
         <div class="innerContainer">
-            <h1>Stack Cup.</h1>
-            <font class="gameSubtitle">You've been training for this your whole life.</font></br>
+            <h1 class="noMargin">Stack Cup.</h1>
+            <p class="gameSubtitle">You've been training for this your whole life.</p>
+
+            <div id="gameRatings">
+                <table class="gameAttributes">
+                    <tr><td class="gameAttributeHeader">Players</td><td class="gameAttributeHeader">Difficulty</td><td class="gameAttributeHeader">Drunk Scale</td></tr>
+                    <tr><td class="gameAttributes">3+</td><td class="gameAttributes">4/7</td><td class="gameAttributes">4/7</td></tr>
+                </table>
+            </div>
 			
             <div class="reqMaterials">
                 <b>Materials Required & Game Setup</b>
-                <ul><li>Beer.
-                </li><li>At least a 20-Pack of cups.
-				</li><li>Two pong balls.
-				</li><li>A fairly large table.
-                </li><li>Place all but two of the cups in a giant cluster on the table, fill them 1/4 with beer.
-				</li><li>Designate one cup as the "Death Cup", fill it to the top, and place it in the middle of said cluster.</li></ul>
-            </div>
-			<div class="gameRatings">
-				<table class="gameRatings">
-					<tr><td># of Players: </td><td class="rating">3+</td></tr>
-					<tr><td>Difficulty: </td><td class="ratingHarsh">4/7</td></tr>
-					<tr><td>Drunk Scale: </td><td class="ratingHarsh">4/7</td></tr>
-				</table>
+                <div class="alignLeft">
+                    <ul><li>Beer.
+                    </li><li>At least a 20-Pack of cups.
+                    </li><li>Two pong balls.
+                    </li><li>A fairly large table.
+                    </li><li>Place all but two of the cups in a giant cluster on the table, fill them 1/4 with beer.
+                    </li><li>Designate one cup as the "Death Cup", fill it to the top, and place it in the middle of said cluster.</li></ul>
+                </div>
             </div>
 
             <table class="gameRules">
-                <tr class="ruleRow1"><td class="ruleNum1">1.</td><td><a class="ruleButton1" href="#popup1">Stand in a circle around the table. Choose two players that are opposite eachother to go first. Then, give the two players a pong ball and one of the empty cups you set aside. These are "Bounce Cups".</a></td></tr>
+                <tr class="ruleRow1"><td class="ruleNum1">1.</td><td>Stand in a circle around the table. Choose two players that are opposite eachother to go first. Then, give the two players a pong ball and one of the empty cups you set aside. These are "Bounce Cups".</td></tr>
                 <tr class="ruleRow2"><td class="ruleNum2">2.</td><td>Once the game begins, the two players must try to bounce their ball into the Bounce Cup. When the player makes the shot, they pass the cup and ball off to the player on the left.</td></tr>
 			    <tr class="ruleRow1"><td class="ruleNum1">3.</td><td>If a player makes their first shot, they may pass the cup and ball to <b>any player of their choice</b>.</td></tr>
                 <tr class="ruleRow2"><td class="ruleNum2">4.</td><td>If a player accidentally sinks one of the cups in the cluster, they must stop what they're doing, remove the ball, drink the cup, and stack the empty cup onto their Bounce Cup before resuming play.</td></tr>
@@ -70,14 +71,7 @@
                 <tr class="ruleRow2"><td class="ruleNum2">6.</td><td>Meanwhile, the player that was stacked on must grab a new cup from the cluster, drink, thus creating a new Bounce Cup, and begin bouncing again.</td></tr>
 				<tr class="ruleRow1"><td class="ruleNum1">7.</td><td>The game ends when a player is passed and only the Death Cup remains. The loser must chug the Death Cup.</td></tr>
             </table>
-			<div id="popup1" class="overlay">
-				<div class="popup">
-					<h2>1.</h2><a class="close" href="#">&times;</a>
-					<div class="ruleContent">
-						Stand in a circle around the table. Choose two players that are opposite eachother to go first. Then, give the two players a pong ball and one of the empty cups you set aside. These are "Bounce Cups".
-					</div>
-				</div>
-			</div>
+
         </div>
     </div>
 </body>

@@ -13,8 +13,7 @@
     <script type="text/javascript">
         [
             '../../scripts/essential/jquery-3.6.0.min.js',
-            '../../scripts/essential/displaymenu.js',
-            '../../scripts/jquery.cookie.js'
+            '../../scripts/essential/displaymenu.js'
             
         ].forEach(function (src) {
             var script = document.createElement('script');
@@ -40,14 +39,23 @@
             <a href="../shows.html"><button class="navMenuButton">SHOWS</button></a><br />
         </div>
         <div class="innerContainer">
-            <h1>Beer Ball.</h1>
-            <font class="gameSubtitle">The culmination of pong and chugging skills in one short but brutal game.</font>
-            <h3>Players: 4 <br /> Difficulty: 2/7 <br /> Drunk Scale: 4/7</h3>
+            <h1 class="noMargin">Beer Ball.</h1>
+            <p class="gameSubtitle">The culmination of pong and chugging skills in one short but brutal game.</p>
 
-            <table class="reqMaterials">
-                <tr><td><b>Materials Required</b></td></tr>
-                <tr><td>4 fresh beers, a square table or pong table, pong ball and a shot glass for measuring.</td></tr>
-            </table>
+            <div id="gameRatings">
+                <table class="gameAttributes">
+                    <tr><td class="gameAttributeHeader">Players</td><td class="gameAttributeHeader">Difficulty</td><td class="gameAttributeHeader">Drunk Scale</td></tr>
+                    <tr><td class="gameAttributes">4</td><td class="gameAttributes">2/7</td><td class="gameAttributes">4/7</td></tr>
+                </table>
+            </div>
+
+            <div class="reqMaterials">
+                <b>Materials Required & Game Setup</b>
+                <div class="alignLeft">
+                    <ul><li>4 fresh beers, a square table or pong table, pong ball and a shot glass for measuring.</li></ul>
+                </div>
+            </div>
+
             <table class="gameRules">
                 <tr class="ruleRow1"><td class="ruleNum1">1.</td><td>Create two teams of two and stand at opposing ends of the table, each player places a fresh unopened beer on the table in front of them.</td></tr>
                 <tr class="ruleRow2"><td class="ruleNum2">2.</td><td>Decide who starts with the ball first. If you can't decide, stop being bitches and give it to the oldest player.</td></tr>

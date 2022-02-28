@@ -13,8 +13,7 @@
     <script type="text/javascript">
         [
             '../../scripts/essential/jquery-3.6.0.min.js',
-            '../../scripts/essential/displaymenu.js',
-            '../../scripts/jquery.cookie.js'
+            '../../scripts/essential/displaymenu.js'
             
         ].forEach(function (src) {
             var script = document.createElement('script');
@@ -40,10 +39,15 @@
             <a href="../shows.html"><button class="navMenuButton">SHOWS</button></a><br />
         </div>
         <div class="innerContainer">
-            <h1>Call of Duty Zombies.</h1>
-            <h3>Players: 2+ <br /> Difficulty: ~1/7 <br /> Drunk Scale: ~5/7</h3>
+            <h1 class="noMargin">Call of Duty Zombies.</h1>
+            <p class="gameSubtitle">Zombies + Booze in a game that punishes your harder the further you go.</p>
 
-            <font color="#999999"><b>Zombies + Booze in a game that punishes your harder the further you go.</b></font>
+            <div id="gameRatings">
+                <table class="gameAttributes">
+                    <tr><td class="gameAttributeHeader">Players</td><td class="gameAttributeHeader">Difficulty</td><td class="gameAttributeHeader">Drunk Scale</td></tr>
+                    <tr><td class="gameAttributes">2+</td><td class="gameAttributes">1/7</td><td class="gameAttributes">~5/7</td></tr>
+                </table>
+            </div>
 
             <table class="gameRules">
                 <tr class="ruleRow1"><td class="ruleNum1">1.</td><td>Beer and Liquor are both recommended for this game.</td></tr>

@@ -13,8 +13,7 @@
     <script type="text/javascript">
         [
             '../../scripts/essential/jquery-3.6.0.min.js',
-            '../../scripts/essential/displaymenu.js',
-            '../../scripts/jquery.cookie.js'
+            '../../scripts/essential/displaymenu.js'
             
         ].forEach(function (src) {
             var script = document.createElement('script');
@@ -40,10 +39,15 @@
             <a href="../shows.html"><button class="navMenuButton">SHOWS</button></a><br />
         </div>
         <div class="innerContainer">
-            <h1>Hockey.</h1>
-            <h3>Players: 3+ <br /> Difficulty: 2/7 <br /> Drunk Scale: 4.5/7</h3>
+            <h1 class="noMargin">Hockey.</h1>
+            <p class="gameSubtitle">A competitive game involving skill, opportune timing and 25 cents.</p>
+            <div id="gameRatings">
+                <table class="gameAttributes">
+                    <tr><td class="gameAttributeHeader">Players</td><td class="gameAttributeHeader">Difficulty</td><td class="gameAttributeHeader">Drunk Scale</td></tr>
+                    <tr><td class="gameAttributes">3+</td><td class="gameAttributes">2/7</td><td class="gameAttributes">4.5/7</td></tr>
+                </table>
+            </div>
 
-            <font color="#999999"><b>A competitive game involving skill, opportune timing and 25 cents.</b></font>
             <table class="gameRules">
                 <tr class="ruleRow1"><td class="ruleNum1">1.</td><td>Whip a quarter out of that pocket of yours. (maybe more than one, you'll probably lose one or two).</td></tr>
                 <tr class="ruleRow2"><td class="ruleNum2">2.</td><td>Each player must place their drink on the table in front of them. Note that a bottle or can is best, because it's a bit heavier than a cup.</td></tr>

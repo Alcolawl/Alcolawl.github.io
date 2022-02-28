@@ -13,8 +13,7 @@
     <script type="text/javascript">
         [
             '../../scripts/essential/jquery-3.6.0.min.js',
-            '../../scripts/essential/displaymenu.js',
-            '../../scripts/jquery.cookie.js'
+            '../../scripts/essential/displaymenu.js'
             
         ].forEach(function (src) {
             var script = document.createElement('script');
@@ -40,10 +39,15 @@
             <a href="../shows.html"><button class="navMenuButton">SHOWS</button></a><br />
         </div>
         <div class="innerContainer">
-            <h1>Madden Shots.</h1>
-            <h3>Players: 2+ <br /> Difficulty: ~1/7 <br /> Drunk Scale: ~4.5/7</h3>
+            <h1 class="noMargin">Madden Shots.</h1>
+            <p class="gameSubtitle">The ever popular video game, Madden and pounding shots of liquor.</p>
 
-            <font color="#999999"><b>The ever popular video game, Madden and pounding shots of liquor.</b></font>
+            <div id="gameRatings">
+                <table class="gameAttributes">
+                    <tr><td class="gameAttributeHeader">Players</td><td class="gameAttributeHeader">Difficulty</td><td class="gameAttributeHeader">Drunk Scale</td></tr>
+                    <tr><td class="gameAttributes">2+</td><td class="gameAttributes">1/7</td><td class="gameAttributes">4.5/7</td></tr>
+                </table>
+            </div>
 
             <table class="gameRules">
                 <tr class="ruleRow1"><td class="ruleNum1">1.</td><td>First of all, go out and get a decent bottle of liquor. A $10 handle of asswater vodka ain't gonna cut it for this game unless you hate yourself.</td></tr>

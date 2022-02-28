@@ -13,8 +13,7 @@
     <script type="text/javascript">
         [
             '../../scripts/essential/jquery-3.6.0.min.js',
-            '../../scripts/essential/displaymenu.js',
-            '../../scripts/jquery.cookie.js'
+            '../../scripts/essential/displaymenu.js'
             
         ].forEach(function (src) {
             var script = document.createElement('script');
@@ -40,18 +39,25 @@
             <a href="../shows.html"><button class="navMenuButton">SHOWS</button></a><br />
         </div>
         <div class="innerContainer">
-            <h1>Baseball.</h1>
+            <h1 class="noMargin">Baseball.</h1>
 
-            <font class="gameSubtitle">A Team-based pong game based on chugging stupid amounts of booze.</font>
-            <h3>Amount of Players: 6+ <br />Difficulty: 3/7 <br /> Drunk Scale: 5/7</h3>
+            <p class="gameSubtitle">A Team-based pong game based on chugging stupid amounts of booze.</p>
+            <div id="gameRatings">
+                <table class="gameAttributes">
+                    <tr><td class="gameAttributeHeader">Players</td><td class="gameAttributeHeader">Difficulty</td><td class="gameAttributeHeader">Drunk Scale</td></tr>
+                    <tr><td class="gameAttributes">6+</td><td class="gameAttributes">3/7</td><td class="gameAttributes">5/7</td></tr>
+                </table>
+            </div>
 
-            <table class="reqMaterials">
-                <tr><td><b>Materials Required & Game Setup</b></td></tr>
-                <tr><td>14 Solo Cups and at least 1 pong ball.</td></tr>
-                <tr><td>Split all players into two equal teams.</td></tr>
-                <tr><td>Line up 4 cups vertically at each end of the table, fill them with beer.</td></tr>
-                <tr><td>Line up 3 cups at both long sides of the table (6 cups total). These cups should be lined up parallel to the sides of the table. Each of these cups must be filled with beer. The cup on the left is filled with an inch of beer, the middle cup 1/2 way, the third cup 2/3.</td></tr>
-            </table>
+            <div class="reqMaterials">
+                <b>Materials Required & Game Setup</b>
+                <div class="alignLeft">
+                    <ul><li>14 Solo Cups and at least 1 pong ball.
+                    </li><li>Split all players into two equal teams.
+                    </li><li>Line up 4 cups vertically at each end of the table, fill them with beer.
+                    </li><li>Line up 3 cups at both long sides of the table (6 cups total). These cups should be lined up parallel to the sides of the table. Each of these cups must be filled with beer. The cup on the left is filled with an inch of beer, the middle cup 1/2 way, the third cup 2/3.</li></ul>
+                </div>
+            </div>
 
             <table class="gameRules">
                 <tr class="ruleRow1">
