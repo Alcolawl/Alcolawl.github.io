@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Drink,Movie,Games,Alcohol,Drinking Game">
+    <meta name="author" content="Team D2M">
+    
+    <title>Finding Nemo</title>
+
+    <link href="../../style/style2.css" rel="stylesheet" type="text/css" />
+    <link href="../../style/tableStyle.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        [
+            '../../scripts/essential/jquery-3.6.0.min.js',
+            '../../scripts/essential/displaymenu.js',
+            '../../scripts/movieInfo.js'            
+        ].forEach(function (src) {
+            var script = document.createElement('script');
+            script.src = src;
+            script.async = false;
+            document.head.appendChild(script);
+        });
+    </script>
+</head>
+
+<body>
+    <div id="header">
+        <input type="checkbox" id="hamburger"/><img id="banner" src="../../images/banner.gif"/>
+    </div>
+    <div id="content">
+        <div id="navMenu">
+            <a href="../../index.html"><button class="navMenuButton">HOME</button></a><br />
+            <a href="../about.html"><button class="navMenuButton">ABOUT</button></a><br />
+            <a href="../movies.html"><button class="navMenuButton">MOVIES</button></a><br />
+            <a href="../games.html"><button class="navMenuButton">GAMES</button></a><br />
+            <a href="../shows.html"><button class="navMenuButton">SHOWS</button></a><br />
+        </div>
+        <div class="innerContainer">
+            <br />
+            <h1><script>document.write(document.title);</script>.</h1>
+
+            <div id="drunkscale"></div>
+            <h3 id="runtime"></h3>
+            <table>
+                <tr><th></th><th>Take a Drink When: </th></tr>
+                <tr><td width="5%">1.</td><td class="rule">Someone says "Nemo" "Dory" or "Dude".</td></tr>
+                <tr><td>2.</td><td class="rule">Dory forgets something or won't shut up.</td></tr>
+                <tr><th></th><th>Take A Huge Gulp When: </th></tr>
+                <tr><td>3.</td><td class="rule">Someone inks themself.</td></tr>
+                <tr><td>4.</td><td class="rule">You see a human.</td></tr>
+                <tr><th></th><th>Finish Your Drink When:</th></tr>
+                <tr><td>5.</td><td class="rule">Marlin and Dory find Nemo.</td></tr>
+            </table>
+        
+        </div>
+    </div>
+</body>
+</html>
+<footer>
+<!--Footer / Legal Stuff-->
+<p>&#169;2022 - Team D2M</p>
+</footer>

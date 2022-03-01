@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Drink,Movie,Games,Alcohol,Drinking Game">
+    <meta name="author" content="Team D2M">    
+    <title>Dazed and Confused</title>
+
+    <link href="../../style/style2.css" rel="stylesheet" type="text/css" />
+    <link href="../../style/tableStyle.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        [
+            '../../scripts/essential/jquery-3.6.0.min.js',
+            '../../scripts/essential/displaymenu.js',
+            '../../scripts/movieInfo.js'            
+        ].forEach(function (src) {
+            var script = document.createElement('script');
+            script.src = src;
+            script.async = false;
+            document.head.appendChild(script);
+        });
+    </script>
+</head>
+
+<body>
+    <div id="header">
+        <input type="checkbox" id="hamburger"/><img id="banner" src="../../images/banner.gif"/>
+    </div>
+    <div id="content">
+        <div id="navMenu">
+            <a href="../../index.html"><button class="navMenuButton">HOME</button></a><br />
+            <a href="../about.html"><button class="navMenuButton">ABOUT</button></a><br />
+            <a href="../movies.html"><button class="navMenuButton">MOVIES</button></a><br />
+            <a href="../games.html"><button class="navMenuButton">GAMES</button></a><br />
+            <a href="../shows.html"><button class="navMenuButton">SHOWS</button></a><br />
+        </div>
+        <div class="innerContainer">
+            <br />
+            <h1><script>document.write(document.title);</script>.</h1>
+
+            <div id="drunkscale"></div>
+            <h3 id="runtime"></h3>
+        <table>
+            <tr><th></th><th>Take a Drink When: </th></tr>
+            <tr><td width="5%">1.</td><td class="rule">There's a new scene when people are smoking or drinking.</td></tr>
+            <tr><td>2.</td><td class="rule">Someone gets paddled.</td></tr>
+            <tr><td>3.</td><td class="rule">Someone says "shotgun", "freshman / freshmen" or "sixer".</td></tr>
+            <tr><td>4.</td><td class="rule">Ben Affleck is a tool or an asshole.</td></tr>
+            <tr><td>5.</td><td class="rule">Mitch acts awkward / nervous (ex. touching his hair / face constantly for no reason).</td></tr>
+            <tr><th></th><th>Take 2 Drinks Whenever: </th></tr>
+            <tr><td>6.</td><td class="rule">Matthew McConaughey is the fuckin man!</td></tr>
+            <tr><th></th><th>Finish Your Drink When:</th></tr>
+            <tr><td>7.</td><td class="rule">Ben Affleck goes on his crazy rant.</td></tr>
+            <tr><th></th><th>If You're Not a Baby... (+1/7)</th></tr>
+            <tr><td>8.</td><td class="rule">Drink everytime the song changes.</td></tr>
+            <tr><th></th><th>And If You Think You're Tough Shit: (additional +1/7)</th></tr>
+            <tr><td>9.</td><td class="rule">Drink everytime someone says the word "man".</td></tr>
+        </table>
+        </div>
+    </div>
+</body>
+</html>
+<footer>
+<!--Footer / Legal Stuff-->
+<p>&#169;2022 - Team D2M</p>
+</footer>
