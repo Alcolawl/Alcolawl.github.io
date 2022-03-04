@@ -82,7 +82,7 @@ td.ruleNum1,
 td.ruleNum2 {
     width: 5%;
     text-align: center;
-    font-size: 18pt;
+    font-size: 150%;
     font-weight: 400;
     padding-left: .5%;
 }
