@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Drink,Movie,Games,Alcohol,Drinking Game">
+    <meta name="author" content="Team D2M">
+    <title>The Hobbit: An Unexpected Journey</title>
+    <link href="../../style/style2.css" rel="stylesheet" type="text/css" />
+    <link href="../../style/tableStyle.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        [
+            '../../scripts/essential/jquery-3.6.0.min.js',
+            '../../scripts/essential/displaymenu.js',
+            '../../scripts/movieInfo.js'            
+        ].forEach(function (src) {
+            var script = document.createElement('script');
+            script.src = src;
+            script.async = false;
+            document.head.appendChild(script);
+        });
+    </script>
+</head>
+
+<body>
+    <div id="header">
+        <input type="checkbox" id="hamburger"/><img id="banner" src="../../images/banner.gif"/>
+    </div>
+    <div id="content">
+        <div id="navMenu">
+            <a href="../../index.html"><button class="navMenuButton">HOME</button></a><br />
+            <a href="../about.html"><button class="navMenuButton">ABOUT</button></a><br />
+            <a href="../movies.html"><button class="navMenuButton">MOVIES</button></a><br />
+            <a href="../games.html"><button class="navMenuButton">GAMES</button></a><br />
+            <a href="../shows.html"><button class="navMenuButton">SHOWS</button></a><br />
+        </div>
+        <div class="innerContainer">
+            <h1><script>document.write(document.title);</script>.</h1>
+
+            <div id="drunkscale"></div>
+            <h3 id="runtime"></h3>
+            <table>
+                <tr><th></th><th>First of All: </th></tr>
+                <tr><td width="5%">1.</td><td class="rule">Pick a character and everytime they talk (in a new scene) you have to drink! </td></tr>
+                <tr><th></th><th>Take a Drink When: </th></tr>
+                <tr><td>2.</td><td class="rule">There's a panoramic scene.</td></tr>
+                <tr><td>3.</td><td class="rule">Someone says "Dragon" or "Smaug".</td></tr>
+                <tr><td>4.</td><td class="rule">A member of the group survives something that clearly should've killed them.</td></tr>
+                <tr><td>5.</td><td class="rule">Someone's smoking.</td></tr>
+                <tr><td>6.</td><td class="rule">The whole "fellowship" is on screen. (Once per scene)</td></tr>
+                <tr><td>7.</td><td class="rule">There is text on the screen.</td></tr>
+                <tr><th></th><th>Take A Gulp For Every Time: </th></tr>
+                <tr><td>8.</td><td class="rule">Gandalf uses magic.</td></tr>
+                <tr><td>9.</td><td class="rule">There's a fight scene.</td></tr>
+                <tr><th></th><th>Finish Your Drink When:</th></tr>
+                <tr><td>10.</td><td class="rule">When Bilbo puts on the ring for the first time.</td></tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+<footer>
+<!--Footer / Legal Stuff-->
+<p>&#169;2022 - Team D2M</p>
+</footer>

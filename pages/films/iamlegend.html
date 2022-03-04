@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Drink,Movie,Games,Alcohol,Drinking Game">
+    <meta name="author" content="Team D2M">
+    <title>I Am Legend</title>
+    <link href="../../style/style2.css" rel="stylesheet" type="text/css" />
+    <link href="../../style/tableStyle.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        [
+            '../../scripts/essential/jquery-3.6.0.min.js',
+            '../../scripts/essential/displaymenu.js',
+            '../../scripts/movieInfo.js'            
+        ].forEach(function (src) {
+            var script = document.createElement('script');
+            script.src = src;
+            script.async = false;
+            document.head.appendChild(script);
+        });
+    </script>
+</head>
+
+<body>
+    <div id="header">
+        <input type="checkbox" id="hamburger"/><img id="banner" src="../../images/banner.gif"/>
+    </div>
+    <div id="content">
+        <div id="navMenu">
+            <a href="../../index.html"><button class="navMenuButton">HOME</button></a><br />
+            <a href="../about.html"><button class="navMenuButton">ABOUT</button></a><br />
+            <a href="../movies.html"><button class="navMenuButton">MOVIES</button></a><br />
+            <a href="../games.html"><button class="navMenuButton">GAMES</button></a><br />
+            <a href="../shows.html"><button class="navMenuButton">SHOWS</button></a><br />
+        </div>
+        <div class="innerContainer">
+            <h1><script>document.write(document.title);</script>.</h1>
+
+            <div id="drunkscale"></div>
+            <h3 id="runtime"></h3>
+            <table>
+                <tr><th></th><th>Take a Drink When: </th></tr>
+                <tr><td width="5%">1.</td><td class="rule">There's a panoramic scene.</td></tr>
+                <tr><td>2.</td><td class="rule">There's a flashback.</td></tr>
+                <tr><td>3.</td><td class="rule">Will Smith talks to a mannequin.</td></tr>
+                <tr><td>4.</td><td class="rule">You hear Will Smith's broadcast.</td></tr>
+                <tr><td>5.</td><td class="rule">Bob Marly plays.</td></tr>
+                <tr><td>6.</td><td class="rule">Will Smith cries.</td></tr>
+                <tr><th></th><th>Take 2 Drinks When: </th></tr>
+                <tr><td>7.</td><td class="rule">Will Smith has a new car.</td></tr>
+                <tr><td>8.</td><td class="rule">A butterfly is brought up.</td></tr>
+                <tr><td>9.</td><td class="rule">Will Smith says "I can still fix this".</td></tr>
+                <tr><td>10.</td><td class="rule">Will Smith is in the lab / doing lab work.</td></tr>
+                <tr><th></th><th>Chug When: </th></tr>
+                <tr><td>11.</td><td class="rule">He finds the cure.</td></tr>
+                <tr><th></th><th>Salute Chug For: </th></tr>
+                <tr><td>12.</td><td class="rule">His dog, Sam. (You'll know when).</td></tr>
+                <tr><th></th><th>Finish Your Drink When:</th></tr>
+                <tr><td>13.</td><td class="rule">For Will Smith's bravery near the end of the movie.</td></tr>
+                <tr><th></th><th>And If You're Not a Baby... (+2/7)</th></tr>
+                <tr><td>14.</td><td class="rule">Drink everytime Will Smith talks to his dog.</td></tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+<footer>
+<!--Footer / Legal Stuff-->
+<p>&#169;2022 - Team D2M</p>
+</footer>

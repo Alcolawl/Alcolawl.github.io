@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Drink,Movie,Games,Alcohol,Drinking Game">
+    <meta name="author" content="Team D2M">
+    <title>Iron Man 3</title>
+    <link href="../../style/style2.css" rel="stylesheet" type="text/css" />
+    <link href="../../style/tableStyle.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        [
+            '../../scripts/essential/jquery-3.6.0.min.js',
+            '../../scripts/essential/displaymenu.js',
+            '../../scripts/movieInfo.js'            
+        ].forEach(function (src) {
+            var script = document.createElement('script');
+            script.src = src;
+            script.async = false;
+            document.head.appendChild(script);
+        });
+    </script>
+</head>
+
+<body>
+    <div id="header">
+        <input type="checkbox" id="hamburger"/><img id="banner" src="../../images/banner.gif"/>
+    </div>
+    <div id="content">
+        <div id="navMenu">
+            <a href="../../index.html"><button class="navMenuButton">HOME</button></a><br />
+            <a href="../about.html"><button class="navMenuButton">ABOUT</button></a><br />
+            <a href="../movies.html"><button class="navMenuButton">MOVIES</button></a><br />
+            <a href="../games.html"><button class="navMenuButton">GAMES</button></a><br />
+            <a href="../shows.html"><button class="navMenuButton">SHOWS</button></a><br />
+        </div>
+        <div class="innerContainer">
+            <h1><script>document.write(document.title);</script>.</h1>
+
+            <div id="drunkscale"></div>
+            <h3 id="runtime"></h3>
+            <table>
+                <tr><th></th><th>Take a Drink When: </th></tr>
+                <tr><td width="5%">1.</td><td class="rule">Someone says the names "Iron Man", "Aldridge", "Pepper", "Tony" or "Stark".</td></tr>
+                <tr><td>2.</td><td class="rule">Stark is a douche or says a one liner.</td></tr>
+                <tr><th></th><th>Take 2 Drinks When: </th></tr>
+                <tr><td>3.</td><td class="rule">There's a voice over.</td></tr>
+                <tr><td>4.</td><td class="rule">Someone uses a hologram.</td></tr>
+                <tr><td>5.</td><td class="rule">There's a reference to Tony Stark's behavior torwards women.</td></tr>
+                <tr><th></th><th>Take A Gulp When: </th></tr>
+                <tr><td>6.</td><td class="rule">Gwenyth Paltrow is lookin' fine. (Once per scene).</td></tr>
+                <tr><td>7.</td><td class="rule">Tony kills or messes someone up without his suit.</td></tr>
+                <tr><td>8.</td><td class="rule">Tony uses Suit MK 42's ability to split apart and fly around and shit.</td></tr>
+                <tr><th></th><th>Finish Your Drink When:</th></tr>
+                <tr><td>9.</td><td class="rule">Stark finds the Mandarin.</td></tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+<footer>
+<!--Footer / Legal Stuff-->
+<p>&#169;2022 - Team D2M</p>
+</footer>
