@@ -1,75 +1,71 @@
-﻿table.gameRules {
-    max-width: 85%;
-    padding: 0;
-    background-color: rgba(0, 0, 0, .1);
-    border: 3px solid #00C9FF;
-    border-collapse: collapse;
-    font-size: 12pt;
-    margin: 10px auto auto
+﻿@font-face {
+    font-family: Hemi;
+    src: local(''), url('../fonts/hemi.woff2') format('woff2');
+    font-style: normal;
+    font-weight: normal;
+    unicode-range: U+000-5FF; /* Download only latin glyphs */
 }
 
-.gameReqContainer {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;   
-    max-width: 85%;
+h1.noMargin {margin-bottom: 0;}
+
+.gameSubtitle {
+    color: #999;
+    font-weight: 300;
+}
+
+#gameRatings {
+    /*font-family: Hemi;*/
+    font-size: 22pt;
+    width: 61%;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgba(34, 34, 34, .8);
+    margin-top: 2%;
+}
+
+table.gameAttributes { 
+    width: 100%;
+    border: 2px solid #CD00FF;
+}
+
+td.gameAttributes {
+    width: 33%;
+    border: 2px solid #CD00FF;
+}
+
+td.gameAttributeHeader{
+    width: 33%;
+    border: 2px solid #CD00FF;
+    color: #00C9FF;
+    font-weight: 700;
 }
 
 div.reqMaterials {
+    background-color: rgba(34, 34, 34, .8);
     border: 3px solid #FFA200;
-    text-align: left;
-    width: 50%;
-    padding: 1%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 55%;
+    padding-top: 1%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;    
 }
+
+.alignLeft {text-align: left;}
 
 div.reqMaterials ul li {color: #cccccc;}
 
-.gameRatings {
-	border: 3px solid #FFA200;
-    text-align: left;  
-    width: 50%;
-	font-size: 36pt;
-	font-weight: bold;
-    padding: 2.4%;
-    height: 100%;
-}
-
-td.gameRating {max-width: 90%}
-
-td.rating {
-	text-align: right;
-	color: #00C9FF;
-    width: 10%;    
-}
-
-td.ratingHarsh {
-	text-align: right;
-	color: black;
-	background-color: #FFA200;
-    width: 10%;
-}
-
-td.ratingEasy {
-	text-align: right;
-	color: black;
-	background-color: #39B54A;
-    width: 10%;
-}
-
-td.ratingYikes {
-	text-align: right;
-	color: black;
-	background-color: #FF0000;
-    width: 10%;
+table.gameRules {
+    border: 3px solid #00C9FF;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 85%;
+    border-collapse: collapse;
+    margin-top: 1%;
 }
 
 tr.ruleRow1 {
     border: none;
-    height: 28px;
     background-color: rgba(34, 34, 34, .8);
     text-align: left
 }
@@ -77,7 +73,6 @@ tr.ruleRow1 {
 tr.ruleRow2 {
     border: 1px solid;
     border-color: rgba(51, 51, 51, .8);
-    height: 28px;
     color: #00C9FF;
     background-color: rgba(17, 17, 17, .8);
     text-align: left
@@ -85,12 +80,11 @@ tr.ruleRow2 {
 
 td.ruleNum1,
 td.ruleNum2 {
-    width: 3%;
+    width: 10%;
     text-align: center;
-    font-size: 16pt
+    font-weight: 400;
+    padding-left: .5%;
+    font-size: 200%;
 }
 
-.gameSubtitle {
-    color: #999;
-    font-weight: 300;
-}
+ul > li {color: #cccccc;}
