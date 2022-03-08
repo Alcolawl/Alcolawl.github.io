@@ -80,9 +80,11 @@ tr.ruleRow2 {
 
 td.ruleNum1,
 td.ruleNum2 {
-    width: 5%;
+    width: 10%;
     text-align: center;
-    font-size: 150%;
     font-weight: 400;
     padding-left: .5%;
+    font-size: 200%;
 }
+
+ul > li {color: #cccccc;}
