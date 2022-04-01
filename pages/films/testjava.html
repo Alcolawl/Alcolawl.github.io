@@ -1,0 +1,40 @@
+﻿
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                type: "GET",
+                url: "testjava.xml",
+                dataType: "xml",
+                success: function (xml) {
+                    var x = 1;
+                    
+                    $(xml).find('category').each(function () {
+                        var title = $(this).find('title').text()                                          //Retreive Rule Category
+                        $(".ruleTitle" + x).html(title);                                                  //Output to Cell
+                        x++;
+                    })
+                }
+            })
+        });
+    </script>
+        </div>
+    </div>
+</body>
+</html>
+<footer>
+<!--Footer / Legal Stuff-->
+<p>&#169;2022 - Team D2M</p>
+</footer>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <table>
+        <tr><td class="ruleTitle1"></td></tr>
+    </table>
+        </div>
+    </div>
+</body>
+</html>
+<footer>
+<!--Footer / Legal Stuff-->
+<p>&#169;2022 - Team D2M</p>
+</footer>

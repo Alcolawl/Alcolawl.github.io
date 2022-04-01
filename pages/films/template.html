@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Drink,Movie,Games,Alcohol,Drinking Game">
+    <meta name="author" content="Team D2M">
+    <title>TITLE</title>
+    <link href="../../style/style2.css" rel="stylesheet" type="text/css" />
+    <link href="../../style/tableStyle.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        [
+            '../../scripts/essential/jquery-3.6.0.min.js',
+            '../../scripts/essential/displaymenu.js',
+            '../../scripts/movieInfo.js'            
+        ].forEach(function (src) {
+            var script = document.createElement('script');
+            script.src = src;
+            script.async = false;
+            document.head.appendChild(script);
+        });
+    </script>
+</head>
+
+<body>
+    <div id="header">
+        <input type="checkbox" id="hamburger"/><img id="banner" src="../../images/banner.gif"/>
+    </div>
+    <div id="content">
+        <div id="navMenu">
+            <a href="../../index.html"><button class="navMenuButton">HOME</button></a><br />
+            <a href="../about.html"><button class="navMenuButton">ABOUT</button></a><br />
+            <a href="../movies.html"><button class="navMenuButton">MOVIES</button></a><br />
+            <a href="../games.html"><button class="navMenuButton">GAMES</button></a><br />
+            <a href="../shows.html"><button class="navMenuButton">SHOWS</button></a><br />
+        </div>
+        <div class="innerContainer">
+            <h1><script>document.write(document.title);</script>.</h1>
+
+            <div id="drunkscale"></div>
+            <h3 id="runtime"></h3>
+            <table>
+                <tr><th></th><th>Take a Drink When: </th></tr>
+                <tr><td width="5%">1.</td><td class="rule">The names "Bobby", "Stig", "Deb" or "Papi" are mentioned.</td></tr>
+                <tr><td>2.</td><td class="rule">"People" are mentioned.</td></tr>
+                <tr><td>3.</td><td class="rule">A military branch or government agency is mentioned.</td></tr>
+                <tr><td>4.</td><td class="rule">A military rank is mentioned.</td></tr>
+                <tr><td>5.</td><td class="rule">The money is referred to.</td></tr>
+                <tr><th></th><th>Take 2 Drinks When: </th></tr>
+                <tr><td>6.</td><td class="rule">Marky Mark or Denzel is a fuckin Swag Monster.</td></tr>
+                <tr><td>7.</td><td class="rule">Bobby and Stig bicker.</td></tr>
+                <tr><td>8.</td><td class="rule">Bobby and Stig shit on someone.</td></tr>
+                <tr><th></th><th>Take A Gulp When: </th></tr>
+                <tr><td>9.</td><td class="rule">There's a dope-ass car on screen.</td></tr>
+                <tr><td>10.</td><td class="rule">Bill Paxton fucks up someone's day.</td></tr>
+                <tr><td>11.</td><td class="rule">Bobby or Stig gets shot.</td></tr>
+                <tr><td>12.</td><td class="rule">Bobby and Stig reveal their identities to each other. </td></tr>
+                <tr><th></th><th>Finish Your Drink When:</th></tr>
+                <tr><td>13.</td><td class="rule">In honor of that cripsy-ass Impala.</td></tr>
+            </table>      
+        </div>
+    </div>
+</body>
+</html>
+<footer>
+<!--Footer / Legal Stuff-->
+<p>&#169;2022 - Team D2M</p>
+</footer>
