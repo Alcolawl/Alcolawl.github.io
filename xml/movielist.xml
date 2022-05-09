@@ -1091,6 +1091,15 @@
       <author>Joe</author>
     </movie>
   </p>
+  <q>
+    <movie>
+      <title>Quantum of Solace</title>
+      <link>films/quantumofsolace.html</link>
+      <drunkscale>4</drunkscale>
+      <runtime>1h 46m</runtime>
+      <author>Alcolawl</author>
+    </movie>
+  </q>
   <r>
     <movie>
       <title>Reign of Fire</title>
