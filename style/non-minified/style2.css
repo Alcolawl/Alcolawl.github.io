@@ -141,6 +141,7 @@ footer {font-family: Noto; max-width: 1280px; margin: auto; text-align: right;}
 .sortButton {
     height: auto;
     background-color: #444444;
+    border: none;
     color: #00C9FF;
     box-shadow: 3px 3px 1px #222222;
     min-width: 25%;
