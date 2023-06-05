@@ -27,3 +27,18 @@ function sort_name()
     if(sort_order=="asc"){document.getElementById("name_order").value="desc";}
     if(sort_order=="desc"){document.getElementById("name_order").value="asc";}
 }
+
+function sort_runtime()
+{
+    var tbody =$('#fullList');
+
+    tbody.find('tr').sort(function(a, b) 
+    {
+        if($('#runtime_order').val()=='asc') {return $('td:eq(2)', a).text().localeCompare($('td:eq(2)', b).text());}
+        else {return $('td:eq(2)', b).text().localeCompare($('td:eq(2)', a).text());}		
+    }).appendTo(tbody);
+	
+    var sort_order=$('#runtime_order').val();
+    if(sort_order=="asc"){document.getElementById("runtime_order").value="desc";}
+    if(sort_order=="desc"){document.getElementById("runtime_order").value="asc";}
+}

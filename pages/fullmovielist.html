@@ -30,8 +30,7 @@
 <body>
     <div id="header">
         <input type="checkbox" id="hamburger"/><img id="banner" src="../images/banner.gif"/>
-    </div>
-    
+    </div>    
 
     <div id="content">
         <div id="navMenu">
@@ -82,7 +81,7 @@
                 <img src="../images/update/movieList.png" /><br />
 
                 What lies below is a glorious compilation of drinking rules to over <b>200</b> movies of all styles and genres.<br></br> 
-                <button onclick="sort_drunk_scale();" class="sortButton">Sort by Drunk Scale.</button><button onclick="sort_name();" class="sortButton">Sort by Name.</button>
+                <button onclick="sort_drunk_scale();" class="sortButton">Sort by Drunk Scale.</button><button onclick="sort_name();" class="sortButton">Sort by Name.</button><button onclick="sort_runtime();" class="sortButton">Sort by Run Time.</button>
 
                 <table class="movielist">
                     <thead><th class="nopad" width="21%">Drunk Scale (1-7)</th><th class="nopad" width="50%">Title</th><th class="nopad" width="10%">Run Time</th><th class="nopad">Author</th></thead>
@@ -90,6 +89,7 @@
                 </table>
                 <input type="hidden" id="name_order" value="asc">
                 <input type="hidden" id="drunk_scale_order" value="asc">
+                <input type="hidden" id="runtime_order" value="asc">
             </div>
     </div>
 </body>
