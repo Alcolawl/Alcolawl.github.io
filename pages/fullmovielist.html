@@ -6,6 +6,7 @@
     <meta name="author" content="Team D2M">
     <meta name="description" content="A massive list of rules to over 250 movies that you can get absolutely wasted to!">
     <title>All Movies - Drink 2 Movies</title>
+    <link rel="preload" as="font" href="../fonts/hemi" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" as="font" href="../fonts/notosans-bold.woff2" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" as="font" href="../fonts/notosans-light.woff2" type="font/woff2" crossorigin="anonymous">
     <link rel="image_src" href="../images/previewpic.png" />
@@ -16,7 +17,8 @@
     [
         '../scripts/essential/jquery-3.7.0.min.js',
         '../scripts/essential/displaymenu.js',
-        '../scripts/non-minified/movieDisplay.js'
+        '../scripts/non-minified/movieDisplay.js',
+        '../scripts/non-minified/tableSort.js'
     ].forEach(function (src) {
         var script = document.createElement('script');
         script.src = src;
@@ -80,11 +82,14 @@
                 <img src="../images/update/movieList.png" /><br />
 
                 What lies below is a glorious compilation of drinking rules to over <b>200</b> movies of all styles and genres.<br></br> 
+                <button onclick="sort_drunk_scale();" class="sortButton">Sort by Drunk Scale.</button><button onclick="sort_name();" class="sortButton">Sort by Name.</button>
 
                 <table class="movielist">
                     <thead><th class="nopad" width="21%">Drunk Scale (1-7)</th><th class="nopad" width="50%">Title</th><th class="nopad" width="10%">Run Time</th><th class="nopad">Author</th></thead>
                     <tbody id="fullList"></tbody>
                 </table>
+                <input type="hidden" id="name_order" value="asc">
+                <input type="hidden" id="drunk_scale_order" value="asc">
             </div>
     </div>
 </body>

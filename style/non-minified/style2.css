@@ -26,6 +26,14 @@
     font-display: auto; 
 }
 
+@font-face {
+    font-family: Hemi;
+    src: local('Hemi'), url('../fonts/hemi.woff2') format('woff2');
+    font-style: normal;	
+    unicode-range: U+000-5FF;
+    font-display: auto; 
+}
+
 b {
     font-family: Noto;
     font-style: normal;
@@ -129,6 +137,26 @@ input[type="checkbox"]:checked {
 footer {font-family: Noto; max-width: 1280px; margin: auto; text-align: right;}
 
 .noCenter {text-align: left;}
+
+.sortButton {
+    height: auto;
+    background-color: #444444;
+    color: #00C9FF;
+    box-shadow: 3px 3px 1px #222222;
+    min-width: 25%;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    margin-bottom: 5px;
+    padding: 1%;
+    font-size: 28pt;
+    font-weight: bold;
+    font-family: "Hemi";
+}
+
+.sortButton:active {
+    background-color: #CD00FF;
+    color: #333333;
+}
 
 ul > li {color: #00C9FF;}
 ul > li > span {color: #cccccc;}
