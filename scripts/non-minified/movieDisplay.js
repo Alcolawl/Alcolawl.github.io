@@ -27,7 +27,6 @@
                 $("#fullList").append(output);                                                //Output to table
                 x++;
             })
-            
         }
     })
 });
