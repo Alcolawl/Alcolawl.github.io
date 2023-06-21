@@ -1,13 +1,7 @@
 ﻿function go(choice) {
 
     var nextChar = choice;
-
-    if (choice == 80)                                                                           //If the Choice is P, make the next character R. There is no movie Q. REMOVE AFTER ADDING A MOVIE THAT STARTS WITH Q.
-    {
-        nextChar++;
-        nextChar++;
-    }
-    else { nextChar++; }
+    nextChar++;
 
     $.ajax({
         type: "GET",
