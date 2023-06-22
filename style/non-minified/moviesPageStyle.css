@@ -109,6 +109,20 @@ pre {
     -o-transition: all 0.3s ease;  
 }
 
+#spacebar{
+    color: #00C9FF;
+    box-shadow: 3px 3px 1px #222222;
+    min-height: 90px;
+    max-width: 58%;
+    padding-left: 2%;
+    padding-right: 2%
+}
+
+#spacebar:active {
+    background-color: #CD00FF;
+    color: #333333;
+}
+
 #fullList {
     background-color: #444444;
     color: #00C9FF;
