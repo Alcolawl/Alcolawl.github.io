@@ -33,6 +33,15 @@
     box-shadow: 3px 3px 1px #222222;
 }
 
+pre {
+    font-family: Noto;    
+    font-weight: 300;
+    font-size: 14pt;
+    margin: 0;
+    margin-bottom: 20px;
+    white-space: pre-line;
+}
+
 /*Collapsible menu*/
 
 #movieListContainer{display: none;}
@@ -62,6 +71,10 @@
 .kbButton:active {
     background-color: #CD00FF;
     color: #333333;
+}
+
+#results {
+    margin-top: 20px;
 }
 
 #results tr {
