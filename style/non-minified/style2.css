@@ -5,7 +5,7 @@
     font-style: normal;
     font-weight: 300;
     unicode-range: U+000-5FF; /* Download only latin glyphs */
-    font-display: auto;
+    font-display: swap;
 }
 
 @font-face {
@@ -14,7 +14,7 @@
     font-style: normal;
     font-weight: 400;
     unicode-range: U+000-5FF;
-    font-display: auto;
+    font-display: swap;
 }
 
 @font-face {
@@ -23,7 +23,7 @@
     font-style: normal;	
     font-weight: 700;
     unicode-range: U+000-5FF;
-    font-display: auto; 
+    font-display: swap;
 }
 
 @font-face {
@@ -31,7 +31,7 @@
     src: local('Hemi'), url('../fonts/hemi.woff2') format('woff2');
     font-style: normal;	
     unicode-range: U+000-5FF;
-    font-display: auto; 
+    font-display: swap; 
 }
 
 b {
