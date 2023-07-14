@@ -13,27 +13,26 @@ h1.noMargin {margin-bottom: 0;}
     font-weight: 300;
 }
 
-#gameRatings {
-    /*font-family: Hemi;*/
-    font-size: 22pt;
-    width: 61%;
+#gameRatings { /*Container*/
+    font-size: calc(15px + 0.390625vw);
     margin-left: auto;
     margin-right: auto;
     margin-top: 2%;
 }
 
-table.gameAttributes { 
-    width: 100%;
+#gameDetails { /*Table*/
+    min-width: 60%;
+    max-width: 60%;
     border: 2px solid #CD00FF;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 td.gameAttributes {
-    width: 33%;
     border: 2px solid #CD00FF;
 }
 
 td.gameAttributeHeader{
-    width: 33%;
     border: 2px solid #CD00FF;
     color: #00C9FF;
     font-weight: 700;
