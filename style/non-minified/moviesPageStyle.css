@@ -65,7 +65,7 @@ pre {
     margin-bottom: 5px;
     color: #00C9FF;
     box-shadow: 3px 3px 1px #222222;
-    font-size: 32pt;
+    overflow: auto;
 }
 
 .kbButton:active {
@@ -115,7 +115,7 @@ pre {
     min-height: 90px;
     max-width: 58%;
     padding-left: 2%;
-    padding-right: 2%
+    padding-right: 2%;
 }
 
 #spacebar:active {
