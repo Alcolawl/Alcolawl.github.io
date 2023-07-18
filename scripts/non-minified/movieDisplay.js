@@ -15,9 +15,8 @@
         scale = "<td>" + scale + "</td>";                                       // <td>scale</td>
         title = "<td>" + link + url + linkMid + title + linkEnd + "</td>";      // <td><a href="url">title</a></td>
         runtime = "<td>" + runtime + "</td>";                                   // <td>runtime</td>
-        author = "<td>" + author + "</td>";                                     // <td>author</td>
 
-        var rowOut = scale + title + runtime + author;                          // Create and populate new row
+        var rowOut = scale + title + runtime;                          // Create and populate new row
         output = output + "<tr>" + rowOut + "</tr>";                            // Add new row to final output
 
     }
