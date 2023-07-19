@@ -6,7 +6,7 @@
         var linkMid = '">';
         var linkEnd = "</a>";
         var output = "";
-        var header = '<tr><th class="center" width="15%">Drunk Scale</th><th class="center" width="55%">Title</th><th class="center" width="30%">Run Time</th></tr>';
+        var header = '<tr><th class="center" width="15%">Drunk Scale</th><th class="center" width="70%">Title</th><th class="center" width="15%">Run Time</th></tr>';
 
         for (var count = 1; count<movielist.length; count++)                            // Iterate through each movie / line of csv
         {
@@ -35,7 +35,7 @@
                 var author = (movielist[count][4])                                      // Retrieve Movie's Blurb
                 scale = "<td>" + scale + "</td>";                                       // <td>scale</td>
                 title = "<td>" + link + url + linkMid + title + linkEnd + "</td>";      // <td><a href="url">title</a></td>
-                runtime = "<td>" + runtime + "</td>";                                   // <td>runtime</td>
+                runtime = "<td class=\"runtime\">" + runtime + "</td>";                                   // <td>runtime</td>
 
                 var rowOut = scale + title + runtime;                         // Create and populate new row
                 output = output + "<tr>" + rowOut + "</tr>";                            // Add new row to final output
@@ -50,7 +50,7 @@
                 var author = (movielist[count][4])                                      // Retrieve Movie's Blurb
                 scale = "<td>" + scale + "</td>";                                       // <td>scale</td>
                 title = "<td>" + link + url + linkMid + title + linkEnd + "</td>";      // <td><a href="url">title</a></td>
-                runtime = "<td>" + runtime + "</td>";                                   // <td>runtime</td>
+                runtime = "<td class=\"runtime\">" + runtime + "</td>";                                   // <td>runtime</td>
 
                 var rowOut = scale + title + runtime;                         // Create and populate new row
                 output = output + "<tr>" + rowOut + "</tr>";                            // Add new row to final output

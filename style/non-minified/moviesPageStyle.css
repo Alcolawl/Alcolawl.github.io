@@ -74,20 +74,39 @@ pre {
     color: #333333;
 }
 
+#tableContainer{
+    max-width: 100%;
+}
+
 #results {
     margin-top: 20px;
+    table-layout: fixed;
+    width: 100%;
+    font-size: clamp(4pt, 4vmin, 16pt);
+    overflow: hidden;
 }
 
 #results tr {
     border: 2px solid #222222;
     transition: all 0.3s ease; 
     -moz-transition: all 0.3s ease; 
-    -o-transition: all 0.3s ease;  
+    -o-transition: all 0.3s ease;
 }
 
 #results th {
     text-align: center;
     margin: auto;
+    font-size: clamp(6pt, 4vmin, 16pt);
+}
+
+#results td {
+    white-space: normal;
+}
+
+.runtime{
+    white-space: nowrap;
+    text-size-adjust: auto;
+    font-size: clamp(8pt, 3vmin, 14pt); 
 }
 
 #results tr:hover {

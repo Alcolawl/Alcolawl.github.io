@@ -70,13 +70,14 @@ th.center {
     height: 35px;
     font-size: 14pt;
     padding-right: 0px;
+    overflow: hidden;
 }
 
 /*Movie List*/
 
 .movielist {
     margin: auto;
-    min-width: 85%;
+    min-width: 100%;
 }
 
 table.movielist tr {
@@ -99,6 +100,12 @@ table.movielist a:hover {
 }
 
 table.movielist td {border: 2px solid #222222;}
+
+.runtime{
+    white-space: nowrap;
+    text-size-adjust: auto;
+    font-size: clamp(8pt, 3vmin, 14pt); 
+}
 
 /*Shows*/
 
