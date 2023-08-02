@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Drink,Movie,Games,Alcohol,Drinking Game">
+    <meta name="author" content="Team D2M">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>In the Line of Fire</title>
+    <link href="../../style/style2.css" rel="stylesheet" type="text/css" />
+    <link href="../../style/tableStyle.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        [
+            '../../scripts/essential/jquery-3.7.0.min.js',
+            '../../scripts/essential/jquery.csv.min.js',
+            '../../scripts/essential/displaymenu.js',
+            '../../scripts/movieInfo.min.js'            
+        ].forEach(function (src) {
+            var script = document.createElement('script');
+            script.src = src;
+            script.async = false;
+            document.head.appendChild(script);
+        });
+    </script>
+</head>
+
+<body>
+    <div id="header">
+        <input type="checkbox" id="hamburger"/><img id="banner" src="../../images/banner.gif"/>
+    </div>
+    <div id="content">
+        <div id="navMenu">
+            <a href="../../index.html"><button class="navMenuButton">HOME</button></a><br />
+            <a href="../about.html"><button class="navMenuButton">ABOUT</button></a><br />
+            <a href="../movies.html"><button class="navMenuButton">MOVIES</button></a><br />
+            <a href="../games.html"><button class="navMenuButton">GAMES</button></a><br />
+            <a href="../shows.html"><button class="navMenuButton">SHOWS</button></a><br />
+        </div>
+        <div class="innerContainer">
+            <h1><script>document.write(document.title);</script>.</h1>
+
+            <div id="drunkscale"></div>
+            <h3 id="runtime"></h3>
+            <table>
+                <tr><th></th><th>Take a Drink When: </th></tr>
+                <tr><td width="10%">1.</td><td class="rule">"Frank"</td></tr>
+                <tr><td>2.</td><td class="rule">Someone dies</td></tr>
+                <tr><td>3.</td><td class="rule">A military branch or government agency is mentioned.</td></tr>
+                <tr><th></th><th>Take 2 Drinks When: </th></tr>
+                <tr><td>4.</td><td class="rule">Frank talks on the phone.</td></tr>
+                <tr><td>5.</td><td class="rule">Every time Frank flirts and/or winks.</td></tr>
+                <tr><td>6.</td><td class="rule">"Booth""</td></tr>
+                <tr><th></th><th>Chug 5 seconds: </th></tr>
+                <tr><td>7.</td><td class="rule">Frank one-liner (witty or not).</td></tr>
+                <tr><td>8.</td><td class="rule">"Rendezvous"</td></tr>
+                <tr><th></th><th>Finish Your Drink When:</th></tr>
+                <tr><td>9.</td><td class="rule">"Aim High""</td></tr>
+            </table>      
+        </div>
+    </div>
+</body>
+</html>
+<footer>
+<!--Footer / Legal Stuff-->
+<p>&#169;2023 - Team D2M</p>
+</footer>
