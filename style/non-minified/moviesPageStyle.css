@@ -89,8 +89,6 @@ pre {
 #results tr {
     border: 2px solid #222222;
     transition: all 0.3s ease; 
-    -moz-transition: all 0.3s ease; 
-    -o-transition: all 0.3s ease;
 }
 
 #results th {
@@ -125,8 +123,6 @@ pre {
     font-weight: 700;
     color: #CD00FF;
     transition: all 0.3s ease; 
-    -moz-transition: all 0.3s ease; 
-    -o-transition: all 0.3s ease;  
 }
 
 #spacebar{
