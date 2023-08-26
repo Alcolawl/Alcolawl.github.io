@@ -113,7 +113,7 @@ pre {
     box-shadow: 0px 0px 10px 5px rgba(205,0,255,0.8); 
 }
 
-#results a:link {text-decoration: none;}
+#results a:link {text-decoration: none; transition: all 0.3s ease;}
 
 #results a:hover {
     font-size: 22px;
