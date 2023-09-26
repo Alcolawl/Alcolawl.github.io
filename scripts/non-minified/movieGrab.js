@@ -27,6 +27,19 @@
                 }
             }
 
+            // If the chosen letter (choice) is a A, we also must do some extra checking
+            if (choice == 65)
+            {
+                // If the movie title begins with a "A", proceed
+                if (choice == title.substring(0, 1).charCodeAt()){
+                    // If the movie title begins with "A ", proceed
+                    if (title.substring(0, 2) == "A "){
+                        // If the movie starts with "A" but the second word does not start with a "A", iterate the loop
+                        if (title.substring(0, 3) != "A " + String.fromCharCode(choice)){continue;}
+                    }
+                }
+            }
+
             // If the chosen letter (choice) matches the title (movielist[count][0]) or begins with an A or THE + the chosen letter
             if ((choice == title.substring(0, 1).charCodeAt()) || (title.substring(0, 3) == "A " + String.fromCharCode(choice)) || (title.substring(0, 5) == "The " + String.fromCharCode(choice)))
             {
