@@ -2,9 +2,6 @@
 
 $.get( "../xml/movielist.csv", function(input){
     var movielist = $.csv.toArrays(input);
-    var link = '<a href="';
-    var linkMid = '">';
-    var linkEnd = "</a>";
     var output = "";
 
     for (var count = 1; count<movielist.length; count++)                        // Iterate through each movie / line of csv
@@ -15,7 +12,7 @@ $.get( "../xml/movielist.csv", function(input){
         var runtime = (movielist[count][3])                                     // Retrieve Movie's Run Time
         var author = (movielist[count][4])                                      // Retrieve Movie's Blurb
         scale = "<td>" + scale + "</td>";                                       // <td>scale</td>
-        title = "<td>" + link + url + linkMid + title + linkEnd + "</td>";      // <td><a href="url">title</a></td>
+        title = '<td><a href="' + url + '">' + title + "</a></td>";             // <td><a href="URL">title</a></td>
         runtime = "<td class=\"runtime\">" + runtime + "</td>";                 // <td>runtime</td>
 
         var rowOut = scale + title + runtime;                                   // Create and populate new row
