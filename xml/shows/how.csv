@@ -1,0 +1,7 @@
+﻿type,rule
+drink,Someone says the name of a main character.
+drink,There's a scene at a bar (each one).
+drink,There's a voiceover.
+gulp,Someone says 'legendary'.
+finish,A relationship begins or ends.
+title,How I Met Your Mother
