@@ -1,114 +1,102 @@
-﻿/*"Here, take a cookie. I promise by the time you walk out that door, you'll feel right as rain."*/
-var filename = document.cookie;                                                                 //Store cookie contents as string
-$(document).ready(function () {
-                                                                 
-    filename = filename.replace('; popup=1', '');                                               //Remove other stuff from string
-    filename = filename.replace('filename=', '');                                               //Remove other stuff from string
-    document.cookie = "filename=; expires=Thu, 01 Jan 1970 00:00:00 UTC";                       //Delete Cookie
+﻿// Function: Creates table based on user's choice.
 
-    choiceLauncher();                                                                           //Check for table, kickstart function.
-})
+identifyTitle();
 
-/*Global Variables*/
-
-//Function: Creates table based on user's choice. use AJAX
-
-var iteration = 0;                                                                              //Keeps track of how many times the program has iterated through the choiceDelegation function.
-//1 = Drink, 2 = Gulp, 3 = Chug, 4 = Finish
-var x = 1;                                                                                      //Keeps track of the rows in the table
-var letter = 64;                                                                                //ASCII value of letters for each rule
-var output = "";                                                                                //Prepares Output Buffer
-var finalize = "<tr><th width=\"5%\"></th><th>Take a Drink when:</th></tr>";                    //Setup first row
-var myTable = document.getElementById('rulesTable');                                            //myTable = the table on the page
-var showTitle = document.getElementById('showTitle');                                           //showTitle = the title of the show on the page
-var tableExists = false;                                                                        //Stores whether a table has been created yet
-var globalXml;                                                                                  //Stores the XML document loaded in the createTable function
-
-function choiceLauncher()                                                                       //Stores user's choice as a number
+function identifyTitle()
 {
-    //Remove existing table
-    if (tableExists == true) {                                                                  //If a table already exists, clear it.
-        $(myTable).children().remove();
-        output = "";                                                                            //Clear Output Buffer
-    }
+    /* Name of CSV file is appended on the URL from the previous page. Ex. "#cops"
+    Sloppy, but this avoids the use of cookies to dynamically generate the HTML for this page*/
+    const currentUrl = window.location.href;
+    const showTitleSplit = currentUrl.split('#');
+    const showTitle = showTitleSplit[1];
 
-    createTable();                                                                              //Get the ball rolling!
+    createTable(showTitle);                                                                     // Get the ball rolling!
 }
 
-function createTable() {
+function createTable(showTitle) {
 
-    var xmlurl = "../../xml/shows/" + filename + ".xml"
+    var myTable = document.getElementById('rulesTable');                                        // myTable = the table on the page
+    var csvurl = "../../xml/shows/" + showTitle + ".csv";
+    const showTitleElement = document.getElementById('showTitle');                              // showTitle = the title of the show on the page
 
-    $.ajax({
-        type: "GET",
-        url: xmlurl,
-        dataType: "xml",
-        success: function (xml) {
-            globalXml = xml;
-            iteration = 0;
-            x = 1;                                                                              //Reset X to 1 when the script runs -- may not be needed.
-            tableExists = true;                                                                 //From this point on, it's assumed a table has been created.
+    $.get( csvurl, function(input){
+        var rules = $.csv.toArrays(input);
+        var drinkRule = "";
+        var gulpRule = "";
+        var chugRule = "";
+        var finishRule = "";
+        var output = "";                                                                        // Prepares Output Buffer
 
-            $(xml).find('show').each(function () {
-                document.title = $(this).find('title').text();
-                showTitle.innerHTML = document.title + ".";
-            })
+        // Fetch and store all rules. ruleAmount will keep track of how many rules there are
+        for (var ruleAmount = 1; ruleAmount<rules.length; ruleAmount++){
 
-            //DRINK SECTION            
-            for (var i = 1; i < 7; i++) {
-                $(xml).find('drink').each(function () {                                         //Gather DRINK rules
-                    var rule = "";                                                              //Make Rule blank
-                    var rule = $(this).find('rule' + String.fromCharCode(letter + i)).text();   //Find next Rule (RuleA,RuleB,etc.)
-                    if (rule == "")                                                             //If there is no rule or it's blank, break the loop
-                    { return false; }
-                    output = output + "<tr><td>" + x + ".</td><td class=\"rule\">" + rule + "</td></tr>";       //Stores all Rules for this section
-                    x++;
-                });
+            var drinktype = rules[ruleAmount][0];                                               // Identify drink type
+
+            switch(drinktype){                                                                  // Store rules in a string
+                case 'drink':
+                    drinkRule += rules[ruleAmount][1] + "\n";                                   // Add a new line for filtering later. This preserves punctuation.
+                    break;
+                case 'gulp':
+                    gulpRule += rules[ruleAmount][1] + "\n";
+                    break;
+                case 'chug':
+                    chugRule += rules[ruleAmount][1] + "\n";
+                    break;
+                case 'finish':
+                    finishRule += rules[ruleAmount][1] + "\n";
+                    break;
+                case 'title':                                                                   // We cheat and put the title of the show in the CSV as a rule
+                    showTitleElement.innerHTML = rules[ruleAmount][1] + ".";
+                default:
+                    break;
             }
-
-            //GULP SECTION  
-            for (var i = 1; i < 7; i++) {
-                $(xml).find('gulp').each(function () {                                          //Gather GULP rules
-                    var rule = "";                                                              //Make Rule blank
-                    var rule = $(this).find('rule' + String.fromCharCode(letter + i)).text();   //Find next Rule (RuleA,RuleB,etc.)
-                    if (rule != "" && i == 1)                                                   //If the first rule in this section isn't blank, create the section.
-                    { output = output + "<tr><th width=\"5%\"></th><th>Take a Gulp When:</th></tr>"; }
-                    if (rule == "")                                                             //If there is no rule or it's blank, break the loop
-                    { return false;}
-                    output = output + "<tr><td>" + x + ".</td><td class=\"rule\">" + rule + "</td></tr>";       //Stores all Rules for this section
-                    x++;
-                });
-            }
-
-            //CHUG SECTION  
-            for (var i = 1; i < 7; i++) {
-                $(xml).find('chug').each(function () {                                          //Gather CHUG rules
-                    var rule = "";                                                              //Make Rule blank
-                    var rule = $(this).find('rule' + String.fromCharCode(letter + i)).text();   //Find next Rule (RuleA,RuleB,etc.)
-                    if (rule != "" && i == 1)                                                   //If the first rule in this section isn't blank, create the section.
-                    { output = output + "<tr><th width=\"5%\"></th><th>Chug For 5 Seconds When:</th></tr>"; }
-                    if (rule == "")                                                             //If there is no rule or it's blank, break the loop
-                    { return false; }
-                    output = output + "<tr><td>" + x + ".</td><td class=\"rule\">" + rule + "</td></tr>";       //Stores all Rules for this section
-                    x++;
-                });
-            }
-
-            //FINISH SECTION  
-            for (var i = 1; i < 7; i++) {
-                $(xml).find('finish').each(function () {                                        //Gather FINISH rules
-                    var rule = "";                                                              //Make Rule blank
-                    var rule = $(this).find('rule' + String.fromCharCode(letter + i)).text();   //Find next Rule (RuleA,RuleB,etc.)
-                    if (rule != "" && i == 1)                                                   //If the first rule in this section isn't blank, create the section.
-                    { output = output + "<tr><th width=\"5%\"></th><th>Finish Your Drink When:</th></tr>"; }
-                    if (rule == "")                                                             //If there is no rule or it's blank, break the loop
-                    { return false; }
-                    output = output + "<tr><td>" + x + ".</td><td class=\"rule\">" + rule + "</td></tr>";       //Stores all Rules for this section
-                    x++;
-                });
-            }
-
-            myTable.innerHTML = finalize + output;                                                  //Output ENTIRE TABLE  
         }
-    });
+
+        // Reset variables
+        var output = "";
+        var count = 1;
+
+        // Create arrays from each string, splitting the elements by newline characters added above
+        var drinkRuleArray = drinkRule.split(/\r?\n/)
+        var gulpRuleArray = gulpRule.split(/\r?\n/)
+        var chugRuleArray = chugRule.split(/\r?\n/)
+        var finishRuleArray = finishRule.split(/\r?\n/)
+
+        // Trim empty elements from each array
+        drinkRuleArray = drinkRuleArray.filter(Boolean);
+        gulpRuleArray = gulpRuleArray.filter(Boolean);
+        chugRuleArray = chugRuleArray.filter(Boolean);
+        finishRuleArray = finishRuleArray.filter(Boolean);
+
+
+        // Build final HTML for table output. If the arrays aren't empty, builds the rows for each rule
+        if (drinkRule != ""){
+            drinkRuleArray.forEach((rule) => {
+                output += "<tr><td>" + count + ".</td><td class=\"rule\">" + rule + "</td></tr>"
+                count++;
+            });
+        }
+        if (gulpRule != ""){
+            output += "<tr><th width=\"5%\"></th><th>Take a Gulp When:</th></tr>";
+            gulpRuleArray.forEach((rule) => {
+                output += "<tr><td>" + count + ".</td><td class=\"rule\">" + rule + "</td></tr>"
+                count++;
+            });
+        }
+        if (chugRule != ""){
+            output += "<tr><th width=\"5%\"></th><th>Chug For 5 Seconds When:</th></tr>";
+            chugRuleArray.forEach((rule) => {
+                output += "<tr><td>" + count + ".</td><td class=\"rule\">" + rule + "</td></tr>"
+                count++;
+            });
+        }
+        if (finishRule != ""){
+            output += "<tr><th width=\"5%\"></th><th>Finish Your Drink When:</th></tr>";
+            finishRuleArray.forEach((rule) => {
+                output += "<tr><td>" + count + ".</td><td class=\"rule\">" + rule + "</td></tr>"
+                count++;
+            });
+        }
+        myTable.innerHTML = "<tr><th width=\"5%\"></th><th>Take a Drink when:</th></tr>" + output;  //Output ENTIRE TABLE  
+    })
 }
