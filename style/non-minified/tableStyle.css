@@ -52,17 +52,17 @@ td.rule {padding-right: 5%;}
 }
 
 table.movielist tr {
-    background-color: #4b4b4b;
+    background-color: #444444;
     height: 40px;
     transition: all 0.2s ease;
 }
 
 table.movielist tr:hover {
-    background: #595959;
+    background: #505050;
     box-shadow: inset 0px 0px 15px #CD00FF;
     height: clamp(50px, 30vw, 75px);
     font-size: clamp(16pt, 4vmin, 20pt);
-    opacity: 1; 
+    opacity: 1;
 }
 
 table.movielist a:link {

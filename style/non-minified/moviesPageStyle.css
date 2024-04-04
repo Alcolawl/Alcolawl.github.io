@@ -89,7 +89,7 @@ pre {
 }
 
 #results tr {
-    background-color: #4b4b4b;
+    background-color: #444444;
     height: 40px;
     transition: all 0.2s ease; 
 }
@@ -108,7 +108,7 @@ pre {
     font-size: clamp(16pt, 4vmin, 20pt);
     height: clamp(50px, 30vw, 75px);
     opacity: 1; 
-    background: #595959;
+    background: #505050;
     box-shadow: inset 0px 0px 15px #CD00FF;
 }
 
