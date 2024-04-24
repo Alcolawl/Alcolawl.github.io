@@ -4,7 +4,7 @@ function go(choice){
 
     $("#results").css("display", "table");  //Reveals table with results, was previously hidden via CSS
 
-    $.get( "../xml/movielist.csv", function(input){
+    $.get( "../csv/movielist.csv", function(input){
         var movielist = $.csv.toArrays(input);
         var output = "";
         var header = '<tr><th class="nopad" width="15%">Drunk Scale</th><th class="nopad" width="70%">Title</th><th class="nopad" width="15%">Run Time</th></tr>';

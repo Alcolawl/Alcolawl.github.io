@@ -16,7 +16,7 @@ function identifyTitle()
 function createTable(showTitle) {
 
     var myTable = document.getElementById('rulesTable');                                        // myTable = the table on the page
-    var csvurl = "../../xml/shows/" + showTitle + ".csv";
+    var csvurl = "../../csv/shows/" + showTitle + ".csv";
     const showTitleElement = document.getElementById('showTitle');                              // showTitle = the title of the show on the page
 
     $.get( csvurl, function(input){

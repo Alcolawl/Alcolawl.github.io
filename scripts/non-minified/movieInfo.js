@@ -1,7 +1,7 @@
 ﻿// Retrieves information for the specific user-selected movie
 
 $(window).on('load', function() {
-    $.get( "../../xml/movielist.csv", function(input){
+    $.get( "../../csv/movielist.csv", function(input){
         var movielist = $.csv.toArrays(input);
         var img = '<img src="';
         var imgEnd = '"/>';

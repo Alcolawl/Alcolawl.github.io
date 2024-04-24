@@ -1,6 +1,6 @@
 ﻿// Retirieves and displays the full list of movies
 
-$.get( "../xml/movielist.csv", function(input){
+$.get( "../csv/movielist.csv", function(input){
     var movielist = $.csv.toArrays(input);
     var output = "";
 
